@@ -1,0 +1,11 @@
+title="LotI Era"
+type="era"
+icon="units/important/efraim.png"
+version="0.1"
+author="lhybrideur"
+passphrase=""
+description="Era allowing to use everything for Legends of the Invincibles for your campaign."
+email="lhybrideur@hotmail.fr"
+[feedback]
+    topic_id=57216
+[/feedback]
