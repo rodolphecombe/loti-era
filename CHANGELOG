@@ -3,3 +3,10 @@ Changelog
 0.1
 Starting from version 3.2.7b of LotI.
 Currently working only as a dependency.
+
+1.0
+Now working in MP and SP.
+Cleaned a bit useless files. 
+
+1.1
+All the sides now drop items in MP.
