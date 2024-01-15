@@ -1,10 +1,10 @@
 title="LotI Modification"
 type="era"
 icon="units/important/efraim.png"
-version="0.1"
+version="2.0"
 author="lhybrideur"
 passphrase=""
-description="Modification allowing to use everything for Legends of the Invincibles for your campaign."
+description="Modification allowing to use everything for Legends of the Invincibles in SP and MP."
 email="lhybrideur@hotmail.fr"
 [feedback]
     topic_id=57216
