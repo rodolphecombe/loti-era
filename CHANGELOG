@@ -13,3 +13,6 @@ All the sides now drop items in MP.
 
 2.0
 Added AMLAs to most mainline units. Dunefolk and monsters missing.
+
+2.1
+Corrected a bug that was transforming the wrong units
