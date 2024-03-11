@@ -301,7 +301,15 @@ end
 local function show_item_sorts(dialog)
 	local sorts = loti.item.storage.list_sorts()
 	local too_progressed = is_too_progressed()
-	for item_sort, count in pairs(sorts) do
+
+        local a = {}
+        for n in pairs(sorts) do table.insert(a, n) end
+        table.sort(a)
+
+	local item_sort, count
+        for i in ipairs(a) do
+	    item_sort=a[i]
+            count=sorts[a[i]]
 		if not too_progressed or item_sort == "potion" or item_sort == "limited" then
 			-- TODO: print human-readable translatable name of item_sort.
 			local text = item_sort .. " (" .. count .. ")"
@@ -448,6 +456,7 @@ local function onshow(dialog, unit, item_sort)
 	if not is_too_progressed() or item_sort == "potion" or item_sort == "limited" then
 		local types = loti.item.storage.list_items(item_sort)
 
+
 		-- Sort the items by name by creating { item_name = item_number, ... } table,
 		-- then creating an array of { item_name1, item_name2, ... },
 		-- then sorting this array alphabetically,
@@ -486,9 +495,9 @@ local function onshow(dialog, unit, item_sort)
 
 	dialog.equip.visible = can_equip
 	if string.match(item_sort, "potion") then
-		dialog.equip.label = "Use"
+		dialog.equip.label = _"Use"
 	else
-		dialog.equip.label = "Equip"
+		dialog.equip.label = _"Equip"
 	end
 	dialog.storage_dropdown_menu.visible = not empty and present
 
@@ -604,6 +613,16 @@ local function unequip_destroy()
 
 	-- Tell player which gem was picked.
 	loti.gem.show_gem_info_popup(gem)
+	if (string.sub(tostring(item.name),1,6)) == "Lilith" then
+		local mrscrane = wesnoth.units.find_on_map{ id = "Lilith" }
+		if #mrscrane == 1 then
+			local lil_sez={"Why you little...", "I spent decades crafting that!",
+			"You'll pay for this mischief, in this world or the next",
+			"I'll tell you the truth! Your soul's gonna burn, in a lake of fire!"}
+			local rand=math.random(1,#lil_sez)
+			wml.fire("message", { speaker="Lilith", message= lil_sez[rand]})
+		end
+	end
 
 	inventory_dialog.goto_tab("items_tab")
 end
