@@ -117,7 +117,7 @@ loti.item.storage.remove = function(item_number, crafted_sort)
 	end
 
 	wml.variables["item_storage"] = list
-	wesnoth.fire_event("removed from storage")
+	wesnoth.fire_event("removed from storage") -- where is it used?
 end
 
 -- Get the list of all items in the storage.
@@ -378,7 +378,8 @@ end
 
 -- Place item on the ground at coordinates (x,y).
 -- Optional parameter crafted_sort: if present, overrides item_sort of the item.
-loti.item.on_the_ground.add = function(item_number, x, y, crafted_sort)
+-- Optional parameter turn: if present, overrides current turn.
+loti.item.on_the_ground.add = function(item_number, x, y, crafted_sort, turn)
 	local record = {
 		type = item_number,
 		x = x,
@@ -387,6 +388,9 @@ loti.item.on_the_ground.add = function(item_number, x, y, crafted_sort)
 	}
 	if crafted_sort then
 		record.sort = crafted_sort
+	end
+	if turn then
+		record.turn = turn
 	end
 
 	local list = wml.array_access.get("items")
@@ -404,7 +408,7 @@ loti.item.on_the_ground.add = function(item_number, x, y, crafted_sort)
 
 	if wml.variables["allied_sides"] then
 		wesnoth.add_event_handler {
-			id = "ie" .. x .. y,
+			id = "ie" .. x .. "|" .. y,
 			name = "moveto",
 			first_time_only = "no",
 			wml.tag.filter {
@@ -432,7 +436,7 @@ loti.item.on_the_ground.add = function(item_number, x, y, crafted_sort)
 	-- (see PLACE_ITEM_EVENT for WML version)
 	-- this is a LEGACY version, which uses the "controller" side filter
 		wesnoth.add_event_handler {
-			id = "ie" .. x .. y,
+			id = "ie" .. x .. "|" .. y,
 			name = "moveto",
 			first_time_only = "no",
 			wml.tag.filter {
@@ -552,7 +556,7 @@ end
 loti.item.util.take_item_from_unit = function(unit, item_number, crafted_sort, skip_update)
 	loti.item.on_unit.remove(unit, item_number, crafted_sort, skip_update)
 	loti.item.storage.add(item_number, crafted_sort)
-	wesnoth.fire_event("unequip", unit.x, unit.y)
+	wesnoth.fire_event("unequip", unit)
 end
 
 -- Remove one item from storage, then open "Pick up item" dialog on behalf of unit.
@@ -560,7 +564,7 @@ end
 loti.item.util.get_item_from_storage = function(unit, item_number, crafted_sort)
 	loti.item.storage.remove(item_number, crafted_sort)
 	loti.item.on_the_ground.add(item_number, unit.x, unit.y, crafted_sort)
-	wesnoth.fire_event("item pick", unit.x, unit.y)
+	wesnoth.fire_event("item pick", unit)
 end
 
 -------------------------------------------------------------------------------
@@ -580,11 +584,15 @@ end
 -- Generate the description of an item
 loti.item.describe_item = function(number, sort, set_items)
 	local item = loti.unit.item_with_set_effects(number, set_items, sort)
-	if item.description then
+	if item.description_override then
 		-- This item has constant (non-calculated) description.
 		-- For example, this can be a gem or an item like Book of Courage
 		-- ("Unit becomes fearless" instead of the calculated description).
-		return item.description
+		local descr = item.description_override
+		if item.flavour then
+			descr = descr .. "\n<span color='#808080'><i>" .. item.flavour .. "</i></span>"
+		end
+		return descr
 	end
 
 	local desc = {}
@@ -602,7 +610,7 @@ loti.item.describe_item = function(number, sort, set_items)
 		if variable then
 			if variable > 0 then
 				table.insert(desc, "<span color='green'>" .. _"Damage increased by " .. tostring(variable) .. ending)
-			else
+			elseif variable < 0 then
 				table.insert(desc, "<span color='red'>" .. _"Damage decreased by " .. tostring(variable * -1) .. ending)
 			end
 		end
@@ -827,10 +835,10 @@ loti.item.describe_item = function(number, sort, set_items)
 				describe("unwalkable", _"above unwalkable places")
 				describe("impassable", _"through impassable walls")
 			elseif effect.apply_to == "alignment" then
-				if effect.alignment == "chaotic" then line = "<span color='yellow'>" .. _"Sets alignment to chaotic" .. "</span>"
-				elseif effect.alignment == "liminal" then line = "<span color='yellow'>" .. _"Sets alignment to liminal" .. "</span>"
-				elseif effect.alignment == "lawful" then line = "<span color='yellow'>" .. _"Sets alignment to lawful" .. "</span>"
-				elseif effect.alignment == "neutral" then line = "<span color='yellow'>" .. _"Sets alignment to neutral" .. "</span>" end
+				if effect.set == "chaotic" then line = "<span color='yellow'>" .. _"Sets alignment to chaotic" .. "</span>"
+				elseif effect.set == "liminal" then line = "<span color='yellow'>" .. _"Sets alignment to liminal" .. "</span>"
+				elseif effect.set == "lawful" then line = "<span color='yellow'>" .. _"Sets alignment to lawful" .. "</span>"
+				elseif effect.set == "neutral" then line = "<span color='yellow'>" .. _"Sets alignment to neutral" .. "</span>" end
 			elseif effect.apply_to == "bonus_attack" then
 				line = "<span color='green'>" .. _"Bonus attack: " .. effect.description .. "</span>"
 			elseif effect.apply_to == "status" and effect.add == "not_living" then
@@ -893,7 +901,7 @@ function wesnoth.wml_actions.random_item(cfg)
 	if cfg.variable then
 		wml.variables[cfg.variable] = generated
 	else
-		loti.item.on_the_ground.add(generated, cfg.x, cfg.y)
+		loti.item.on_the_ground.add(generated, cfg.x, cfg.y, nil, cfg.turn)
 	end
 end
 

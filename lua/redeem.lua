@@ -532,16 +532,135 @@ end
 -- Unit is identified by cfg.find_in parameter (e.g. find_in=secondary_unit).
 -- NOTE: this is TEMPORARY (won't be needed in the future),
 -- because the WML code that needs this variable might be replaced by Lua.
+--
 function wesnoth.wml_actions.count_redeem_upgrades(cfg)
 	local to_variable = cfg.to_variable or "upgrade_count"
 
-	local units = wesnoth.units.find_on_map(cfg)
+        local units = wesnoth.units.find_on_map(cfg)
 	if #units < 1 then
-		wml.error("[show_redeem_menu]: no units found, may need find_in= parameter.")
+		wml.error("[count_redeem_upgrades]: no units found, may need find_in= parameter.")
 	end
 
 	local count = 0
 	for _ in pairs(loti_util_list_existing_upgrades("redeem", units[1])) do count = count + 1 end
 
 	wml.variables[to_variable] = count
+end
+
+-- max_redeem_count_from_level gets the max redeem count for a redeem level.
+local function max_redeem_count_from_level(level)
+    -- max_redeem_count(n+1)=max_redeem_count(n)+floor(n*4/3), where n is redeem level
+    --   and max_redeem_count(1) = 6.
+    -- Instead of repeatedly calculating these values, they are presented here (with plenty of extras for future use)
+    local my_level = level or wml.error("max_redeem_count_from_level: missing input value (level)")
+    local max_redeem_count_list = {6, 8, 10, 13, 17, 22, 29, 38, 50, 66, 88, 117, 156, 208, 277, 369, 492, 656, 874, 1165, 1553, 2070, 2760, 3680, 4906, 6541, 8721, 11628, 15504, 20672, 27562, 36749, 48998, 65330, 87106, 116141, 154854, 206472, 275296, 367061}
+    return max_redeem_count_list[my_level]
+end
+
+-- Tag [max_redeem_count_from_level] gets the max redeem count for a redeem level.
+-- Result is placed into Wesnoth variable cfg.to_variable.
+-- Requires cfg.to_variable, cfg.level
+function wesnoth.wml_actions.max_redeem_count_from_level(cfg)
+    local to_variable = cfg.to_variable or wml.error("[max_redeem_from_level]: missing to_variable= .")
+    local level = cfg.level or wml.error("[max_redeem_from_level]: missing level= .")
+    wml.variables[to_variable] = max_redeem_count_from_level(level)
+end
+
+-- redeem_hit_chance returns the chance of redeem success based on redeem level and target's level
+-- distance indicates whether target is the unit redeemer attacks (distance=0), or a unit adjacent to the
+-- unit redeemer attacks (distance=1)
+local function redeem_hit_chance(redeem_level,target_level,distance)
+	-- nil result indicates no chance
+	local hit_chance = 0
+
+	if (distance < 0) or (distance > 1) then wml.error("does_redeem_hit:  distance must be 0 or 1") end
+	-- tables based on formulae that can be found at https://github.com/Dugy/LotI_Era/blob/7397831e6b6693612bb455a8acb26acf8be4e69f/utils/redeeming.cfg#L264
+	local chance={ 	-- chance to sucessfully hit redeem defender
+			-- index = redeem level, value = table of probablity by target level (from 0)
+		{ 100, 100,  50,  25 },
+		{ 100, 100, 100,  50,  25 },
+		{ 100, 100, 100,  75,  50,  25,  10},
+		{ 100, 100, 100, 100,  75,  50,  25,  10},
+		{ 100, 100, 100, 100,  75,  50,  25,  10}, -- redeem level 5
+		{ 100, 100, 100, 100, 100,  75,  50,  25,  10},
+		{ 100, 100, 100, 100, 100, 100,  75,  50,  25,  10},
+		{ 100, 100, 100, 100, 100, 100, 100,  75,  50,  25,  10},
+		{ 100, 100, 100, 100, 100, 100,  90,  60,  40,  30,  20,  10},
+		{ 100, 100, 100, 100, 100, 100, 100,  90,  60,  40,  30,  20,  10},  -- redeem level 10
+		{ 100, 100, 100, 100, 100, 100, 100, 100,  90,  60,  40,  30,  20,  10},
+		{ 100, 100, 100, 100, 100, 100, 100,  90,  80,  70,  60,  50,  40,  30,  20,  10},
+		{ 100, 100, 100, 100, 100, 100, 100, 100,  90,  80,  70,  60,  50,  40,  30,  20,  10},
+		{ 100, 100, 100, 100, 100, 100, 100, 100, 100,  90,  80,  70,  60,  50,  40,  30,  20,  10},
+		{ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100,  90,  80,  70,  60,  50,  40,  30,  20,  10}, -- redeem level 15
+		{ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100,  90,  80,  70,  60,  50,  40,  30,  20,  10},
+		{ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100,  90,  80,  70,  60,  50,  40,  30,  20,  10},
+		{ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100,  90,  80,  70,  60,  50,  40,  30,  20,  10},
+		{ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100,  90,  80,  70,  60,  50,  40,  30,  20,  10},
+		{ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100,  90,  80,  70,  60,  50,  40,  30,  20,  10}
+	}
+
+	local adj_chance={	-- chance to sucessfully hit unit adjacent to redeem defender
+				-- index = redeem level, value = table of probablity by target level (from 0)
+		{},{},{},{},   -- redeem level 1-4 don't hit adjacent to target
+		{ 100, 100,  50,  25}, -- redeem level 5
+		{ 100, 100,  50,  25},
+		{ 100, 100, 100,  50,  25},
+		{ 100, 100, 100,  50,  25},
+		{ 100, 100, 100, 100,  50,  25},
+		{ 100, 100, 100, 100,  50,  25}, -- redeem level 10
+		{ 100, 100, 100, 100, 100,  50,  25},
+		{ 100, 100, 100, 100, 100,  50,  25},
+		{ 100, 100, 100, 100, 100, 100,  50,  25},
+		{ 100, 100, 100, 100, 100, 100,  50,  25},
+		{ 100, 100, 100, 100, 100, 100, 100,  50,  25}, -- redeem level 15
+		{ 100, 100, 100, 100, 100, 100, 100,  50,  25},
+		{ 100, 100, 100, 100, 100, 100, 100, 100,  50,  25},
+		{ 100, 100, 100, 100, 100, 100, 100, 100,  50,  25},
+		{ 100, 100, 100, 100, 100, 100, 100, 100, 100,  50,  25},
+		{ 100, 100, 100, 100, 100, 100, 100, 100, 100,  50,  25}
+	}
+
+	local lookup=0
+	if (distance == 0) and (chance[redeem_level] ~= nil) then lookup = chance[redeem_level][target_level+1] end
+	if (distance == 1) and (adj_chance[redeem_level] ~= nil) then lookup = adj_chance[redeem_level][target_level+1] end
+	if (lookup ~= nil) then hit_chance=lookup end
+	return hit_chance
+end
+
+-- Tag [does_redeem_hit_target] determines success/fail of redeeming target
+-- Requires cfg.redeem_level=, cfg.target_level=
+-- Returns true/false in variable identified by cfg.to_variable
+function wesnoth.wml_actions.does_redeem_hit_target(cfg)
+	local redeem_level = cfg.redeem_level or wml.error("[does_redeem_hit_target]: requires redeem_level= ")
+	local target_level = cfg.target_level or wml.error("[does_redeem_hit_target]: requires target_level= ")
+	local to_variable = cfg.to_variable or wml.error("[does_redeem_hit_target]: requires to_variable= ")
+	local debug = cfg.debug
+
+	local hit_chance = redeem_hit_chance(redeem_level,target_level,0)
+	local rand = math.random(0, 99)
+	if (debug) then print(string.format("[does_redeem_hit_target]: rlel = %d, tlel = %d, hit = %d, rand = %d",
+		redeem_level,target_level,hit_chance,rand))
+	end
+	local ret_val=false
+	if rand < hit_chance then ret_val=true end
+	wml.variables[to_variable]=ret_val
+end
+
+-- Tag [does_redeem_hit_adjacent_to_target] determines success/fail of redeeming unit adjacent to redeem target
+-- Requires cfg.redeem_level=, cfg.target_level=
+-- Returns true/false in variable identified by cfg.to_variable
+function wesnoth.wml_actions.does_redeem_hit_adjacent_to_target(cfg)
+	local redeem_level = cfg.redeem_level or wml.error("[does_redeem_hit_adjacent_to_target]: requires redeem_level= ")
+	local target_level = cfg.target_level or wml.error("[does_redeem_hit_adjacent_to_target]: requires target_level= ")
+	local to_variable = cfg.to_variable or wml.error("[does_redeem_hit_adjacent_to_target]: requires to_variable= ")
+	local debug = cfg.debug
+
+	local hit_chance = redeem_hit_chance(redeem_level,target_level,1)
+	local rand = math.random(0, 99)
+	if (debug) then print(string.format("[does_redeem_hit_adjacent_to_target]: rlel = %d, tlel = %d, hit = %d, rand = %d",
+		redeem_level,target_level,hit_chance,rand))
+	end
+	local ret_val=false
+	if rand < hit_chance then ret_val=true end
+	wml.variables[to_variable]=ret_val
 end

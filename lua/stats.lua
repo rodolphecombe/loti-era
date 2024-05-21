@@ -258,7 +258,7 @@ function wesnoth.update_stats(original)
 		if weapon_type == "magic" then
 			weap.damage = weap.damage * magic / 100
 			if spell_suck > 0 then
-				table.insert(specials, { "dummy", { id = "spell_suck", suck = spell_suck}})
+				table.insert(wml.get_child(weap, "specials"), { "dummy", { id = "spell_suck", name = (_"suck ($amount)"):vformat{amount = spell_suck}, description = (_"Sucks $amount health on each successful hit."):vformat{amount = spell_suck}, suck = spell_suck }})
 			end
 		elseif weapon_type then
 			local bonuses = weapon_bonuses[weapon_type]
@@ -275,7 +275,7 @@ function wesnoth.update_stats(original)
 				weap.icon = bonuses.icon
 			end
 			if bonuses.suck > 0 then
-				table.insert(specials, { "dummy", { id = "suck", suck = bonuses.suck}})
+				table.insert(wml.get_child(weap, "specials"), { "dummy", { id = "suck", name = (_"suck ($amount)"):vformat{amount = bonuses.suck}, description = (_"Sucks $amount health on each successful hit."):vformat{amount = bonuses.suck}, suck = bonuses.suck }})
 			end
 			if bonuses.merge == true then
 				weap.damage = weap.damage * weap.number
@@ -291,7 +291,7 @@ function wesnoth.update_stats(original)
 				weap.description = bonuses.name
 			end
 			if bonuses.devastating_blow > 0 then
-				table.insert(wml.get_child(weap, "specials"), { "dummy", { id = "devastating_blow", devastating_blow = bonuses.devastating_blow }})
+				table.insert(wml.get_child(weap, "specials"), { "dummy", { id = "devastating_blow", name = _"devastating blow", description = (_"$chance% chance that the enemy will lose 20% of their health on each hit. It cannot kill."):vformat{chance = bonuses.devastating_blow}, devastating_blow = bonuses.devastating_blow }})
 			end
 			for k = 1,#bonuses.specials do
 				table.insert(wml.get_child(weap, "specials"), bonuses.specials[k])
@@ -319,7 +319,14 @@ function wesnoth.update_stats(original)
 	limit_resistance("pierce", 20);
 	limit_resistance("impact", 20);
 
-	remade.vision = remade.max_moves + vision
+	local base_vision = remade.vision
+	if base_vision < 0 then
+		base_vision = remade.max_moves
+	end
+	remade.vision = base_vision + vision
+	if remade.vision < 0 then
+		remade.vision = 0
+	end
 
 	local remade_abilities = wml.get_child(remade, "abilities")
 	if not remade_abilities then
@@ -358,12 +365,18 @@ function wesnoth.update_stats(original)
 	local is_loyal
 
 	for index, eff in loti.unit.effects(remade) do -- luacheck: ignore 213/index
-		-- TODO: Add alignment, max_attacks and new_advancement using wesnoth.effects
-		if eff.apply_to == "alignment" then
+		-- LEGACY
+		if eff.apply_to == "alignment" and eff.alignment then
 			remade.alignment = eff.alignment
 		end
 		if eff.apply_to == "loyal" then
 			is_loyal = true
+		end
+		if eff.apply_to == "ellipse" then
+			is_loyal = false
+		end
+		if remade.canrecruit then
+			is_loyal = false
 		end
 		if eff.apply_to == "attack" then
 			if eff.set_icon then
@@ -382,7 +395,8 @@ function wesnoth.update_stats(original)
 				set_if_same("type")
 			end
 		end
-		if eff.apply_to == "max_attacks" then
+		--LEGACY
+		if eff.apply_to == "max_attacks" and eff.add then
 			remade.max_attacks = remade.max_attacks + eff.add
 		end
 		if eff.apply_to == "new_advancement" then
@@ -555,7 +569,7 @@ function wesnoth.update_stats(original)
 		local best_backstab_mult = 0
 		local best_backstab
 		for i = #specials,1,-1 do
-			if specials[i][1] == "damage" and string.match(specials[i][2].id, "backstab") then
+			if specials[i][1] == "damage" and specials[i][2].id and string.match(specials[i][2].id, "backstab") then
 				local quality = specials[i][2].multiply
 
 				if quality then
