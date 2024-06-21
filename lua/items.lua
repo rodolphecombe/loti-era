@@ -98,7 +98,11 @@ loti.item.storage.add = function(item_number, crafted_sort)
 
 	table.sort(list, compare_entries)
 	wml.variables["item_storage"] = list
-	wesnoth.fire_event("added to storage")
+	if wesnoth.current_version() < wesnoth.version "1.17.0" then
+		wesnoth.fire_event("added to storage")
+	else
+		wesnoth.game_events.fire("added to storage")
+	end
 end
 
 -- Remove item_number from storage.
@@ -117,7 +121,11 @@ loti.item.storage.remove = function(item_number, crafted_sort)
 	end
 
 	wml.variables["item_storage"] = list
-	wesnoth.fire_event("removed from storage") -- where is it used?
+	if wesnoth.current_version() < wesnoth.version "1.17.0" then
+		wesnoth.fire_event("removed from storage") -- where is it used?
+	else
+		wesnoth.game_events.fire("removed from storage")
+	end
 end
 
 -- Get the list of all items in the storage.
@@ -178,12 +186,20 @@ loti.item.type = {
 	-- Returns Lua table { item_number1 = object1, ... }
 	_reload = function()
 		local cache = {}
-
-		local all_known_types = wml.array_access.get('item_list.object')
+		local data_loader = wesnoth.unit_types["Item Data Loader"].__cfg
+		local all_known_types = wml.get_child(data_loader, "advancement")
 		for _, item in ipairs(all_known_types) do
-			cache[item.number] = item
+			cache[item[2].number] = item[2]
 		end
 
+		-- Describing the items requires having them aready indexed
+		rawset(loti.item.type, "_cache", cache)
+
+		for _, item in pairs(cache) do
+			item.description = loti.item.describe_item(item.number, item.sort)
+		end
+
+		-- Save the described items
 		rawset(loti.item.type, "_cache", cache)
 		return cache
 	end
@@ -406,64 +422,126 @@ loti.item.on_the_ground.add = function(item_number, x, y, crafted_sort, turn)
 		halo = loti.item.halo
 	}
 
-	if wml.variables["allied_sides"] then
-		wesnoth.add_event_handler {
-			id = "ie" .. x .. "|" .. y,
-			name = "moveto",
-			first_time_only = "no",
-			wml.tag.filter {
-				x = x,
-				y = y,
-				side = wml.variables["allied_sides"],
-				wml.tag["not"] {
-					wml.tag.filter_wml {
-						wml.tag.variables {
-							cant_pick = "yes"
-						}
-					}
-				},
-			},
-			wml.tag.fire_event {
-				name = "item_pick",
-				wml.tag.primary_unit {
+	if wesnoth.current_version() < wesnoth.version "1.17.0" then
+		if wml.variables["allied_sides"] then
+			wesnoth.add_event_handler {
+				id = "ie" .. x .. "|" .. y,
+				name = "moveto",
+				first_time_only = "no",
+				wml.tag.filter {
 					x = x,
-					y = y
+					y = y,
+					side = wml.variables["allied_sides"],
+					wml.tag["not"] {
+						wml.tag.filter_wml {
+							wml.tag.variables {
+								cant_pick = "yes"
+							}
+						}
+					},
+				},
+				wml.tag.fire_event {
+					name = "item_pick",
+					wml.tag.primary_unit {
+						x = x,
+						y = y
+					}
 				}
 			}
-		}
-	else
-	-- Enable "pick item" event when some unit walks onto this hex.
-	-- (see PLACE_ITEM_EVENT for WML version)
-	-- this is a LEGACY version, which uses the "controller" side filter
-		wesnoth.add_event_handler {
-			id = "ie" .. x .. "|" .. y,
-			name = "moveto",
-			first_time_only = "no",
-			wml.tag.filter {
-				x = x,
-				y = y,
-				wml.tag["not"] {
-					wml.tag.filter_wml {
-						wml.tag.variables {
-							cant_pick = "yes"
+		else
+		-- Enable "pick item" event when some unit walks onto this hex.
+		-- (see PLACE_ITEM_EVENT for WML version)
+		-- this is a LEGACY version, which uses the "controller" side filter
+			wesnoth.add_event_handler {
+				id = "ie" .. x .. "|" .. y,
+				name = "moveto",
+				first_time_only = "no",
+				wml.tag.filter {
+					x = x,
+					y = y,
+					wml.tag["not"] {
+						wml.tag.filter_wml {
+							wml.tag.variables {
+								cant_pick = "yes"
+							}
 						}
+					},
+					wml.tag.filter_side {
+						controller = "human"
 					}
 				},
-				wml.tag.filter_side {
-					controller = "human"
-				}
-			},
-			wml.tag.fire_event {
-				name = "item_pick",
-				wml.tag.primary_unit {
-					x = x,
-					y = y
+				wml.tag.fire_event {
+					name = "item_pick",
+					wml.tag.primary_unit {
+						x = x,
+						y = y
+					}
 				}
 			}
-		}
 
+		end
+		wesnoth.fire_event("item drop", x, y) -- where is it used?
+
+	else  -- wesnoth 1.17 or higher
+		if wml.variables["allied_sides"] then
+			wesnoth.game_events.add_wml {
+				id = "ie" .. x .. "|" .. y,
+				name = "moveto",
+				first_time_only = "no",
+				wml.tag.filter {
+					x = x,
+					y = y,
+					side = wml.variables["allied_sides"],
+					wml.tag["not"] {
+						wml.tag.filter_wml {
+							wml.tag.variables {
+								cant_pick = "yes"
+							}
+						}
+					},
+				},
+				wml.tag.fire_event {
+					name = "item_pick",
+					wml.tag.primary_unit {
+						x = x,
+						y = y
+					}
+				}
+			}
+		else
+		-- Enable "pick item" event when some unit walks onto this hex.
+		-- (see PLACE_ITEM_EVENT for WML version)
+		-- this is a LEGACY version, which uses the "controller" side filter
+			wesnoth.game_events.add_wml {
+				id = "ie" .. x .. "|" .. y,
+				name = "moveto",
+				first_time_only = "no",
+				wml.tag.filter {
+					x = x,
+					y = y,
+					wml.tag["not"] {
+						wml.tag.filter_wml {
+							wml.tag.variables {
+								cant_pick = "yes"
+							}
+						}
+					},
+					wml.tag.filter_side {
+						controller = "human"
+					}
+				},
+				wml.tag.fire_event {
+					name = "item_pick",
+					wml.tag.primary_unit {
+						x = x,
+						y = y
+					}
+				}
+			}
+
+		end
+		wesnoth.game_events.fire("item drop", x, y) -- where is it used?
 	end
-	wesnoth.fire_event("item drop", x, y) -- where is it used?
 end
 
 -- Remove one item from the ground at coordinates (x,y).
@@ -556,7 +634,11 @@ end
 loti.item.util.take_item_from_unit = function(unit, item_number, crafted_sort, skip_update)
 	loti.item.on_unit.remove(unit, item_number, crafted_sort, skip_update)
 	loti.item.storage.add(item_number, crafted_sort)
-	wesnoth.fire_event("unequip", unit)
+	if wesnoth.current_version() < wesnoth.version "1.17.0" then
+		wesnoth.fire_event("unequip", unit)
+	else
+		wesnoth.game_events.fire("unequip", unit)
+	end
 end
 
 -- Remove one item from storage, then open "Pick up item" dialog on behalf of unit.
@@ -564,7 +646,11 @@ end
 loti.item.util.get_item_from_storage = function(unit, item_number, crafted_sort)
 	loti.item.storage.remove(item_number, crafted_sort)
 	loti.item.on_the_ground.add(item_number, unit.x, unit.y, crafted_sort)
-	wesnoth.fire_event("item pick", unit)
+	if wesnoth.current_version() < wesnoth.version "1.17.0" then
+		wesnoth.fire_event("item pick", unit)
+	else
+		wesnoth.game_events.fire("unequip", unit)
+	end
 end
 
 -------------------------------------------------------------------------------
@@ -839,6 +925,20 @@ loti.item.describe_item = function(number, sort, set_items)
 				elseif effect.set == "liminal" then line = "<span color='yellow'>" .. _"Sets alignment to liminal" .. "</span>"
 				elseif effect.set == "lawful" then line = "<span color='yellow'>" .. _"Sets alignment to lawful" .. "</span>"
 				elseif effect.set == "neutral" then line = "<span color='yellow'>" .. _"Sets alignment to neutral" .. "</span>" end
+			elseif effect.apply_to == "status" then
+				for part in string.gmatch(effect.add, '([^,]+)') do
+					if line then
+						table.insert(desc, line)
+						line = nil
+					end
+					if part == "unpoisonable" then line = "<span color='yellow'>" .. _"Immune to Poison" .. "</span>"
+					elseif part == "unslowable" then line = "<span color='yellow'>" .. _"Immune to Slow" .. "</span>"
+					elseif part == "undrainable" then line = "<span color='yellow'>" .. _"Immune to Drain" .. "</span>"
+					elseif part == "unplagueable" then line = "<span color='yellow'>" .. _"Immune to Plague" .. "</span>"
+					elseif part == "unpretrifiable" then line = "<span color='yellow'>" .. _"Immune to Petrify" .. "</span>"
+					elseif part == "unhealable" then line = "<span color='yellow'>" .. _"Unhealable" .. "</span>"
+					elseif part == "invulnerable" then line = "<span color='yellow'>" .. _"Invulnerable" .. "</span>" end
+				end
 			elseif effect.apply_to == "bonus_attack" then
 				line = "<span color='green'>" .. _"Bonus attack: " .. effect.description .. "</span>"
 			elseif effect.apply_to == "status" and effect.add == "not_living" then
@@ -876,8 +976,6 @@ function wesnoth.wml_actions.describe_all_objects(cfg)
 end
 
 -- Invalidate cache of loti.item.type[].
--- Used at the end of GENERATE_ITEM_LIST macro,
--- after all [describe_object] tags (they change item descriptions in item_list).
 function wesnoth.wml_actions.clear_item_list_cache()
 	loti.item.type._reload()
 	item_generation_lists = {}

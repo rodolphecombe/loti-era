@@ -16,3 +16,18 @@ Added AMLAs to most mainline units. Dunefolk and monsters missing.
 
 2.1
 Corrected a bug that was transforming the wrong units
+
+2.2
+Now using auto-generated AMLAs for mainline units. Available for all units on the amla_tweak branch.
+
+2.3
+Added Fire Dragon, Fire Wraith, Wose Shaman and the new nagas.
+_______________________________________________________
+Port to 1.18
+
+2.4
+Added Saurian Javelineer
+
+2.5
+Updated to LotI 3.2.8
+
