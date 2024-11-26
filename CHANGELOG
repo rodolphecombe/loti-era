@@ -34,6 +34,7 @@ Added Dunefolk
 
 2.7
 Added generic AMLAs to custom units. Code by ForestDragon
+Fixed a few bugs in LotI code
 
 2.7.1 (maintenance)
 Fixed Sylph having the wrong ID
