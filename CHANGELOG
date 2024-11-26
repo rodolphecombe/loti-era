@@ -42,4 +42,4 @@ Fixed Sylph having the wrong ID
 2.7.2 (maintenance)
 Units that do not lvl up from mainline units are now separated into a enemies folder.
 To add them all to your campaign, add {~add-ons/LotI_Era/units/enemies} to your _main.cfg, or add only each individual unit you want.
-
+More weapon type added to the binding. 
