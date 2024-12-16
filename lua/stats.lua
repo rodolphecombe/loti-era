@@ -248,10 +248,10 @@ function wesnoth.update_stats(original)
 		weapon_type = loti.item.weapon_bindings[wn]
 
 		if not weapon_type then
-			if wn == "thorns" or wn == "gossamer" or wn == "entangle" or wn == "ensnare" or wn == "water spray" or wn == "ink" or wn == "magic blast" then
+			if wn == "thorns" or wn == "gossamer" or wn == "entangle" or wn == "ensnare" or wn == "water spray" or or wn == "ink" or wn == "magic blast" or wn == "sand" or wn == "water breath" or wn == "tornado"  or wn == "blade shower"  or wn == "aura wave"  or wn == "windblade"  or wn == "dust" or wn == "will of shassagoth" or wn == "ravage"  or wn == "sand storm" or wn == " sorrow" or wn == "memory" or wn == "death" then
 				weapon_type = "magic"
 			elseif weap.range == "ranged" then
-				if weap.type == "fire" or weap.type == "cold" or weap.type == "arcane" or weap.type == "lightning" then
+				if weap.type == "fire" or weap.type == "cold" or weap.type == "arcane" or weap.type == "lightning" or weap.type == "arcane_focus" or weap.type == "electric" or type == "energy" then
 					weapon_type = "magic"
 				end
 			end
