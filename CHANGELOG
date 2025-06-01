@@ -47,3 +47,5 @@ More weapon type added to the binding.
 2.7.3 (maintenance)
 Generic AMLAs are now compatible with melee and ranged attacks having the same name (e.g. Saurian Javelineer).
 "better" AMLA changed to +1 damage instead of +15%.
+Added War of Legends weapons to weapon binding
+Corrected portraits being erased. 
