@@ -4,7 +4,7 @@ loti.flavours_table = { "chivalrous", "wizardly", "dark", "criminal", "warlike",
 local title_table = {}
 local flavours_table = loti.flavours_table
 
-local title_data = wml.get_child(wesnoth.unit_types["Title Data Loader"].__cfg, "advancement")
+local title_data = wml.get_child(wesnoth.unit_types["Title Data Loader LotI"].__cfg, "advancement")
 for i = 1,#title_data do
 	if title_data[i][1] == "nonterminal" then
 		local made = {}
