@@ -248,12 +248,12 @@ function wesnoth.update_stats(original)
 		weapon_type = loti.item.weapon_bindings[wn]
 
 		if not weapon_type then
-			if wn == "thorns" or wn == "gossamer" or wn == "entangle" or wn == "ensnare" or wn == "water spray" or wn == "ink" or wn == "magic blast"  or wn == "blast wave" or wn == "sand" or wn == "water breath" or wn == "tornado"  or wn == "blade shower"  or wn == "aura wave"  or wn == "windblade"  or wn == "dust" or wn == "will of shassagoth" or wn == "ravage"  or wn == "sand storm" or wn == " sorrow" or wn == "memory" or wn == "death" then
-				weapon_type = "magic"
-			elseif weap.range == "ranged" then
-				if weap.type == "fire" or weap.type == "cold" or weap.type == "arcane" or weap.type == "lightning" or weap.type == "arcane_focus" or weap.type == "electric" or type == "energy" then
+			if weap.range == "ranged" then
+				if weap.type == "fire" or weap.type == "cold" or weap.type == "arcane" or weap.type == "lightning" or weap.type == "arcane_focus" or weap.type == "electric" or weap.type == "energy" then
 					weapon_type = "magic"
 				end
+			elseif wn == "thorns" or wn == "gossamer" or wn == "entangle" or wn == "ensnare" or wn == "water spray" or wn == "waterspray" or wn == "ink" or wn == "magic blast"  or wn == "blast wave" or wn == "sand" or wn == "water breath" or wn == "tornado"  or wn == "blade shower"  or wn == "aura wave"  or wn == "windblade"  or wn == "dust" or wn == "will of shassagoth" or wn == "ravage"  or wn == "sand storm" or wn == " sorrow" or wn == "memory" or wn == "death" or wn == "pulse" or wn == "lightning" or wn == "icicles" or wn == "degeneration" or wn == "degeneration_amla" or wn == "curse" or wn == "eruption" or wn == "soul_slasher" or wn == "uruz_rune" or wn == "kenaz_rune" or wn == "tiwaz_rune"or wn == "cold blast" or wn == "burning fist" or wn == "dragonclaw" or wn == "ryushino" or wn == "supreme_elemental" or wn == "vine_attack" then
+				weapon_type = "magic"
 			end
 		end
 
