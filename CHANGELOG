@@ -49,3 +49,8 @@ Generic AMLAs are now compatible with melee and ranged attacks having the same n
 "better" AMLA changed to +1 damage instead of +15%.
 Added War of Legends weapons to weapon binding
 Corrected portraits being erased. 
+
+2.7.4 (maintenance)
+Attacks with only one strike do not throw a log warning anymore at lvl-up.
+Remove more duplicate images.
+Added binding for Dragon Saga weapons.
