@@ -47,3 +47,8 @@ More weapon type added to the binding.
 2.7.3 (maintenance)
 Generic AMLAs are now compatible with melee and ranged attacks having the same name (e.g. Saurian Javelineer).
 "better" AMLA changed to +1 damage instead of +15%.
+
+2.7.4 (maintenance)
+Attacks with only one strike do not throw a log warning anymore at lvl-up.
+Remove more duplicate images.
+Added binding for Dragon Saga weapons.
