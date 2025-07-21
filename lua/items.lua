@@ -395,7 +395,7 @@ end
 -- Place item on the ground at coordinates (x,y).
 -- Optional parameter crafted_sort: if present, overrides item_sort of the item.
 -- Optional parameter turn: if present, overrides current turn.
-loti.item.on_the_ground.add = function(item_number, x, y, crafted_sort, turn)
+loti.item.on_the_ground.add = function(item_number, x, y, crafted_sort, turn, dropping_side)
 	local record = {
 		type = item_number,
 		x = x,
@@ -422,126 +422,36 @@ loti.item.on_the_ground.add = function(item_number, x, y, crafted_sort, turn)
 		halo = loti.item.halo
 	}
 
-	if wesnoth.current_version() < wesnoth.version "1.17.0" then
-		if wml.variables["allied_sides"] then
-			wesnoth.add_event_handler {
-				id = "ie" .. x .. "|" .. y,
-				name = "moveto",
-				first_time_only = "no",
-				wml.tag.filter {
-					x = x,
-					y = y,
-					side = wml.variables["allied_sides"],
-					wml.tag["not"] {
-						wml.tag.filter_wml {
-							wml.tag.variables {
-								cant_pick = "yes"
-							}
-						}
-					},
-				},
-				wml.tag.fire_event {
-					name = "item_pick",
-					wml.tag.primary_unit {
-						x = x,
-						y = y
+	wesnoth.game_events.add_wml {
+		id = "ie" .. x .. "|" .. y,
+		name = "moveto",
+		first_time_only = "no",
+		wml.tag.filter {
+			x = x,
+			y = y,
+			wml.tag["not"] {
+				wml.tag.filter_wml {
+					wml.tag.variables {
+						cant_pick = "yes"
 					}
 				}
-			}
-		else
-		-- Enable "pick item" event when some unit walks onto this hex.
-		-- (see PLACE_ITEM_EVENT for WML version)
-		-- this is a LEGACY version, which uses the "controller" side filter
-			wesnoth.add_event_handler {
-				id = "ie" .. x .. "|" .. y,
-				name = "moveto",
-				first_time_only = "no",
-				wml.tag.filter {
-					x = x,
-					y = y,
-					wml.tag["not"] {
-						wml.tag.filter_wml {
-							wml.tag.variables {
-								cant_pick = "yes"
-							}
-						}
-					},
-					wml.tag.filter_side {
-						controller = "human"
-					}
+			},
+			wml.tag.filter_side {
+				wml.tag["not"] {
+					side = dropping_side
 				},
-				wml.tag.fire_event {
-					name = "item_pick",
-					wml.tag.primary_unit {
-						x = x,
-						y = y
-					}
-				}
+				controller = "human"
 			}
-
-		end
-		wesnoth.fire_event("item drop", x, y) -- where is it used?
-
-	else  -- wesnoth 1.17 or higher
-		if wml.variables["allied_sides"] then
-			wesnoth.game_events.add_wml {
-				id = "ie" .. x .. "|" .. y,
-				name = "moveto",
-				first_time_only = "no",
-				wml.tag.filter {
-					x = x,
-					y = y,
-					side = wml.variables["allied_sides"],
-					wml.tag["not"] {
-						wml.tag.filter_wml {
-							wml.tag.variables {
-								cant_pick = "yes"
-							}
-						}
-					},
-				},
-				wml.tag.fire_event {
-					name = "item_pick",
-					wml.tag.primary_unit {
-						x = x,
-						y = y
-					}
-				}
+		},
+		wml.tag.fire_event {
+			name = "item_pick",
+			wml.tag.primary_unit {
+				x = x,
+				y = y
 			}
-		else
-		-- Enable "pick item" event when some unit walks onto this hex.
-		-- (see PLACE_ITEM_EVENT for WML version)
-		-- this is a LEGACY version, which uses the "controller" side filter
-			wesnoth.game_events.add_wml {
-				id = "ie" .. x .. "|" .. y,
-				name = "moveto",
-				first_time_only = "no",
-				wml.tag.filter {
-					x = x,
-					y = y,
-					wml.tag["not"] {
-						wml.tag.filter_wml {
-							wml.tag.variables {
-								cant_pick = "yes"
-							}
-						}
-					},
-					wml.tag.filter_side {
-						controller = "human"
-					}
-				},
-				wml.tag.fire_event {
-					name = "item_pick",
-					wml.tag.primary_unit {
-						x = x,
-						y = y
-					}
-				}
-			}
-
-		end
-		wesnoth.game_events.fire("item drop", x, y) -- where is it used?
-	end
+		}
+	}
+	wesnoth.game_events.fire("item drop", x, y) -- where is it used?
 end
 
 -- Remove one item from the ground at coordinates (x,y).
@@ -999,7 +909,7 @@ function wesnoth.wml_actions.random_item(cfg)
 	if cfg.variable then
 		wml.variables[cfg.variable] = generated
 	else
-		loti.item.on_the_ground.add(generated, cfg.x, cfg.y, nil, cfg.turn)
+		loti.item.on_the_ground.add(generated, cfg.x, cfg.y, nil, cfg.turn, cfg.side)
 	end
 end
 
