@@ -465,7 +465,7 @@ local function unit_information_part_2()
            end
          elseif special_name == "dummy" and special_data["devastating_blow"] ~= nil then
            special = tostring(special_data["devastating_blow"]) .. "% devastating blow"
-         elseif special_name == "dummy" and special_data["lethargy"] ~= nil then
+         elseif special_name == "dummy" and special_data["lethargy_loti"] ~= nil then
            special = "lethargy"
          end
          if special ~= nil and special ~= "" then
