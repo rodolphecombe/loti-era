@@ -729,7 +729,7 @@ function wesnoth.wml_actions.advance_stuff(cfg)
 	end
 
     if loti_needs_advance == nil then
-        if unit.type == "Elvish Assassin" then
+        if unit.type == "Elvish Assassin LotI" then
 --	    wesnoth.interface.add_chat_message("is assassin")
             local a = { "advancement", { max_times = 1, always_display = true, id = "execution", image = "attacks/bow-elven-magic.png", strict_amla = true, require_amla="",
                 { "effect", { apply_to = "remove_attack", name = "execution" }},
@@ -896,7 +896,7 @@ function loti.util.list_equippable_sorts(unit)
 
 	-- All corporeal beings except bats can wear armour.
 	if not ( unit_type == "Ghost" or unit_type == "Wraith" or unit_type == "Spectre"
-		or unit_type == "Shadow" or unit_type == "Nightgaunt" or unit_type == "Dark Shade" or unit_type == "Reaper"
+		or unit_type == "Shadow" or unit_type == "Nightgaunt" or unit_type == "Dark Shade LotI" or unit_type == "Reaper LotI"
 		or unit_type:match(" Bat$") )
 	then
 		can_equip.armour = 1
@@ -914,15 +914,15 @@ function loti.util.list_equippable_sorts(unit)
 	end
 
 	-- Some magician-like units can carry a staff (even if they don't attack with it).
-	if unit_type == "Lich" or unit_type == "09 Ancient Lich" or unit_type == "Lich King"
-		or unit_type == "Demilich" or unit_type == "Infernal Knight"
+	if unit_type == "Lich" or unit_type == "09 Ancient Lich" or unit_type == "Lich King LotI"
+		or unit_type == "Demilich LotI" or unit_type == "Infernal Knight LotI"
 		or unit_type == "Dark Adept" or unit_type == "Elvish Shyde"
-		or unit_type == "Elvish Seer" or unit_type == "Elvish Sylph" or unit_type == "Elvish Sylph loti"
-		or unit_type == "Celestial Messenger" or unit_type == "Prophet"
+		or unit_type == "Elvish Seer LotI" or unit_type == "Elvish Sylph" or unit_type == "Elvish Sylph LotI"
+		or unit_type == "Celestial Messenger LotI" or unit_type == "Prophet LotI"
 		or unit_type == "Mage of Light" or unit_type == "Stormrider"
-		or unit_type == "Sword Mage" or unit_type == "Knight of Magic"
-		or unit_type == "Warlock" or unit_type == "Faerie Incarnation"
-		or unit_type == "Elvish Overlord"
+		or unit_type == "Sword Mage LotI" or unit_type == "Knight of Magic LotI"
+		or unit_type == "Warlock LotI" or unit_type == "Faerie Incarnation LotI"
+		or unit_type == "Elvish Overlord LotI"
 	then
 		can_equip.staff = 1
 	end
