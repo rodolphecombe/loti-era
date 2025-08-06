@@ -54,3 +54,7 @@ Corrected portraits being erased.
 Attacks with only one strike do not throw a log warning anymore at lvl-up.
 Remove more duplicate images.
 Added binding for Dragon Saga weapons.
+
+2.7.5 (maintenance)
+AI units can no longer pick up items.
+Units can no longer pick up items dropped by their own side.
