@@ -61,3 +61,7 @@ Units can no longer pick up items dropped by their own side.
 
 2.7.6 (maintenance)
 Update unit costs.
+
+3.0
+Custom units, abilities and specials now use unique ids.
+Updated unit costs.
