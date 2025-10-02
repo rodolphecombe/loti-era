@@ -1,6 +1,6 @@
---! #textdomain "wesnoth-loti"
+--! #textdomain "wesnoth-loti-era"
 
-local _ = wesnoth.textdomain "wesnoth-loti"
+local _ = wesnoth.textdomain "wesnoth-loti-era"
 
 local T = wml.tag
 
