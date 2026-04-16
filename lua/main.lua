@@ -405,7 +405,7 @@ local function unit_information_part_2()
       end
 
       local range
-      local dmgType = _"werd damage type"
+      local dmgType = _"weird damage type"
       local _ = wesnoth.textdomain "wesnoth"
       if attack["range"] == "melee" then range = _"melee"
       elseif attack["range"] == "ranged" then range = _"ranged" end

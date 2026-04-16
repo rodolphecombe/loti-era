@@ -3,7 +3,7 @@
 -- Utility functions for plugins of the inventory dialog.
 --
 
-local _ = wesnoth.textdomain "wesnoth-loti-era"
+local _ = wesnoth.textdomain "wesnoth-lib"
 local util = {}
 
 -- Create a "Close" button in the bottom-right corner of the dialog.
@@ -23,6 +23,7 @@ util.make_close_button = function()
 		}
 	}
 end
+local _ = wesnoth.textdomain "wesnoth-loti-era"
 
 -- These variables are for translation of strings that depend on a parameter.
 -- NO_ITEM_TEXT must list all item types that have a slot (i.e. all except potion/limited).

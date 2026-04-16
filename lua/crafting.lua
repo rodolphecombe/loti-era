@@ -577,13 +577,17 @@ loti.gem.show_crafting_window = function(x, y)
 						word_to = 560+1
 					else
 						-- Weapon
+						local _ = wesnoth.textdomain "wesnoth"
 						populate_item(_"Sword", "attacks/sword-steel.png", "sword")
 						populate_item(_"Bow", "attacks/bow-short-reinforced.png", "bow")
 						populate_item(_"Axe", "attacks/battleaxe.png", "axe")
 						populate_item(_"Staff", "attacks/staff-magic.png", "staff")
+						local _ = wesnoth.textdomain "wesnoth-loti-era"
 						populate_item(_"Mace (or hammer, club, morning star, scourge, flail, ...)", "attacks/mace.png", "mace")
 						populate_item(_"Crossbow (or slurbow)", "attacks/crossbow-iron.png", "xbow")
+						local _ = wesnoth.textdomain "wesnoth"
 						populate_item(_"Dagger", "attacks/dagger-curved.png", "dagger")
+						local _ = wesnoth.textdomain "wesnoth-loti-era"
 						populate_item(_"Knife (throwing)", "attacks/dagger-thrown-human.png", "knife")
 						populate_item(_"Spear (or javelin, lance, pike, trident)", "attacks/spear.png", "spear")
 						populate_item(_"Polearm (halberd, scythe, ...)", "attacks/halberd.png", "polearm")

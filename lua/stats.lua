@@ -457,7 +457,9 @@ function wesnoth.update_stats(original)
 				end
 				if not strongest_attack then
 					if eff.range == "melee" then
+						local _ = wesnoth.textdomain "wesnoth-units"
 						strongest_attack = { name = "fangs", description = _"fangs", icon = "attacks/fangs-animal.png", type = "blade", range = eff.range or "melee", damage = 5, number = 4, { "specials", {}}}
+						local _ = wesnoth.textdomain "wesnoth-loti-era"
 					end
 				else
 					strongest_attack = wesnoth.deepcopy(strongest_attack)
