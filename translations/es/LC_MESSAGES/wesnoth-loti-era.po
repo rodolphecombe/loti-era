@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-loti-era\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-02-01 20:00\n"
-"PO-Revision-Date: 2026-02-02 14:52-0300\n"
+"POT-Creation-Date: 2026-03-17 19:45\n"
+"PO-Revision-Date: 2026-03-21 14:14-0300\n"
 "Last-Translator: Sebastián Lecchini <sebas38760@gmail.com>\n"
 "Language-Team: es\n"
 "Language: es\n"
@@ -13,22 +13,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. [about]
+#. [about] name=Lhybrideur
 #: LotI_Era/_main.cfg:12
 msgid "Author of this modification"
 msgstr "Autor de esta modificación"
 
-#. [about]
+#. [about] name=ForestDragon
 #: LotI_Era/_main.cfg:18
 msgid "Generic AMLA for custom units by"
 msgstr "AMLA genérico para unidades personalizadas por"
 
-#. [about]
+#. [about] name=Dugi
 #: LotI_Era/_main.cfg:24
 msgid "Author of Legend of the Invincibles"
 msgstr "Autor de La leyenda de los invencibles"
 
-#. [about]
+#. [about] name=CrowT
 #: LotI_Era/_main.cfg:30
 msgid "Portraits for Efraim and Lethalia"
 msgstr "Retratos para Efraim y Lethalia"
@@ -43,37 +43,37 @@ msgstr ""
 "las fuentes de las imágenes, muchas son simplemente ediciones de archivos "
 "existentes"
 
-#. [about]
+#. [about] name=Zydin, nickg4000, CrowT, Revelations, RaustBD
 #: LotI_Era/_main.cfg:39
 msgid "chapters 1 to 4 text revision"
 msgstr "Revisión de texto de los capítulos 1 al 4"
 
-#. [about]
+#. [about] name=Chewan, nuorc, dabber, matsjoyce
 #: LotI_Era/_main.cfg:45
 msgid "Other text revisions"
 msgstr "Otras revisiones de texto"
 
-#. [about]
+#. [about] name=matsjoyce, Discontinuum, arobinson
 #: LotI_Era/_main.cfg:51
 msgid "Bug fixes"
 msgstr "Corrección de errores"
 
-#. [about]
+#. [about] name=mattsc
 #: LotI_Era/_main.cfg:57
 msgid "Help with AI"
 msgstr "Ayuda con la IA"
 
-#. [about]
+#. [about] name=Edward Chernenko
 #: LotI_Era/_main.cfg:63
 msgid "Major help with GUI"
 msgstr "Ayuda importante con la interfaz gráfica"
 
-#. [about]
+#. [about] name=Chewan, nuorc (proofreading)
 #: LotI_Era/_main.cfg:69
 msgid "German translation"
 msgstr "Traducción al alemán"
 
-#. [about]
+#. [about] name=_
 #: LotI_Era/_main.cfg:75
 msgid "Special thanks to"
 msgstr "Agradecimientos especiales a"
@@ -93,10 +93,11 @@ msgstr ""
 "tiene ahora"
 
 #. [+language]
-#. [effect]
+#. [effect], apply_to=new_attack, type=fire, range=ranged
 #. [attack], type=arcane, range=ranged
 #. [attack], type=fire, range=ranged
 #. [attack], type=lightning, range=ranged
+#. [effect], apply_to=new_attack, type=lightning, range=ranged
 #: LotI_Era/_main.cfg:99 LotI_Era/units/Dwarvish_Hero.cfg:279
 #: LotI_Era/units/enemies/Ancient_Warrior.cfg:202
 #: LotI_Era/units/enemies/Mist.cfg:137
@@ -177,7 +178,7 @@ msgstr "mejor bloqueando (reduce un 2% la probabilidad de ser golpeado)"
 #: LotI_Era/units/Lunatic_Knight.cfg:208 LotI_Era/units/Monstrosity.cfg:317
 #: LotI_Era/units/Orcish_Strafer.cfg:392
 #: LotI_Era/units/Orcish_Warmonger.cfg:387
-#: LotI_Era/units/Orcish_Warmonger.cfg:591 LotI_Era/units/Phantom.cfg:302
+#: LotI_Era/units/Orcish_Warmonger.cfg:592 LotI_Era/units/Phantom.cfg:302
 #: LotI_Era/units/Pilum_Master.cfg:273 LotI_Era/units/Predator.cfg:370
 #: LotI_Era/units/Prophet.cfg:532 LotI_Era/units/Reaper.cfg:331
 #: LotI_Era/units/Scythemaster.cfg:222 LotI_Era/units/Seer.cfg:598
@@ -237,93 +238,98 @@ msgstr "rápido"
 msgid "Legend of the Invincibles (custom terrains)"
 msgstr "Leyenda de los Invencibles (terrenos personalizados)"
 
-#. [terrain_type]
+#. [terrain_type], id=arctic_wasteland
 #: LotI_Era/terrain.cfg:47 LotI_Era/terrain.cfg:48
 msgid "Arctic Wasteland"
 msgstr "Páramo ártico"
 
-#. [terrain_type]
+#. [terrain_type], id=icy_cavewall
 #: LotI_Era/terrain.cfg:56
 msgid "Icy Cave Wall"
 msgstr "Pared helada de cueva"
 
-#. [terrain_type]
+#. [terrain_type], id=ice_shards
 #: LotI_Era/terrain.cfg:64
 msgid "Ice Crystals"
 msgstr "Cristales de hielo"
 
-#. [terrain_type]
+#. [terrain_type], id=volcanic_wasteland
 #: LotI_Era/terrain.cfg:72 LotI_Era/terrain.cfg:73
 msgid "Volcanic Wasteland"
 msgstr "Páramo volcánico"
 
-#. [terrain_type]
+#. [terrain_type], id=power_source_blue_flame
 #: LotI_Era/terrain.cfg:81 LotI_Era/terrain.cfg:82
 msgid "Power Source"
 msgstr "Fuente de poder"
 
-#. [terrain_type]
+#. [terrain_type], id=wasteland_loti
 #: LotI_Era/terrain.cfg:92 LotI_Era/terrain.cfg:93
 msgid "Wasteland"
 msgstr "Páramo"
 
-#. [terrain_type]
+#. [terrain_type], id=weird_landscape
 #: LotI_Era/terrain.cfg:101 LotI_Era/terrain.cfg:102
 msgid "Weird Landscape"
 msgstr "Paisaje extraño"
 
-#. [terrain_type]
+#. [terrain_type], id=weird_eye
 #: LotI_Era/terrain.cfg:110 LotI_Era/terrain.cfg:111
 msgid "Weird Eye"
 msgstr "Ojo extraño"
 
-#. [terrain_type]
+#. [terrain_type], id=weird_eyes
 #: LotI_Era/terrain.cfg:119 LotI_Era/terrain.cfg:120
 msgid "Weird Eyes"
 msgstr "Ojos extraños"
 
-#. [terrain_type]
+#. [terrain_type], id=weird_tentacle
 #: LotI_Era/terrain.cfg:128 LotI_Era/terrain.cfg:129
 msgid "Weird Tentacle"
 msgstr "Tentáculo extraño"
 
-#. [terrain_type]
+#. [terrain_type], id=weird_tentacles
 #: LotI_Era/terrain.cfg:137 LotI_Era/terrain.cfg:138
 msgid "Weird Tentacles"
 msgstr "Tentáculos extraños"
 
-#. [terrain_type]
+#. [terrain_type], id=ice_shards
 #: LotI_Era/terrain.cfg:146
 msgid "Demonic Cemetery"
 msgstr "Cementerio demoníaco"
 
-#. [terrain_type]
+#. [terrain_type], id=infernal_forest
 #: LotI_Era/terrain.cfg:156 LotI_Era/terrain.cfg:157
 msgid "Infernal Forest"
 msgstr "Bosque infernal"
 
-#. [terrain_type]
+#. [terrain_type], id=rainforest_loti_old
+#. [terrain_type], id=rainforest_loti_impassable
+#. [terrain_type], id=palm_forest_loti_old
+#. [terrain_type], id=palm_desert_forest_loti_old
 #: LotI_Era/terrain.cfg:167 LotI_Era/terrain.cfg:178 LotI_Era/terrain.cfg:191
 #: LotI_Era/terrain.cfg:213 LotI_Era/terrain.cfg:259 LotI_Era/terrain.cfg:281
 msgid "Forest"
 msgstr "Bosque"
 
-#. [terrain_type]
+#. [terrain_type], id=rainforest_loti_old
 #: LotI_Era/terrain.cfg:168
 msgid "Rainforest (deprecated)"
 msgstr "Selva tropical (obsoleto)"
 
-#. [terrain_type]
+#. [terrain_type], id=rainforest_loti_impassable
 #: LotI_Era/terrain.cfg:179
 msgid "Rainforest"
 msgstr "Selva tropical"
 
-#. [terrain_type]
+#. [terrain_type], id=palm_forest_loti_old
 #: LotI_Era/terrain.cfg:192 LotI_Era/terrain.cfg:260
 msgid "Palm Forest (deprecated, use default)"
 msgstr "Bosque de palmeras (obsoleto, usar el predeterminado)"
 
-#. [terrain_type]
+#. [terrain_type], id=palms_on_hills_loti_old
+#. [terrain_type], id=palms_on_dunes_loti_old
+#. [terrain_type], id=savanna_hills_loti_old
 #. [name_variation]
 #: LotI_Era/terrain.cfg:202 LotI_Era/terrain.cfg:225 LotI_Era/terrain.cfg:248
 #: LotI_Era/terrain.cfg:270 LotI_Era/terrain.cfg:293 LotI_Era/terrain.cfg:316
@@ -331,32 +337,34 @@ msgstr "Bosque de palmeras (obsoleto, usar el predeterminado)"
 msgid "Hills"
 msgstr "Colinas"
 
-#. [terrain_type]
+#. [terrain_type], id=palms_on_hills_loti_old
 #: LotI_Era/terrain.cfg:203 LotI_Era/terrain.cfg:271
 msgid "Palms on Hills (deprecated, use default)"
 msgstr "Palmeras en colinas (obsoleto, usar el predeterminado)"
 
-#. [terrain_type]
+#. [terrain_type], id=palm_desert_forest_loti_old
 #: LotI_Era/terrain.cfg:214 LotI_Era/terrain.cfg:282
 msgid "Palm Desert Forest (deprecated, use default)"
 msgstr "Bosque desértico de palmeras (obsoleto, usar el predeterminado)"
 
-#. [terrain_type]
+#. [terrain_type], id=palms_on_dunes_loti_old
 #: LotI_Era/terrain.cfg:226 LotI_Era/terrain.cfg:294
 msgid "Palms on Dunes (deprecated, use default)"
 msgstr "Palmeras en dunas (obsoleto, usar el predeterminado)"
 
-#. [terrain_type]
+#. [terrain_type], id=savanna_loti_old_loti_old
+#. [terrain_type], id=savanna_loti_old
 #: LotI_Era/terrain.cfg:236 LotI_Era/terrain.cfg:304
 msgid "Savanna"
 msgstr "Sabana"
 
-#. [terrain_type]
+#. [terrain_type], id=savanna_loti_old_loti_old
+#. [terrain_type], id=savanna_loti_old
 #: LotI_Era/terrain.cfg:237 LotI_Era/terrain.cfg:305
 msgid "Savanna (deprecated, use default)"
 msgstr "Sabana (obsoleto, usar el predeterminado)"
 
-#. [terrain_type]
+#. [terrain_type], id=savanna_hills_loti_old
 #: LotI_Era/terrain.cfg:249 LotI_Era/terrain.cfg:317
 msgid "Savanna Hills (deprecated, use default)"
 msgstr "Colinas de sabana (obsoleto, usar el predeterminado)"
@@ -546,6 +554,62 @@ msgstr "Esencia de otro mundo"
 #: LotI_Era/lua/crafting.lua:663
 msgid "Are you sure you want to craft this item?"
 msgstr "¿Estás seguro de que quieres fabricar este objeto?"
+
+#: LotI_Era/lua/hacks.lua:14
+msgid ""
+"infected: This unit is infected. It will become undead after death, unless "
+"cured by a healer or by standing on a village."
+msgstr ""
+"infectado: Esta unidad está infectada. Se convertirá en no muerto tras la "
+"muerte, salvo que se cure por un sanador o en una aldea."
+
+#: LotI_Era/lua/hacks.lua:20
+msgid ""
+"in flames: This unit is in flames. It will lose 16 HP per turn, unless cured "
+"by a healer or by standing on a village."
+msgstr ""
+"en llamas: Esta unidad está en llamas. Perderá 16 PV por turno, salvo que se "
+"cure por un sanador o en una aldea."
+
+#: LotI_Era/lua/hacks.lua:26
+msgid "unslowable: This unit cannot be affected by slow."
+msgstr "irralentizable: Esta unidad no puede ser ralentizada."
+
+#: LotI_Era/lua/hacks.lua:32
+msgid "unpoisonable: This unit cannot be affected by poison."
+msgstr "inenvenenable: Esta unidad no puede ser envenenada."
+
+#: LotI_Era/lua/hacks.lua:38
+msgid "undrainable: This unit cannot be drained."
+msgstr "indrenable: Esta unidad no puede ser drenada."
+
+#: LotI_Era/lua/hacks.lua:44
+msgid ""
+"unplagueable: This unit will not return as undead when killed by a plague "
+"weapon special."
+msgstr ""
+"no plagable: Esta unidad no regresará como no muerta si es asesinada por un "
+"arma con la habilidad plaga."
+
+#: LotI_Era/lua/hacks.lua:76
+msgid "%d%% to all resistances (halves every turn)"
+msgstr "%d%% a todas las resistencias (se reduce a la mitad cada turno)"
+
+#: LotI_Era/lua/hacks.lua:77
+msgid "%d to damage (halves every turn)"
+msgstr "%d al daño (se reduce a la mitad cada turno)"
+
+#: LotI_Era/lua/hacks.lua:78
+msgid "%d%% enemy chance to hit (halves every turn)"
+msgstr "%d%% probabilidad enemiga de acertar (se reduce a la mitad cada turno)"
+
+#: LotI_Era/lua/hacks.lua:79
+msgid "%d%% chance to hit (halves every turn)"
+msgstr "%d%% probabilidad de acertar (se reduce a la mitad cada turno)"
+
+#: LotI_Era/lua/hacks.lua:80
+msgid "%d to attack count (halves every turn)"
+msgstr "%d al número de ataques (se reduce a la mitad cada turno)"
 
 #: LotI_Era/lua/item_pick.lua:16
 msgid "Use this potion?"
@@ -1159,116 +1223,108 @@ msgstr "tipo de daño extraño"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:559
-msgid ""
-"        Damage                  Resistance                      Penetration</"
-"span> \n"
-msgstr ""
-"        Daño                    Resistencia                     Penetración</"
-"span> \n"
+msgid "\tDamage\t\t\tResistance\t\t\tPenetration</span> \n"
+msgstr "\tDaño\t\t\tResistencia\tPenetración</span> \n"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:560
-msgid "Blade                           "
-msgstr "Corte                            "
+msgid "Blade\t\t\t\t"
+msgstr "Corte\t\t\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:561
-msgid "Pierce                          "
-msgstr "Penetración                    "
+msgid "Pierce\t\t\t\t"
+msgstr "Pernetración\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:562
-msgid "Impact                          "
-msgstr "Impacto                         "
+msgid "Impact\t\t\t\t"
+msgstr "Impacto\t\t\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:563
-msgid "Fire                            "
-msgstr "Fuego                           "
+msgid "Fire\t\t\t\t"
+msgstr "Fuego\t\t\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:564
-msgid "Cold                            "
-msgstr "Frío                            "
+msgid "Cold\t\t\t\t"
+msgstr "Frío\t\t\t\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:565
-msgid "Arcane                          "
-msgstr "Arcano                          "
+msgid "Arcane\t\t\t\t"
+msgstr "Arcano\t\t\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:591
-msgid ""
-"        Location                                Defence         Movement "
-"cost</span> \n"
-msgstr ""
-"        Terreno                                 Defensa         Costo de "
-"movimiento</span> \n"
+msgid "\tLocation\t\t\t\tDefence\t\tMovement cost</span> \n"
+msgstr "Terreno\t\t\tDefensa\t\t\tCdM</span> \n"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:592
-msgid "In forests                              "
-msgstr "En bosques                              "
+msgid "In forests\t\t\t\t"
+msgstr "En bosques\t\t\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:593
-msgid "In frozen places                "
-msgstr "En lugares congelados           "
+msgid "In frozen places\t\t"
+msgstr "En lugares helados\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:594
-msgid "On flat terrains                "
-msgstr "En terrenos llanos              "
+msgid "On flat terrains\t\t"
+msgstr "En terrenos planos\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:595
-msgid "In caves                                        "
-msgstr "En cuevas                               "
+msgid "In caves\t\t\t\t\t"
+msgstr "En cuevas\t\t\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:596
-msgid "In mushroom grooves     "
-msgstr "En bosquecillos de hongos       "
+msgid "In mushroom grooves\t"
+msgstr "En arboledas de hongos\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:597
-msgid "In villages                             "
-msgstr "En aldeas                               "
+msgid "In villages\t\t\t\t"
+msgstr "En aldeas\t\t\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:598
-msgid "In castles                              "
-msgstr "En castillos                            "
+msgid "In castles\t\t\t\t"
+msgstr "En castillos\t\t\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:599
-msgid "In shallow waters               "
-msgstr "En aguas poco profundas         "
+msgid "In shallow waters\t\t"
+msgstr "En aguas poco profundas\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:600
-msgid "On coastal reefs                "
-msgstr "En arrecifes costeros           "
+msgid "On coastal reefs\t\t"
+msgstr "En arrecifes costeros\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:601
-msgid "In deep water                   "
-msgstr "En agua profunda                "
+msgid "In deep water\t\t\t"
+msgstr "En aguas profundas\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:602
-msgid "On hills                                        "
-msgstr "En colinas                              "
+msgid "On hills\t\t\t\t\t"
+msgstr "En colinas\t\t\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:603
-msgid "On mountains                            "
-msgstr "En montañas                             "
+msgid "On mountains\t\t\t\t"
+msgstr "En montañas\t\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:604
-msgid "On sands                                        "
-msgstr "En arenas                               "
+msgid "On sands\t\t\t\t\t"
+msgstr "En arenas\t\t\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: LotI_Era/lua/main.lua:605
@@ -1291,7 +1347,7 @@ msgstr ""
 
 #. [lua]: wesnoth.wml_actions.advance_stuff
 #. [attack], type=pierce, range=ranged
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=ranged
 #: LotI_Era/lua/main.lua:716 LotI_Era/units/Elvish_Assassin.cfg:60
 #: LotI_Era/units/Elvish_Assassin.cfg:348 LotI_Era/units/Predator.cfg:202
 #: LotI_Era/utils/global_events.cfg:373
@@ -1513,18 +1569,6 @@ msgstr ""
 "$chance% de probabilidad de que el enemigo pierda el 20% de su salud en cada "
 "golpe. No puede matar."
 
-#: LotI_Era/lua/stats.lua:340
-msgid ""
-" .. original.id\n"
-"        for i = 1,#damage_type_list do\n"
-"                if penetrations[damage_type_list[i]] > 0 then\n"
-"                        table.insert(remade_abilities, { "
-msgstr ""
-" .. original.id\n"
-"        for i = 1,#damage_type_list do\n"
-"                if penetrations[damage_type_list[i]] > 0 then\n"
-"                        table.insert(remade_abilities, { "
-
 #. [attack], type=blade, range=melee
 #. [attack], type=pierce, range=melee
 #: LotI_Era/lua/stats.lua:460 LotI_Era/units/Goblin_Ravager.cfg:38
@@ -1537,10 +1581,6 @@ msgstr ""
 #: LotI_Era/units/enemies/demon_infiltrators_unidentified.cfg:925
 msgid "fangs"
 msgstr "colmillos"
-
-#: LotI_Era/lua/stats.lua:518
-msgid " .. eff.name, { "
-msgstr " .. eff.name, { "
 
 #: LotI_Era/lua/inventory/dialog.lua:122
 msgid "on the recall list"
@@ -1885,7 +1925,7 @@ msgid "touch"
 msgstr "toque"
 
 #. [attack], type=cold, range=ranged
-#. [effect]
+#. [effect], apply_to=new_attack, type=cold, range=ranged
 #: LotI_Era/units/Ancient_Lich.cfg:54 LotI_Era/units/Demilich.cfg:62
 #: LotI_Era/units/Duelist_Wizard.cfg:139 LotI_Era/units/Lich_King.cfg:48
 #: LotI_Era/units/enemies/corruption.cfg:101
@@ -1907,7 +1947,7 @@ msgid "chill tempest"
 msgstr "ola de frío"
 
 #. [attack], type=arcane, range=ranged
-#. [effect]
+#. [effect], apply_to=new_attack, type=arcane, range=ranged
 #: LotI_Era/units/Ancient_Lich.cfg:66 LotI_Era/units/Arch_Necromancer.cfg:67
 #: LotI_Era/units/Demilich.cfg:74 LotI_Era/units/Lich_King.cfg:60
 #: LotI_Era/units/Necromancer.cfg:61 LotI_Era/units/Shadowalker.cfg:60
@@ -2019,7 +2059,7 @@ msgid "plague staff"
 msgstr "bastón de plaga"
 
 #. [attack], type=cold, range=ranged
-#. [effect]
+#. [effect], apply_to=new_attack, type=cold, range=ranged
 #: LotI_Era/units/Arch_Necromancer.cfg:53 LotI_Era/units/Necromancer.cfg:49
 #: LotI_Era/units/enemies/hybrids_of_steel.cfg:803
 #: LotI_Era/units/enemies/hybrids_of_steel.cfg:1100
@@ -2344,7 +2384,7 @@ msgstr "mejor defendiendo (reduce un 2% la probabilidad de ser golpeado)"
 #: LotI_Era/units/Champion.cfg:316 LotI_Era/units/Duke.cfg:144
 #: LotI_Era/units/Dwarvish_Protector.cfg:222
 #: LotI_Era/units/Orcish_Warmonger.cfg:368
-#: LotI_Era/units/Orcish_Warmonger.cfg:572
+#: LotI_Era/units/Orcish_Warmonger.cfg:573
 #: LotI_Era/units/mainline/Armageddon.cfg:32
 #: LotI_Era/units/mainline/Flanker.cfg:141
 #: LotI_Era/units/mainline/Hoplite.cfg:106
@@ -2454,7 +2494,7 @@ msgstr ""
 "capaz de disparar una tormenta de flechas sin dar al enemigo oportunidad de "
 "contraatacar (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=ranged
 #: LotI_Era/units/Champion_Bowman.cfg:276
 #: LotI_Era/units/Elvish_Assassin.cfg:415
 msgid "arrow storm"
@@ -2467,7 +2507,7 @@ msgstr ""
 "capaz de disparar una granizada masiva de flechas para golpear a muchos "
 "enemigos (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=ranged
 #: LotI_Era/units/Champion_Bowman.cfg:299
 msgid "hail of arrows"
 msgstr "granizada de flechas"
@@ -2500,7 +2540,8 @@ msgid "stomp"
 msgstr "pisotón"
 
 #. [attack], type=fire, range=ranged
-#. [effect]
+#. [effect], apply_to=new_attack, type=fire, range=ranged
+#. [effect], apply_to=bonus_attack
 #. [latent]
 #: LotI_Era/units/Chaos_Rider.cfg:65 LotI_Era/units/Duelist_Wizard.cfg:127
 #: LotI_Era/units/Elder_Mage.cfg:140 LotI_Era/units/Infernal_Knight.cfg:52
@@ -2565,7 +2606,7 @@ msgstr ""
 "las sombras de sus víctimas, y las víctimas también resultan heridas."
 
 #. [attack], type=blade, range=melee
-#. [effect]
+#. [effect], apply_to=new_attack, type=blade, range=melee
 #. [attack], type=pierce, range=melee
 #: LotI_Era/units/Dark_Shade.cfg:74 LotI_Era/units/Elvish_Gryphon_Rider.cfg:45
 #: LotI_Era/units/Orcish_Nightblade.cfg:30 LotI_Era/units/Reaper.cfg:236
@@ -2661,7 +2702,7 @@ msgstr "hacha"
 #. [advancement], id=doom
 #: LotI_Era/units/Deathlord.cfg:138 LotI_Era/units/Lich_King.cfg:216
 #: LotI_Era/units/Orcish_Warmonger.cfg:192
-#: LotI_Era/units/Orcish_Warmonger.cfg:456 LotI_Era/units/Swordmaster.cfg:180
+#: LotI_Era/units/Orcish_Warmonger.cfg:457 LotI_Era/units/Swordmaster.cfg:180
 #: LotI_Era/units/mainline/Myrmidon.cfg:35
 #: LotI_Era/units/mainline/Paragon.cfg:43
 #: LotI_Era/units/mainline/Wayfarer.cfg:19
@@ -2671,11 +2712,11 @@ msgstr ""
 "capaz de atacar de forma terrible que baja la resistencia enemiga (nuevo "
 "ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #. [dummy], id=doom_loti
 #: LotI_Era/units/Deathlord.cfg:145 LotI_Era/units/Lich_King.cfg:223
 #: LotI_Era/units/Orcish_Warmonger.cfg:199
-#: LotI_Era/units/Orcish_Warmonger.cfg:463 LotI_Era/units/Swordmaster.cfg:187
+#: LotI_Era/units/Orcish_Warmonger.cfg:464 LotI_Era/units/Swordmaster.cfg:187
 #: LotI_Era/units/mainline/Myrmidon.cfg:42
 #: LotI_Era/units/mainline/Paragon.cfg:50
 #: LotI_Era/units/mainline/Wayfarer.cfg:26 LotI_Era/utils/abilities.cfg:1646
@@ -2693,7 +2734,7 @@ msgstr ""
 #. [advancement], id=bow-poison
 #: LotI_Era/units/Deathlord.cfg:189 LotI_Era/units/Orcish_Strafer.cfg:296
 #: LotI_Era/units/Orcish_Warmonger.cfg:215
-#: LotI_Era/units/Orcish_Warmonger.cfg:479
+#: LotI_Era/units/Orcish_Warmonger.cfg:480
 msgid "shooting poisonous arrows"
 msgstr "disparar flechas venenosas"
 
@@ -2772,7 +2813,7 @@ msgstr ""
 "capaz de entrar en frenesí de batalla como los enanos, pero solo al atacar "
 "(nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=impact, range=melee
 #: LotI_Era/units/Destroyer.cfg:157 LotI_Era/units/mainline/Alchemist.cfg:26
 msgid "frenzy"
 msgstr "delirio"
@@ -2814,7 +2855,7 @@ msgid "lance"
 msgstr "lanza"
 
 #. [attack], type=fire, range=ranged
-#. [effect]
+#. [effect], apply_to=new_attack, type=fire, range=ranged
 #: LotI_Era/units/Dragon_Rider.cfg:81 LotI_Era/units/Fire_Dragon.cfg:42
 #: LotI_Era/units/enemies/Hellhound.cfg:38 LotI_Era/utils/amla.cfg:1188
 #: LotI_Era/utils/amla.cfg:2155
@@ -3183,7 +3224,7 @@ msgstr "jabalina"
 msgid "able to charge into battle (new attack)"
 msgstr "permite cargar en batalla (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #. [damage], id=charge
 #: LotI_Era/units/Dwarvish_Protector.cfg:159
 #: LotI_Era/units/enemies/Flower_of_Evil.cfg:46
@@ -3253,7 +3294,7 @@ msgstr ""
 "más hábil técnicamente, usando un arma que puede disparar muy rápido (nuevo "
 "ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=ranged
 #: LotI_Era/units/Dwarvish_Technocrat.cfg:227
 msgid "bullet storm"
 msgstr "tormenta de balas"
@@ -3263,7 +3304,7 @@ msgstr "tormenta de balas"
 msgid "more technically skilled, using a very precise gun (new attack)"
 msgstr "más hábil técnicamente, usando un arma muy precisa (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=ranged
 #: LotI_Era/units/Dwarvish_Technocrat.cfg:247
 msgid "blunderbuss"
 msgstr "trabuco"
@@ -3371,7 +3412,7 @@ msgstr "ignora las resistencias (y vulnerabilidades) enemigas con relámpagos"
 msgid "capable to cast fire blast (new attack)"
 msgstr "capaz de lanzar ráfaga de fuego (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=fire, range=ranged
 #. [attack], type=fire, range=ranged
 #: LotI_Era/units/Elder_Mage.cfg:765 LotI_Era/units/enemies/Phoenix.cfg:44
 #: LotI_Era/utils/amla.cfg:4842
@@ -3384,7 +3425,8 @@ msgstr "Explosión ígnea"
 msgid "able to curse enemies to cut their resistances"
 msgstr "capaz de maldecir enemigos para reducir sus resistencias"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=arcane, range=ranged
+#. [effect], apply_to=new_attack, type=cold, range=ranged
 #: LotI_Era/units/Elder_Mage.cfg:793
 #: LotI_Era/units/mainline/Troll_Shaman.cfg:90 LotI_Era/utils/amla.cfg:1974
 msgid "curse"
@@ -3529,7 +3571,7 @@ msgstr "tormenta de cuchillas"
 #: LotI_Era/units/Elvish_Nightprowler.cfg:57
 #: LotI_Era/units/Elvish_Warlord.cfg:55 LotI_Era/units/Forester.cfg:92
 #: LotI_Era/units/Orcish_Warmonger.cfg:51
-#: LotI_Era/units/Orcish_Warmonger.cfg:419 LotI_Era/units/Predator.cfg:59
+#: LotI_Era/units/Orcish_Warmonger.cfg:420 LotI_Era/units/Predator.cfg:59
 #: LotI_Era/units/Sky_Goblin.cfg:79 LotI_Era/units/Soul_Shooter.cfg:51
 #: LotI_Era/units/enemies/corruption.cfg:1124
 #: LotI_Era/units/enemies/corruption.cfg:1381
@@ -3559,7 +3601,7 @@ msgstr "más preciso con arco"
 msgid "able to attack in a terribly scary way (new attack)"
 msgstr "capaz de atacar de forma terriblemente aterradora (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #: LotI_Era/units/Elvish_Juggernaut.cfg:218
 #: LotI_Era/units/Elvish_Warlord.cfg:272 LotI_Era/units/Siege_Troll.cfg:104
 #: LotI_Era/units/mainline/Blademaster.cfg:22
@@ -3576,7 +3618,7 @@ msgid "able to maim enemies, lowering their damage temporarily (new attack)"
 msgstr ""
 "capaz de mutilar enemigos, reduciendo temporalmente su daño (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #. [dummy], id=mayhem_loti
 #: LotI_Era/units/Elvish_Juggernaut.cfg:240
 #: LotI_Era/units/mainline/Sicarius.cfg:62
@@ -3647,7 +3689,9 @@ msgstr ""
 "capaz de entrar en frenesí de disparos como los enanos con hachas, pero solo "
 "al atacar (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=ranged
+#. [effect], apply_to=bonus_attack, range=melee
+#. [effect], apply_to=bonus_attack
 #: LotI_Era/units/Elvish_Nightprowler.cfg:281
 #: LotI_Era/units/Werewolf_Rider.cfg:146 LotI_Era/utils/item_list.cfg:7262
 msgid "fury"
@@ -3686,7 +3730,7 @@ msgstr ""
 "capaz de cubrir su espada con telarañas pegajosas para ralentizar enemigos "
 "(nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #: LotI_Era/units/Elvish_Overlord.cfg:231
 msgid "spiderweb sword"
 msgstr "espada de telaraña"
@@ -3812,7 +3856,7 @@ msgstr ""
 "capaz de cargar contra enemigos al apuñalar por la espalda si se selecciona "
 "(nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #: LotI_Era/units/Exterminator.cfg:333
 msgid "murderous frenzy"
 msgstr "locura asesina"
@@ -3823,7 +3867,7 @@ msgstr "locura asesina"
 msgid "able to perform a whirlwind attack (new attack)"
 msgstr "capaz de realizar un ataque de torbellino (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #. [attacks]
 #: LotI_Era/units/Exterminator.cfg:357 LotI_Era/units/Phantom.cfg:216
 #: LotI_Era/units/Shadowalker.cfg:659 LotI_Era/units/mainline/Wayfarer.cfg:73
@@ -3924,7 +3968,7 @@ msgstr ""
 msgid "able to attack parrying enemy blows (new attack)"
 msgstr "capaz de atacar mientras para los golpes enemigos (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #. [dummy], id=parry_loti
 #: LotI_Era/units/Forester.cfg:251 LotI_Era/units/Shadowalker.cfg:683
 #: LotI_Era/units/Swordmaster.cfg:163 LotI_Era/units/mainline/Paragon.cfg:26
@@ -4094,7 +4138,7 @@ msgstr "inflige el doble de daño a enemigos que no tengan aliados adyacentes"
 msgid "able to knock enemies back (new attack)"
 msgstr "capaz de repeler a los enemigos (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #. [damage], id=knockback_loti
 #: LotI_Era/units/Grim_Knight.cfg:207 LotI_Era/units/mainline/Wayfarer.cfg:50
 #: LotI_Era/utils/abilities.cfg:1456
@@ -4415,7 +4459,7 @@ msgstr ""
 "capaz de consumir cadáveres andantes adyacentes para desbloquear un ataque "
 "de lamento devastador durante un turno"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=cold, range=ranged
 #. [attack], type=cold, range=ranged
 #. [attack], type=arcane, range=ranged
 #: LotI_Era/units/Monstrosity.cfg:170 LotI_Era/units/Reaper.cfg:49
@@ -4553,7 +4597,7 @@ msgstr ""
 
 #. [attack], type=blade, range=melee
 #: LotI_Era/units/Orcish_Warmonger.cfg:39
-#: LotI_Era/units/Orcish_Warmonger.cfg:407
+#: LotI_Era/units/Orcish_Warmonger.cfg:408
 #: LotI_Era/units/enemies/corruption.cfg:2604
 #: LotI_Era/units/enemies/corruption.cfg:2708
 msgid "greatsword"
@@ -4561,7 +4605,7 @@ msgstr "gran espada"
 
 #. [advancement], id=sword2-horror
 #: LotI_Era/units/Orcish_Warmonger.cfg:172
-#: LotI_Era/units/Orcish_Warmonger.cfg:436
+#: LotI_Era/units/Orcish_Warmonger.cfg:437
 #: LotI_Era/units/mainline/Myrmidon.cfg:15
 msgid "attacking in a scary way"
 msgstr "atacando de forma aterradora"
@@ -4580,7 +4624,7 @@ msgstr "un mejor líder (como una unidad de nivel 4)"
 
 #. [advancement], id=leadership2_bloodthirst
 #: LotI_Era/units/Orcish_Warmonger.cfg:293
-#: LotI_Era/units/Orcish_Warmonger.cfg:497
+#: LotI_Era/units/Orcish_Warmonger.cfg:498
 msgid "able to cause nearby allies to attack like bloodthirsty fanatics"
 msgstr ""
 "capaz de hacer que los aliados cercanos ataquen como fanáticos sedientos de "
@@ -4592,9 +4636,9 @@ msgstr ""
 #: LotI_Era/units/Orcish_Warmonger.cfg:309
 #: LotI_Era/units/Orcish_Warmonger.cfg:325
 #: LotI_Era/units/Orcish_Warmonger.cfg:347
-#: LotI_Era/units/Orcish_Warmonger.cfg:513
-#: LotI_Era/units/Orcish_Warmonger.cfg:529
-#: LotI_Era/units/Orcish_Warmonger.cfg:551
+#: LotI_Era/units/Orcish_Warmonger.cfg:514
+#: LotI_Era/units/Orcish_Warmonger.cfg:530
+#: LotI_Era/units/Orcish_Warmonger.cfg:552
 #: LotI_Era/units/mainline/Myrmidon.cfg:59
 #: LotI_Era/units/mainline/Myrmidon.cfg:75
 #: LotI_Era/units/mainline/Myrmidon.cfg:97
@@ -4682,7 +4726,7 @@ msgstr ""
 "capaz de atacar de forma engañosa que reduce la defensa enemiga (nuevo "
 "ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #. [dummy], id=trickery_loti
 #: LotI_Era/units/Pilum_Master.cfg:229 LotI_Era/units/Scythemaster.cfg:187
 #: LotI_Era/units/mainline/Enforcer.cfg:80
@@ -4930,7 +4974,7 @@ msgstr "telaraña"
 msgid "able to create a sword from pure magic (new attack)"
 msgstr "capaz de crear una espada de magia pura (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, type=arcane, range=melee
 #: LotI_Era/units/Seer.cfg:490
 msgid "faerie sabre"
 msgstr "sable feérico"
@@ -4977,7 +5021,7 @@ msgstr "Princesa de las sombras"
 msgid "able to strike all nearby enemies with lightning"
 msgstr "capaz de golpear a todos los enemigos cercanos con relámpagos"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=lightning, range=ranged
 #: LotI_Era/units/Shadow_Prince.cfg:247
 msgid "wave of lightning"
 msgstr "ola de relámpagos"
@@ -5070,7 +5114,7 @@ msgstr ""
 msgid "able to attack and defend with a single, devastating blow (new attack)"
 msgstr "capaz de atacar y defender con un solo golpe devastador (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #: LotI_Era/units/Siege_Troll.cfg:126
 msgid "devastation"
 msgstr "devastación"
@@ -5162,7 +5206,7 @@ msgstr "mandíbula"
 msgid "able to breathe dark energy (new attack)"
 msgstr "capaz de exhalar energía oscura (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=arcane, range=ranged
 #. [attack], type=arcane, range=ranged
 #: LotI_Era/units/Skeletal_Dragon.cfg:292
 #: LotI_Era/units/enemies/Dark_Dragon.cfg:44
@@ -5288,7 +5332,7 @@ msgstr "más acostumbrado a las tierras heladas (ocultarse en la nieve)"
 msgid "proficient with cold magic (new attack)"
 msgstr "competente con magia de frío (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=cold, range=ranged
 #: LotI_Era/units/Snow_Hunter.cfg:448
 msgid "ice bolt"
 msgstr "rayo de hielo"
@@ -5298,7 +5342,7 @@ msgstr "rayo de hielo"
 msgid "able to summon a blizzard (new attack)"
 msgstr "capaz de invocar una ventisca (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=cold, range=ranged
 #: LotI_Era/units/Snow_Hunter.cfg:474 LotI_Era/utils/amla.cfg:5371
 msgid "blizzard"
 msgstr "ventisca"
@@ -5336,7 +5380,7 @@ msgstr "convirtiendo enemigos en morts vivants con veneno de arco"
 msgid "able to shoot cursed arcane arrows (new attack)"
 msgstr "capaz de disparar flechas arcanas malditas (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, type=arcane, range=ranged
 #: LotI_Era/units/Soul_Shooter.cfg:224
 msgid "cursed arrow"
 msgstr "flecha maldita"
@@ -5352,7 +5396,7 @@ msgid "able to shoot arrows cursed with the chill of death (new attack)"
 msgstr ""
 "capaz de disparar flechas malditas con el frío de la muerte (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, type=cold, range=ranged
 #: LotI_Era/units/Soul_Shooter.cfg:255
 msgid "chill cursed arrow"
 msgstr "flecha maldita de frío"
@@ -5550,7 +5594,7 @@ msgstr "Bruja"
 msgid "able to attack with magically increased speed (new attack)"
 msgstr "capaz de atacar con velocidad mágicamente aumentada (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #: LotI_Era/units/Warlock.cfg:766
 msgid "speed"
 msgstr "velocidad"
@@ -5560,7 +5604,7 @@ msgstr "velocidad"
 msgid "able to attack with magically flaming sword (new attack)"
 msgstr "capaz de atacar con espada mágicamente llameante (nuevo ataque)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, type=fire, range=melee
 #: LotI_Era/units/Warlock.cfg:786
 msgid "fiery saber"
 msgstr "sable ardiente"
@@ -5904,7 +5948,7 @@ msgstr ""
 "volvieron fuertes más allá de la clasificación habitual."
 
 #. [attack], type=cold, range=ranged
-#. [effect]
+#. [effect], apply_to=new_attack, type=cold, range=ranged
 #: LotI_Era/units/enemies/Abaddon.cfg:46
 #: LotI_Era/units/enemies/demons_race.cfg:150
 #: LotI_Era/units/enemies/demons_race.cfg:868
@@ -6404,13 +6448,13 @@ msgstr ""
 "cerca, los dejan en paz. Son extremadamente peligrosas cerca de hongos "
 "simbióticos."
 
-#. [firststrike]
+#. [firststrike], id=firststrike
 #: LotI_Era/units/enemies/Flower_of_Evil.cfg:33
 #: LotI_Era/units/enemies/Voracious_Herb.cfg:41
 msgid "first strike"
 msgstr "golpe primero"
 
-#. [firststrike]
+#. [firststrike], id=firststrike
 #: LotI_Era/units/enemies/Flower_of_Evil.cfg:34
 #: LotI_Era/units/enemies/Voracious_Herb.cfg:42
 msgid "This unit always strikes first with this attack, even when defending."
@@ -6553,7 +6597,7 @@ msgstr ""
 "locos o los caballeros más valientes."
 
 #. [attack], type=cold, range=ranged
-#. [effect]
+#. [effect], apply_to=new_attack, type=cold, range=ranged
 #: LotI_Era/units/enemies/Ice_Dragon.cfg:61 LotI_Era/utils/amla.cfg:2443
 msgid "icy breath"
 msgstr "aliento helado"
@@ -8383,7 +8427,7 @@ msgstr "cataclísmica"
 msgid "new 120-1 fiery attack, magical"
 msgstr "nuevo ataque de fuego 120-1, mágico"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=fire, range=ranged
 #: LotI_Era/units/enemies/demons_race.cfg:544 LotI_Era/utils/amla.cfg:5028
 msgid "firestorm"
 msgstr "tormenta ígnea"
@@ -9174,7 +9218,7 @@ msgstr "usando dardos de frío"
 msgid "using automatic blowgun (new berserk ranged attack)"
 msgstr "usando cerbatana automática (nuevo ataque a distancia berserker)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=ranged
 #: LotI_Era/units/mainline/Alchemist.cfg:205
 msgid "blowgun berserk"
 msgstr "cerbatana berserker"
@@ -9345,7 +9389,7 @@ msgstr "plaga ("
 #. [leadership], id=despair_loti
 #. [resistance], id=conviction_loti
 #. [resistance], id=frail tide loti
-#. [berserk]
+#. [berserk], id=lesser berserk loti {COUNT}
 #. [hides], id=shadowstalk_loti RADIUS
 #. [leadership], id=extra damage aura loti {INTENSITY}
 #. [leadership], id=all damage aura loti {INTENSITY}
@@ -9901,12 +9945,12 @@ msgstr ""
 "enemigos adyacentes sienten un cansancio decrépito por la edad, reduciendo "
 "sus resistencias a penetración, corte e impacto un "
 
-#. [berserk]
+#. [berserk], id=lesser berserk loti {COUNT}
 #: LotI_Era/utils/abilities.cfg:481
 msgid "lesser berserk ("
 msgstr "frenesí corto ("
 
-#. [berserk]
+#. [berserk], id=lesser berserk loti {COUNT}
 #: LotI_Era/utils/abilities.cfg:482
 msgid ""
 "Whether used offensively or defensively, this attack presses the engagement "
@@ -9915,7 +9959,7 @@ msgstr ""
 "Tanto si se usa ofensivamente como defensivamente, este ataque prolonga el "
 "combate hasta que uno de los combatientes muera, o hayan transcurrido "
 
-#. [berserk]
+#. [berserk], id=lesser berserk loti {COUNT}
 #: LotI_Era/utils/abilities.cfg:482
 msgid " rounds of attacks have occurred."
 msgstr " rondas de ataques."
@@ -10572,7 +10616,7 @@ msgstr ""
 "entre 3."
 
 #. [damage], id=iceform_loti
-#. [effect]
+#. [effect], apply_to=bonus_attack, type=impact, range=melee
 #: LotI_Era/utils/abilities.cfg:1044 LotI_Era/utils/abilities.cfg:1045
 #: LotI_Era/utils/amla.cfg:3622
 msgid "iceform"
@@ -10990,12 +11034,12 @@ msgstr ""
 "que el daño de la unidad disminuye 12 después del ataque; la penalización se "
 "divide entre 2 cada turno."
 
-#. [poison]
+#. [poison], id=infect_loti
 #: LotI_Era/utils/abilities.cfg:1442
 msgid "infect"
 msgstr "infecta"
 
-#. [poison]
+#. [poison], id=infect_loti
 #: LotI_Era/utils/abilities.cfg:1443
 msgid ""
 "The target of this weapon specials becomes poisoned in a special way: if it "
@@ -11006,12 +11050,12 @@ msgstr ""
 "muere por este veneno o es matado mientras está afectado, se convierte en un "
 "cadáver ambulante."
 
-#. [poison]
+#. [poison], id=greater infect loti
 #: LotI_Era/utils/abilities.cfg:1449
 msgid "greater infect"
 msgstr "gran infección"
 
-#. [poison]
+#. [poison], id=greater infect loti
 #: LotI_Era/utils/abilities.cfg:1450
 msgid ""
 "The target of this weapon specials becomes poisoned in a special way: if it "
@@ -11768,12 +11812,12 @@ msgstr ""
 "Cuando esta unidad golpea con un ataque cuerpo a cuerpo ofensivo, se lanza "
 "un hechizo de fuego elegido al azar sobre el objetivo."
 
-#. [slow]
+#. [slow], id=shockwave_loti
 #: LotI_Era/utils/abilities.cfg:1838
 msgid "shockwave"
 msgstr "onda"
 
-#. [slow]
+#. [slow], id=shockwave_loti
 #: LotI_Era/utils/abilities.cfg:1839
 msgid ""
 "This attack is so strong that it slows the target, and creates a shock wave "
@@ -12551,17 +12595,17 @@ msgstr ""
 msgid " hexes away."
 msgstr " casillas de distancia."
 
-#. [berserk]
+#. [berserk], id=berserk_leadership_loti
 #: LotI_Era/utils/abilities.cfg:2330
 msgid "radiating insanity"
 msgstr "locura radiante"
 
-#. [berserk]
+#. [berserk], id=berserk_leadership_loti
 #: LotI_Era/utils/abilities.cfg:2331
 msgid "female^radiating insanity"
 msgstr "locura radiante"
 
-#. [berserk]
+#. [berserk], id=berserk_leadership_loti
 #: LotI_Era/utils/abilities.cfg:2332
 msgid ""
 "All nearby allies fight with a bloodlust equal to the dwarvish berserk on "
@@ -12597,32 +12641,32 @@ msgstr ""
 "frenéticas, haciendo que inflijan y reciban el doble de daño cuerpo a "
 "cuerpo, pero solo ofensivamente."
 
-#. [poison]
+#. [poison], id=poison_leadership_loti
 #: LotI_Era/utils/abilities.cfg:2373
 msgid "radiation"
 msgstr "radiación"
 
-#. [poison]
+#. [poison], id=poison_leadership_loti
 #: LotI_Era/utils/abilities.cfg:2374
 msgid "female^radiation"
 msgstr "radiación"
 
-#. [poison]
+#. [poison], id=poison_leadership_loti
 #: LotI_Era/utils/abilities.cfg:2375
 msgid "All nearby allies get poisonous attacks."
 msgstr "Todos los aliados cercanos obtienen ataques venenosos."
 
-#. [firststrike]
+#. [firststrike], id=firststrike_leadership_loti
 #: LotI_Era/utils/abilities.cfg:2386
 msgid "zeal aura"
 msgstr "aura de celo"
 
-#. [firststrike]
+#. [firststrike], id=firststrike_leadership_loti
 #: LotI_Era/utils/abilities.cfg:2387
 msgid "female^zeal aura"
 msgstr "aura de celo"
 
-#. [firststrike]
+#. [firststrike], id=firststrike_leadership_loti
 #: LotI_Era/utils/abilities.cfg:2388
 msgid "All nearby allies get firststrike."
 msgstr "Todos los aliados cercanos obtienen ataque primero."
@@ -12680,23 +12724,24 @@ msgstr ""
 "Todos los aliados adyacentes ganan drenaje cuerpo a cuerpo que drena el 25% "
 "del daño infligido (en lugar del habitual 50%)."
 
-#. [slow]
+#. [slow], id=slow leadership loti
 #: LotI_Era/utils/abilities.cfg:2477
 msgid "gossamer dispenser"
 msgstr "dispensador de telarañas"
 
-#. [slow]
+#. [slow], id=slow leadership loti
 #: LotI_Era/utils/abilities.cfg:2478
 msgid "female^gossamer dispenser"
 msgstr "dispensadora de telarañas"
 
-#. [slow]
+#. [slow], id=slow leadership loti
 #: LotI_Era/utils/abilities.cfg:2479
 msgid "All adjacent allies will slow targets with melee attacks."
 msgstr ""
 "Todos los aliados adyacentes ralentizarán a los objetivos con ataques cuerpo "
 "a cuerpo."
 
+#. SPECIAL_NOTES_ICE_DRAGON_BREATH
 #: LotI_Era/utils/abilities.cfg:2493
 msgid ""
 " This unit accumulates liquid helium in its inside, and when he unleashes "
@@ -12709,6 +12754,7 @@ msgstr ""
 "las unidades las protege de quedar completamente congeladas, pero aun así "
 "reduce a la mitad su movimiento y daño."
 
+#. SPECIAL_NOTES_DARK_DRAGON_BREATH
 #: LotI_Era/utils/abilities.cfg:2496
 msgid ""
 " This unit absorbs the vital energy of its victims when its foul breath "
@@ -12720,6 +12766,7 @@ msgstr ""
 "en letargo, reduciendo a la mitad su daño y duplicando sus costes de "
 "movimiento."
 
+#. SPECIAL_NOTES_DEMIGOD
 #: LotI_Era/utils/abilities.cfg:2499
 msgid ""
 " Telling everything a half-god can do would be too lengthy. But a matter to "
@@ -12761,6 +12808,7 @@ msgstr ""
 "Sin estos avances, la unidad nunca será particularmente fuerte y los "
 "enemigos de bajo nivel pueden volverse raros."
 
+#. SPECIAL_NOTES_TENTACLES
 #: LotI_Era/utils/abilities.cfg:2506
 msgid ""
 " When this unit is attacked in melee range, the attacker takes 10 points of "
@@ -12770,6 +12818,7 @@ msgstr ""
 "recibe 10 puntos de daño de impacto de sus tentáculos por acercarse "
 "demasiado."
 
+#. SPECIAL_NOTES_TENTACLES_AKULA
 #: LotI_Era/utils/abilities.cfg:2509
 msgid ""
 " When this unit is attacked in melee range, the attacker takes 15 impact "
@@ -12779,6 +12828,7 @@ msgstr ""
 "recibe 15 puntos de daño de impacto de sus tentáculos por acercarse "
 "demasiado."
 
+#. SPECIAL_NOTES_TENTACLES_AKULA_BOSS
 #: LotI_Era/utils/abilities.cfg:2512
 msgid ""
 " When this unit is attacked in melee range, the attacker takes a huge amount "
@@ -12788,6 +12838,7 @@ msgstr ""
 "recibe una enorme cantidad de daño de impacto de sus tentáculos por "
 "acercarse demasiado."
 
+#. SPECIAL_NOTES_DEMON_ARCANE
 #: LotI_Era/utils/abilities.cfg:2515
 msgid ""
 " Demons are creatures of magic, and arcane attacks have only a little effect "
@@ -13065,7 +13116,7 @@ msgstr ""
 "capaz de transformarse en lobo al atacar (20% más de daño y 20% más ataques; "
 "Guía de licantropía)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, type=blade, range=melee
 #: LotI_Era/utils/amla.cfg:802
 msgid "werewolf"
 msgstr "hombre lobo"
@@ -13079,7 +13130,7 @@ msgstr ""
 "capaz de transformarse en lobo terrible al atacar (5% más de daño, 40% más "
 "ataques y veneno; Guía de licantropía)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, type=blade, range=melee
 #: LotI_Era/utils/amla.cfg:931
 msgid "direwolf"
 msgstr "huargo"
@@ -13093,7 +13144,7 @@ msgstr ""
 "capaz de transformarse en sabueso infernal al atacar (berserker; Guía de "
 "licantropía)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, type=fire, range=melee
 #: LotI_Era/utils/amla.cfg:1063
 msgid "hellhound"
 msgstr "sabueso infernal"
@@ -13166,7 +13217,7 @@ msgstr ""
 msgid "attack twice in a row (Wrathful Combat Techniques)"
 msgstr "ataca dos veces seguidas (Técnicas de combate iracundo)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #: LotI_Era/utils/amla.cfg:1427
 msgid "fury (2)"
 msgstr "furia (2)"
@@ -13176,7 +13227,7 @@ msgstr "furia (2)"
 msgid "attack thrice in a row (Wrathful Combat Techniques)"
 msgstr "ataca tres veces seguidas (Técnicas de combate iracundo)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #: LotI_Era/utils/amla.cfg:1448
 msgid "fury (3)"
 msgstr "furia (3)"
@@ -13186,7 +13237,7 @@ msgstr "furia (3)"
 msgid "attack five times in a row (Wrathful Combat Techniques)"
 msgstr "ataca cinco veces seguidas (Técnicas de combate iracundo)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=melee
 #: LotI_Era/utils/amla.cfg:1469
 msgid "fury (5)"
 msgstr "furia (5)"
@@ -13261,7 +13312,7 @@ msgstr ""
 "capaz de lanzar un hechizo que reduce las defensas de terreno enemigas "
 "(Corazón de tinieblas)"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=arcane, range=ranged
 #: LotI_Era/utils/amla.cfg:1738
 msgid "ill luck"
 msgstr "mala suerte"
@@ -13273,7 +13324,7 @@ msgstr ""
 "capaz de lanzar un hechizo que reduce las resistencias enemigas (Corazón de "
 "tinieblas)"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=arcane, range=ranged
 #: LotI_Era/utils/amla.cfg:1908
 msgid "misfortune"
 msgstr "infortunio"
@@ -13284,7 +13335,7 @@ msgid "able to cast a spell that lowers enemy damage (Heart of Darkness)"
 msgstr ""
 "capaz de lanzar un hechizo que reduce el daño enemigo (Corazón de tinieblas)"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=arcane, range=ranged
 #: LotI_Era/utils/amla.cfg:1930
 msgid "hex"
 msgstr "maleficio"
@@ -13298,7 +13349,7 @@ msgstr ""
 "capaz de lanzar un hechizo que convierte a los enemigos muertos en "
 "aparecidos (Corazón de tinieblas)"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=arcane, range=ranged
 #: LotI_Era/utils/amla.cfg:1952
 msgid "reanimation"
 msgstr "reanimación"
@@ -13425,7 +13476,7 @@ msgstr ""
 "escupe fuego con gran radio de explosión, más penetración de fuego (Legado "
 "del dragón de fuego)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack
 #: LotI_Era/utils/amla.cfg:2397
 msgid "explosive fire breath"
 msgstr "aliento ígneo explosivo"
@@ -13472,7 +13523,7 @@ msgstr ""
 "golpea a más enemigos con el aliento y más penetración de frío (Legado del "
 "dragón de hielo)"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack
 #: LotI_Era/utils/amla.cfg:2603
 msgid "explosive ice breath"
 msgstr "aliento helado explosivo"
@@ -13886,7 +13937,7 @@ msgstr "lanza rayos más rápido"
 msgid "capable to use thunder (huge damage, huge radius)"
 msgstr "capaz de usar truenos (enorme daño, enorme radio)"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=lightning, range=ranged
 #: LotI_Era/utils/amla.cfg:4105
 msgid "thunder"
 msgstr "trueno"
@@ -13935,7 +13986,7 @@ msgstr "disparando bolas de fuego con mayor precisión"
 msgid "capable to cast a burning meteor from the skies"
 msgstr "capaz de lanzar un meteoro ardiente desde los cielos"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=fire, range=ranged
 #: LotI_Era/utils/amla.cfg:4347
 msgid "meteor"
 msgstr "meteorito"
@@ -14073,7 +14124,7 @@ msgstr "invoca tormentas ígneas que causan quemaduras inflamatorias"
 msgid "able to summon an arctic blast"
 msgstr "capaz de invocar una ráfaga ártica"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=cold, range=ranged
 #: LotI_Era/utils/amla.cfg:5182
 msgid "arctic blast"
 msgstr "explosión ártica"
@@ -14141,7 +14192,7 @@ msgstr "invoca ventiscas que causan quemaduras por frío"
 msgid "able to blast enemies with entropic chaos"
 msgstr "capaz de lanzar caos entrópico a los enemigos"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=arcane, range=ranged
 #: LotI_Era/utils/amla.cfg:5526
 msgid "entropy"
 msgstr "entropía"
@@ -14197,7 +14248,7 @@ msgstr "lanza explosiones entrópicas más rápido"
 msgid "capable to summon a devastating particle storm"
 msgstr "capaz de invocar una devastadora tormenta de partículas"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=lightning, range=ranged
 #: LotI_Era/utils/amla.cfg:5751
 msgid "particle storm"
 msgstr "tormenta de partículas"
@@ -14316,7 +14367,7 @@ msgid ""
 msgstr ""
 "capaz de abandonar el cuerpo mortal para atacar casi inmune al daño físico"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, type=arcane, range=melee
 #: LotI_Era/utils/amla.cfg:6502
 msgid "spiritual transformation"
 msgstr "transformación espiritual"
@@ -14949,17 +15000,17 @@ msgstr ""
 msgid "Everything can fail. Regardless of the amount of polishing done."
 msgstr "Todo puede fallar. Sin importar cuánto pulido se haya hecho."
 
-#. [object], id=BoMS
+#. [object]
 #: LotI_Era/utils/item_list.cfg:22
 msgid "Book of Magical Swordplay"
 msgstr "Libro de esgrima mágica"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:32
 msgid "Fencing techniques, offensive and also defensive"
 msgstr "Técnicas de esgrima, tanto ofensivas como defensivas"
 
-#. [object], id=BoMS
+#. [object]
 #: LotI_Era/utils/item_list.cfg:34
 msgid ""
 "It is not strength or motivation that makes a great warrior. It is the skill."
@@ -14967,32 +15018,32 @@ msgstr ""
 "No es la fuerza ni la motivación lo que hace a un gran guerrero. Es la "
 "habilidad."
 
-#. [object], id=BoF
+#. [object]
 #: LotI_Era/utils/item_list.cfg:37
 msgid "Book of Fireballs"
 msgstr "Libro de bolas de fuego"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:48
 msgid "Casting fireballs, from basic casting to explosive damages"
 msgstr "Lanzamiento de bolas de fuego, desde lo básico hasta daños explosivos"
 
-#. [object], id=BoF
+#. [object]
 #: LotI_Era/utils/item_list.cfg:50
 msgid "Burn, incinerate, scorch, see your foes turn to ash."
 msgstr "Quema, incinera, carboniza, ve a tus enemigos convertirse en cenizas."
 
-#. [object], id=BoHTaM
+#. [object]
 #: LotI_Era/utils/item_list.cfg:53
 msgid "Book of Herbal Tinctures and Malignancies"
 msgstr "Libro de tinturas herbales y malignidades"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:63
 msgid "Poisons and cures"
 msgstr "Venenos y curas"
 
-#. [object], id=BoHTaM
+#. [object]
 #: LotI_Era/utils/item_list.cfg:65
 msgid ""
 "Like real cures are not needed to get payment for healing, real poison is "
@@ -15001,17 +15052,17 @@ msgstr ""
 "Como no se necesitan curas reales para cobrar por sanar, tampoco se necesita "
 "veneno real para dañar."
 
-#. [object], id=ToB
+#. [object]
 #: LotI_Era/utils/item_list.cfg:68
 msgid "Tome of Bards"
 msgstr "Tomos de Bardos"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:78
 msgid "Techniques of inspiring allies to deal more damage"
 msgstr "Técnicas para inspirar a los aliados a hacer más daño"
 
-#. [object], id=ToB
+#. [object]
 #: LotI_Era/utils/item_list.cfg:80
 msgid ""
 "Stand up and fight\n"
@@ -15030,17 +15081,17 @@ msgstr "Guardia de Guerra"
 msgid "A real warrior's armour is heavy."
 msgstr "La armadura de un verdadero guerrero es pesada."
 
-#. [object], id=TFS
+#. [object]
 #: LotI_Era/utils/item_list.cfg:101
 msgid "The Fencer's Study"
 msgstr "El manual del esgrimista"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:111
 msgid "Quick mastery of fencing"
 msgstr "Dominio rápido de la esgrima"
 
-#. [object], id=TFS
+#. [object]
 #: LotI_Era/utils/item_list.cfg:113
 msgid ""
 "Do you think fencing takes a lot of time to learn? Just buy this for 20 gold "
@@ -15708,7 +15759,7 @@ msgid ""
 msgstr ""
 "Que la luz te muestre el camino hacia la oscuridad que puedes iluminar."
 
-#. [object], id=royalty
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1050
 msgid "Royal Diadem"
 msgstr "Diadema real"
@@ -15738,7 +15789,7 @@ msgstr ""
 "Las unidades propias adyacentes harán 30% más de daño y tendrán 20% mejores "
 "resistencias."
 
-#. [object], id=royalty
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1093
 msgid "Even a fake king can lead soldiers into victory."
 msgstr "Incluso un rey falso puede llevar soldados a la victoria."
@@ -15903,7 +15954,7 @@ msgstr ""
 "Bajo cielos negros, la gente empieza a perder la fe en que el sol volverá a "
 "salir."
 
-#. [object], id=aura of power
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1361
 msgid "Colossally Colossal Arch-Devilish Blade of Universal Annihilation"
 msgstr "Colosalmente Colosal Espada Arquidiabólica de Aniquilación Universal"
@@ -15933,7 +15984,7 @@ msgstr ""
 "Las unidades propias adyacentes harán 20% más de daño y tendrán 10% mejores "
 "resistencias."
 
-#. [object], id=aura of power
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1407
 msgid "Forged by the Paladin of Golden Glory with the Hammer of Eternal Magic."
 msgstr ""
@@ -16035,12 +16086,12 @@ msgstr "Daga del anhelo"
 msgid "Does this make you feel some sort of... bloodlust?"
 msgstr "¿Esto te hace sentir algún tipo de... sed de sangre?"
 
-#. [object], id=fearless
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1568
 msgid "Book of Courage"
 msgstr "Libro del Coraje"
 
-#. [object], id=fearless
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1570
 msgid "<span color='green'>Unit becomes fearless</span>"
 msgstr "<span color='green'>La unidad se vuelve intrépida</span>"
@@ -16060,7 +16111,7 @@ msgstr "intrépida"
 msgid "Fights normally during unfavourable times of day/night"
 msgstr "Lucha normalmente durante momentos desfavorables del día/noche"
 
-#. [object], id=fearless
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1591
 msgid "Daniel was looking for this book. But it was in a dark corner."
 msgstr "Daniel buscaba este libro. Pero estaba en un rincón oscuro."
@@ -16114,7 +16165,7 @@ msgstr ""
 msgid "The Original Trident of Storms"
 msgstr "El tridente de tormentas original"
 
-#. [effect]
+#. [effect], apply_to=new_attack, type=fire, range=ranged
 #: LotI_Era/utils/item_list.cfg:1673
 msgid "storm trident"
 msgstr "tridente de tormentas"
@@ -16240,33 +16291,33 @@ msgstr ""
 "Nadie quería enfrentarse a Cunctator. Nunca luchaba cuando tú querías luchar "
 "contra él."
 
-#. [object], id=GtL
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1850
 msgid "Guide to Lycanthropy"
 msgstr "Guía de licantropía"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:1860
 msgid "Abilities that allow a transformation into powerful animal forms"
 msgstr "Habilidades que permiten transformarse en poderosas formas animales"
 
-#. [object], id=GtL
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1862
 msgid "Search your memories and find the monster you are."
 msgstr "Busca en tus recuerdos y encuentra al monstruo que eres."
 
-#. [object], id=ToBVII
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1865
 msgid "Tome of Bards, Volume II"
 msgstr "Tomo de los bardos, volumen II"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:1875
 msgid "Techniques of inspiring allies to fight better and annoying enemies"
 msgstr ""
 "Técnicas para inspirar a los aliados a luchar mejor y molestar a los enemigos"
 
-#. [object], id=ToBVII
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1877
 msgid ""
 "Shining and so glorious\n"
@@ -16275,49 +16326,49 @@ msgstr ""
 "Brillante y tan glorioso\n"
 "El linaje de verdaderos guerreros"
 
-#. [object], id=KJ
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1881
 msgid "Koschei's Journal"
 msgstr "Diario de Koschei"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:1891
 msgid "Powerful improvements to spells"
 msgstr "Mejoras poderosas a los hechizos"
 
-#. [object], id=KJ
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1893
 msgid "The princess asked him where his soul was hidden. The prince found it."
 msgstr ""
 "La princesa le preguntó dónde tenía escondida su alma. El príncipe la "
 "encontró."
 
-#. [object], id=WCT
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1896
 msgid "Wrathful Combat Techniques"
 msgstr "Técnicas de combate coléricas"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:1906
 msgid "Techniques of using anger in battle"
 msgstr "Técnicas para usar la ira en batalla"
 
-#. [object], id=WCT
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1908
 msgid "Let the anger flow through your veins."
 msgstr "Deja que la ira corra por tus venas."
 
-#. [object], id=HtbaO
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1911
 msgid "How to be an Overlord"
 msgstr "Cómo ser un señor supremo"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:1921
 msgid "Leadership-like abilities"
 msgstr "Habilidades similares al liderazgo"
 
-#. [object], id=HtbaO
+#. [object]
 #: LotI_Era/utils/item_list.cfg:1923
 msgid "Attack! Attack! Attack!"
 msgstr "¡Ataquen! ¡Ataquen! ¡Ataquen!"
@@ -16745,17 +16796,17 @@ msgstr ""
 msgid "Bring sadness to your enemies by showing them how weak they are."
 msgstr "Trae tristeza a tus enemigos mostrándoles lo débiles que son."
 
-#. [object], id=Srn
+#. [object]
 #: LotI_Era/utils/item_list.cfg:2417
 msgid "Serendipity"
 msgstr "Serendipia"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:2427
 msgid "You never know what will be learned from here"
 msgstr "Nunca sabes qué se aprenderá de aquí"
 
-#. [object], id=Srn
+#. [object]
 #: LotI_Era/utils/item_list.cfg:2429
 msgid "'Some inventions come out of nowhere.' - Kevla the Saviour"
 msgstr "«Algunas invenciones surgen de la nada.» - Kevla el Salvador"
@@ -17635,17 +17686,17 @@ msgstr "Picatripas"
 msgid "Mutilating dead enemies makes you forget your woes."
 msgstr "Mutilar enemigos muertos te hace olvidar tus penas."
 
-#. [object], id=HoD
+#. [object]
 #: LotI_Era/utils/item_list.cfg:3569
 msgid "Heart of Darkness"
 msgstr "Corazón de oscuridad"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:3579
 msgid "Various wicked spells"
 msgstr "Varios hechizos malvados"
 
-#. [object], id=HoD
+#. [object]
 #: LotI_Era/utils/item_list.cfg:3581
 msgid "Find your dark subconscience and embrace it."
 msgstr "Encuentra tu subconsciente oscuro y abrázalo."
@@ -18155,18 +18206,18 @@ msgstr ""
 "Las leyendas más oscuras hablan de nigromantes creando no muertos tan puros "
 "que nunca fueron manchados por la vida, muertos desde el nacimiento."
 
-#. [object], id=RBF
+#. [object]
 #: LotI_Era/utils/item_list.cfg:4299
 msgid "Raijer's Bloody Field"
 msgstr "Campo Sangriento de Raijer"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:4308
 msgid "Techniques of extracting the victim's soul and using it for own profit"
 msgstr ""
 "Técnicas para extraer el alma de la víctima y usarla en beneficio propio"
 
-#. [object], id=RBF
+#. [object]
 #: LotI_Era/utils/item_list.cfg:4310
 msgid "Those who are the first of their kinds are often the mightiest of them."
 msgstr "Los que son los primeros de su tipo suelen ser los más poderosos."
@@ -20099,17 +20150,17 @@ msgstr "La alianza"
 msgid "We are The Alliance! We are one!"
 msgstr "¡Somos La Alianza! ¡Somos uno!"
 
-#. [object], id=DoV
+#. [object]
 #: LotI_Era/utils/item_list.cfg:7168
 msgid "The Doctrine of Vindictiveness"
 msgstr "Doctrina de venganza"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:7178
 msgid "A distinctively vindictive view on combat"
 msgstr "Una visión distintivamente vengativa del combate"
 
-#. [object], id=DoV
+#. [object]
 #: LotI_Era/utils/item_list.cfg:7180
 msgid ""
 "If they attack you, make sure they will not dare or will not exist to attack "
@@ -20181,12 +20232,12 @@ msgstr ""
 msgid "The Overdrawer"
 msgstr "Sobregirador"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack
 #: LotI_Era/utils/item_list.cfg:7287
 msgid "overdraw"
 msgstr "sobregiro"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack
 #: LotI_Era/utils/item_list.cfg:7298
 msgid "great overdraw"
 msgstr "gran sobregiro"
@@ -20204,7 +20255,7 @@ msgstr ""
 msgid "Orcish Ingenuity"
 msgstr "Ingenuidad orca"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, type=fire
 #: LotI_Era/utils/item_list.cfg:7326
 msgid "firebolt"
 msgstr "fogonazo"
@@ -20239,7 +20290,7 @@ msgstr "Correr siempre es mejor sin armadura pesada."
 msgid "The Shrapnel Knife"
 msgstr "Cuchillo de metralla"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack
 #: LotI_Era/utils/item_list.cfg:7376
 msgid "shrapnel"
 msgstr "metralla"
@@ -20254,7 +20305,7 @@ msgstr "Puedo golpear a los cuatro con un solo cuchillo, jeje."
 msgid "Souldrainer"
 msgstr "Sorbealmas"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack
 #: LotI_Era/utils/item_list.cfg:7402
 msgid "drain"
 msgstr "drenar"
@@ -20269,7 +20320,7 @@ msgstr "¿Matar o preservarse uno mismo? Hay que considerar la situación."
 msgid "Tears of Void"
 msgstr "Lágrimas del vacío"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, range=ranged
 #: LotI_Era/utils/item_list.cfg:7428
 msgid "aim"
 msgstr "apuntar"
@@ -20284,12 +20335,12 @@ msgstr "¿Quién inventó este nombre? ¿En qué estaba pensando?"
 msgid "The Underdrawer"
 msgstr "El abrumador"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack
 #: LotI_Era/utils/item_list.cfg:7452
 msgid "underdraw"
 msgstr "abrumación"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack
 #: LotI_Era/utils/item_list.cfg:7463
 msgid "great underdraw"
 msgstr "gran abrumación"
@@ -20307,12 +20358,12 @@ msgstr ""
 msgid "The Searing Ice"
 msgstr "Hielo abrasador"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, type=fire
 #: LotI_Era/utils/item_list.cfg:7491
 msgid "flaming sword"
 msgstr "espada llameante"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack, type=cold
 #: LotI_Era/utils/item_list.cfg:7504
 msgid "freezing sword"
 msgstr "espada congelante"
@@ -20327,7 +20378,7 @@ msgstr "Cuidado de no quemarte con el frío."
 msgid "Violent Mage's Staff"
 msgstr "Bastón de mago violento"
 
-#. [effect]
+#. [effect], apply_to=bonus_attack
 #: LotI_Era/utils/item_list.cfg:7531
 msgid "violent beatdown"
 msgstr "paliza violenta"
@@ -21605,17 +21656,17 @@ msgstr ""
 "Golpear fuerte al enemigo no es crucial. Tienes que asegurarte de no morir "
 "cuando él te golpee."
 
-#. [object], id=ToL
+#. [object]
 #: LotI_Era/utils/item_list.cfg:9933
 msgid "Tome of Liches"
 msgstr "Tomo de Liches"
 
-#. [effect]
+#. [effect], apply_to=new_advancement
 #: LotI_Era/utils/item_list.cfg:9942
 msgid "Teachings of the dark arts of necromancy"
 msgstr "Enseñanzas de las artes oscuras de la nigromancia"
 
-#. [object], id=ToL
+#. [object]
 #: LotI_Era/utils/item_list.cfg:9944
 msgid "Are you fed up of mortality?"
 msgstr "¿Estás harto de la mortalidad?"
@@ -23773,7 +23824,7 @@ msgstr "¡Buen tiro, hombre!"
 #. [value]
 #: LotI_Era/utils/utils.cfg:1247
 msgid "A swing and a miss!"
-msgstr "¡Un golpe y fallo!"
+msgstr "¡Un golpe y un fallo!"
 
 #. [value]
 #: LotI_Era/utils/utils.cfg:1250
