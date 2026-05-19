@@ -1,5 +1,5 @@
 
---! #textdomain "wesnoth-loti"
+--! #textdomain "wesnoth-loti-era"
 
 local _ = wesnoth.textdomain "wesnoth-loti-era"
 
