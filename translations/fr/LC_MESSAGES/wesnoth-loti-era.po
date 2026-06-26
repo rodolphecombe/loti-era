@@ -7674,7 +7674,7 @@ msgstr ""
 #. [periodic_damage_aura]
 #: .\utils\abilities.cfg:960
 msgid "Deathaura ({INTENSITY})"
-msgstr "Aura de mort ({INTESITY})"
+msgstr "Aura de mort ({INTENSITY})"
 
 #. [periodic_damage_aura]
 #: .\utils\abilities.cfg:961

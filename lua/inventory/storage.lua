@@ -296,6 +296,7 @@ local function unhide_listbox(dialog)
 	dialog[listbox_id].visible = true
 	dialog[listbox_id]:focus()
 end
+
 local translated_item_sort = {
 	potion = _"Potion",
 	limited = _"Limited",
@@ -336,7 +337,6 @@ local function show_item_sorts(dialog)
 	    item_sort=a[i]
             count=sorts[a[i]]
 		if not too_progressed or item_sort == "potion" or item_sort == "limited" then
-			-- TODO: print human-readable translatable name of item_sort.
 			local text = translated_item_sort[item_sort] .. " (" .. count .. ")"
 
 			listbox_row = listbox_row + 1
