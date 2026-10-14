@@ -575,10 +575,10 @@ end
 -- character takes up the same amount of space.
 local function unit_information_part_5()
   local function form_one_line(type)
-    local defence = 100 - (wml.variables["unit.defense_on." .. type] or 0)
+    local defence = 100 - (wml.variables["unit.defense." .. type] or 0)
     local cost = wml.variables["unit.movement_costs." .. type]
     if cost == nil then
-	return "   none		inaccessible</span> \n"
+	return _"   none		inaccessible</span> \n"
     end
     if defence > 100 then -- def cap
 	    return string.format("%6d%% cap		%6d</span> \n", math.floor(200 - defence), math.floor(cost))
