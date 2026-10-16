@@ -4248,7 +4248,7 @@ msgstr "Certaines elfes qui décident de suivre le chemin de la féérie décide
 #. [unit_type], id=Swordmaster LotI, race=human
 #: .\units\Swordmaster.cfg:4
 msgid "Swordmaster"
-msgstr "Maître de l'Épée"
+msgstr "Maître Epéiste"
 
 #. [unit_type], id=Swordmaster LotI, race=human
 #: .\units\Swordmaster.cfg:18
@@ -4256,7 +4256,7 @@ msgid ""
 "Some royal guards show a great expertise with swords, not only good defensive abilities, so they act as the main offensive force of defensive forces. Shattering the lines of enemy defence in times of war and protecting castles in times of peace, swordmasters are the greatest elite of human soldiers.\n"
 "\n"
 "Note: The ability upgrades may require some books to learn them from."
-msgstr "Certains gardes royaux montrent une grande expertise à l'épée, et pas uniquement de bonnes capacités défensives ; ils agissent donc comme la force d'attaque principale des forces de défense. Brisant la ligne de défense ennemie en temps de guerre et protégeant les châteaux en temps de paix, les Maîtres de l'Epée sont la plus haute élite des soldats humains."
+msgstr "Certains gardes royaux montrent une grande expertise à l'épée, et pas uniquement de bonnes capacités défensives ; ils agissent donc comme la force d'attaque principale des forces de défense. Brisant la ligne de défense ennemie en temps de guerre et protégeant les châteaux en temps de paix, les Maîtres Epéistes sont la plus haute élite des soldats humains."
 
 #. [attack], type=blade, range=melee
 #: .\units\Swordmaster.cfg:43
