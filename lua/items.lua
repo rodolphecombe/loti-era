@@ -854,7 +854,7 @@ loti.item.describe_item = function(number, sort, set_items)
 			elseif effect.apply_to == "status" and effect.add == "not_living" then
 				line = "<span color='#60A0FF'>" .. _"Unlife (immunity to poison, plague and drain)" .. "</span>"
 			elseif effect.apply_to == "new_attack" then
-				line = "<span color='green'>" .. _"New attack: " .. effect.name .. " (" .. tostring(effect.damage) .. " - " .. tostring(effect.number) .. ")</span>"
+				line = "<span color='green'>" .. _"New attack: " .. effect.description .. " (" .. tostring(effect.damage) .. " - " .. tostring(effect.number) .. ")</span>"
 			elseif effect.apply_to == "new_advancement" then
 				line = "<span color='yellow'>" .. _"New advancements: " .. effect.description .. "</span>"
 			end

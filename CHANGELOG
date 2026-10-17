@@ -77,6 +77,11 @@ Allow placing LotI enemies in the editor.
 
 3.0.4 (translation)
 Added French translation by lhybrideur.
+Allow placing LotI enemies in the editor
 
 3.0.5
 Add Merman Brawler
+Port to 1.19
+
+3.0.6
+Item and gem drop chance can now be chosen

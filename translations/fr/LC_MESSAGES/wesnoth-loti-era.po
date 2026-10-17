@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2026-05-19 09:50\n"
-"PO-Revision-Date: 2026-05-19 10:01+0100\n"
+"POT-Creation-Date: 2026-10-16 09:24\n"
+"PO-Revision-Date: 2026-10-16 09:28+0100\n"
 "Last-Translator: Rodolphe Combe-Colas\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -209,23 +209,43 @@ msgstr "Konrad2, Raijer, RainerT, Swistwarrior333, Aevyn, lynx, Cluesen_Mz, arob
 msgid "LotI Modification"
 msgstr "LdI Modification"
 
+#. [slider], id=item_drop_chance
+#: .\_main.cfg:137
+msgid "Item Drop Chance"
+msgstr "Chance de Laisser un Objet"
+
+#. [slider], id=item_drop_chance
+#: .\_main.cfg:138
+msgid "Probability that an enemy unit will drop an item when it dies"
+msgstr "Probabilité qu'un ennemi laisse un objet lorsqu'il meurt"
+
+#. [slider], id=gem_drop_chance
+#: .\_main.cfg:147
+msgid "Gem Drop Chance"
+msgstr "Chance de Laisser une Gemme"
+
+#. [slider], id=gem_drop_chance
+#: .\_main.cfg:148
+msgid "Probability that an enemy unit will drop a gem when it dies"
+msgstr "Probabilité qu'un ennemi laisse une gemme lorsqu'il meurt"
+
 #. [value]
-#: .\_main.cfg:511
+#: .\_main.cfg:539
 msgid "better with $this_item.description"
 msgstr "meilleur avec $this_item.description"
 
 #. [value]
-#: .\_main.cfg:527
+#: .\_main.cfg:555
 msgid "faster with $this_item.description"
 msgstr "plus rapide avec $this_item.description"
 
 #. [value]
-#: .\_main.cfg:547
+#: .\_main.cfg:575
 msgid "more brutish with $this_item.description"
 msgstr "plus brutal avec $this_item.description"
 
 #. [advancement], id=armour
-#: .\_main.cfg:603
+#: .\_main.cfg:631
 #: .\units\Champion_Bowman.cfg:314
 #: .\units\Elvish_Juggernaut.cfg:404
 #: .\units\Elvish_Overlord.cfg:245
@@ -236,6 +256,7 @@ msgstr "plus brutal avec $this_item.description"
 #: .\units\Swordmaster.cfg:232
 #: .\units\Troll_Boulderlobber.cfg:235
 #: .\units\mainline\Blademaster.cfg:54
+#: .\units\mainline\Brawler.cfg:77
 #: .\units\mainline\Enforcer.cfg:96
 #: .\units\mainline\Flameheart.cfg:143
 #: .\units\mainline\Hurricane.cfg:68
@@ -251,7 +272,7 @@ msgid "better protected from physical blows (2% better resistances)"
 msgstr "mieux protégé contre les attaques physiques (2% de résistance supplémentaire)"
 
 #. [advancement], id=dodge
-#: .\_main.cfg:622
+#: .\_main.cfg:650
 #: .\units\Elvish_Juggernaut.cfg:374
 #: .\units\Elvish_Nightprowler.cfg:301
 #: .\units\Elvish_Warlord.cfg:287
@@ -265,7 +286,7 @@ msgid "better at blocking (lowering the chance to be hit by 2%)"
 msgstr "meilleur à la parade (diminue les chances d'être touché de 2%)"
 
 #. [advancement], id=movement
-#: .\_main.cfg:653
+#: .\_main.cfg:681
 #: .\units\Abomination.cfg:374
 #: .\units\Ancient_Lich.cfg:293
 #: .\units\Arch_Necromancer.cfg:381
@@ -332,6 +353,7 @@ msgstr "meilleur à la parade (diminue les chances d'être touché de 2%)"
 #: .\units\mainline\Armageddon.cfg:82
 #: .\units\mainline\Bat_Dread.cfg:15
 #: .\units\mainline\Blademaster.cfg:104
+#: .\units\mainline\Brawler.cfg:96
 #: .\units\mainline\Cataphract.cfg:175
 #: .\units\mainline\Diviner.cfg:201
 #: .\units\mainline\Enforcer.cfg:115
@@ -486,63 +508,63 @@ msgstr "Transmuter des gemmes"
 msgid "Crafting"
 msgstr "Artisanat"
 
-#: .\lua\crafting.lua:570
+#: .\lua\crafting.lua:572
 msgid "Armour (chest)"
 msgstr "Armure (torse)"
 
-#: .\lua\crafting.lua:571
+#: .\lua\crafting.lua:573
 #: .\lua\inventory\storage.lua:306
 msgid "Helm"
 msgstr "Casque"
 
-#: .\lua\crafting.lua:572
+#: .\lua\crafting.lua:574
 #: .\lua\inventory\storage.lua:308
 msgid "Boots"
 msgstr "Bottes"
 
-#: .\lua\crafting.lua:573
+#: .\lua\crafting.lua:575
 #: .\lua\inventory\storage.lua:307
 msgid "Gauntlets"
 msgstr "Gantelets"
 
-#: .\lua\crafting.lua:586
+#: .\lua\crafting.lua:588
 msgid "Mace (or hammer, club, morning star, scourge, flail, ...)"
 msgstr "Massue (ou marteau, gourdin, Morgenstern, fléau, fléau d'armes, ...)"
 
-#: .\lua\crafting.lua:587
+#: .\lua\crafting.lua:589
 msgid "Crossbow (or slurbow)"
 msgstr "Arbalète (ou arbalète à canon)"
 
-#: .\lua\crafting.lua:591
+#: .\lua\crafting.lua:593
 msgid "Knife (throwing)"
 msgstr "Couteau (à lancer)"
 
-#: .\lua\crafting.lua:592
+#: .\lua\crafting.lua:594
 msgid "Spear (or javelin, lance, pike, trident)"
 msgstr "Lance (ou javelot, lance de cavalerie, pique, trident)"
 
-#: .\lua\crafting.lua:593
+#: .\lua\crafting.lua:595
 msgid "Polearm (halberd, scythe, ...)"
 msgstr "Arme d'hast (ou hallebarde, faux, ...)"
 
-#: .\lua\crafting.lua:594
+#: .\lua\crafting.lua:596
 msgid "Sling (or bolas or net)"
 msgstr "Fronde (ou bolas ou filet)"
 
-#: .\lua\crafting.lua:595
+#: .\lua\crafting.lua:597
 msgid "Thunderstick (or dragonstaff)"
 msgstr "Bâton de tonnerre (ou bâton de dragon)"
 
-#: .\lua\crafting.lua:596
+#: .\lua\crafting.lua:598
 #: .\lua\inventory\storage.lua:318
 msgid "Metal claws"
 msgstr "Griffes en métal"
 
-#: .\lua\crafting.lua:597
+#: .\lua\crafting.lua:599
 msgid "Otherworldly essence (for touch attacks, baneblade, ...)"
 msgstr "Essence d'autre monde (pour les attaques de toucher, lame de ruine, ...)"
 
-#: .\lua\crafting.lua:667
+#: .\lua\crafting.lua:671
 msgid "Are you sure you want to craft this item?"
 msgstr "Êtes-vous sûr de vouloir fabriquer cet item ?"
 
@@ -1243,6 +1265,11 @@ msgid "Arcane\t\t\t\t"
 msgstr "Arcane\t\t\t\t"
 
 #. [lua]: wesnoth.wml_actions.harm_unit_loti
+#: .\lua\main.lua:581
+msgid "   none\t\tinaccessible</span> \n"
+msgstr "   aucun\t\tinaccessible</span> \n"
+
+#. [lua]: wesnoth.wml_actions.harm_unit_loti
 #: .\lua\main.lua:591
 msgid "\tLocation\t\t\t\tDefence\t\tMovement cost</span> \n"
 msgstr "\tLocalisation\t\t\t\tDéfense\t\tCoût de mouvement</span> \n"
@@ -1334,7 +1361,7 @@ msgstr "<span size='large' weight='bold'>Voies d'avancement des dévorages d'âm
 #: .\units\Elvish_Assassin.cfg:60
 #: .\units\Elvish_Assassin.cfg:348
 #: .\units\Predator.cfg:202
-#: .\utils\global_events.cfg:373
+#: .\utils\global_events.cfg:369
 msgid "execution"
 msgstr "exécution"
 
@@ -1545,7 +1572,7 @@ msgstr "Stock d'objets"
 
 #. [set_menu_item], id=xx_unit_info
 #: .\lua\inventory\items.lua:32
-#: .\utils\global_events.cfg:1101
+#: .\utils\global_events.cfg:1097
 msgid "Unit information"
 msgstr "Information de l'unité"
 
@@ -1676,7 +1703,7 @@ msgid "Which attacks do you allow to use for retaliation?"
 msgstr "Quelles armes autorisez-vous pour les représailles ?"
 
 #: .\lua\inventory\storage.lua:52
-#: .\lua\inventory\storage.lua:525
+#: .\lua\inventory\storage.lua:523
 msgid "Equip"
 msgstr "Équiper"
 
@@ -1694,15 +1721,15 @@ msgstr "Détruire pour obtenir une gemme aléatoire"
 msgid "Unequip"
 msgstr "Déséquiper"
 
-#: .\lua\inventory\storage.lua:286
+#: .\lua\inventory\storage.lua:285
 msgid "Cannot access item storage after turn 2 outside a castle."
 msgstr "Impossible d'accéder au stock d'objets après le tour 2 à l'extérieur d'un château."
 
-#: .\lua\inventory\storage.lua:288
+#: .\lua\inventory\storage.lua:287
 msgid "Item storage is empty."
 msgstr "Le stock d'objets est vide."
 
-#: .\lua\inventory\storage.lua:293
+#: .\lua\inventory\storage.lua:292
 msgid "In the item storage:"
 msgstr "Dans le stock d'objets :"
 
@@ -1778,23 +1805,23 @@ msgstr "Bâton de tonnerre"
 msgid "Spear"
 msgstr "Lance"
 
-#: .\lua\inventory\storage.lua:463
+#: .\lua\inventory\storage.lua:461
 msgid "Currently equipped: "
 msgstr "Actuellement équipé : "
 
-#: .\lua\inventory\storage.lua:523
+#: .\lua\inventory\storage.lua:521
 msgid "Use"
 msgstr "Utiliser"
 
-#: .\lua\inventory\storage.lua:536
+#: .\lua\inventory\storage.lua:534
 msgid "he"
 msgstr "il"
 
-#: .\lua\inventory\storage.lua:538
+#: .\lua\inventory\storage.lua:536
 msgid "she"
 msgstr "elle"
 
-#: .\lua\inventory\storage.lua:541
+#: .\lua\inventory\storage.lua:539
 msgid ""
 "This unit is currently not on the battlefield,\n"
 "so "
@@ -1802,27 +1829,27 @@ msgstr ""
 "Cette unité n'est pas actuellement sur le champ de bataille,\n"
 "alors "
 
-#: .\lua\inventory\storage.lua:542
+#: .\lua\inventory\storage.lua:540
 msgid " can't take new items from the storage."
 msgstr " ne peut pas prendre de nouveaux objets du stock."
 
-#: .\lua\inventory\storage.lua:546
+#: .\lua\inventory\storage.lua:544
 msgid "This unit can't equip such items.\n"
 msgstr "Cette unité ne peut pas équiper de tels objets.\n"
 
-#: .\lua\inventory\storage.lua:547
+#: .\lua\inventory\storage.lua:545
 msgid "They are unworthy of a mighty "
 msgstr "Ils sont indignes d'un puissant "
 
-#: .\lua\inventory\storage.lua:559
+#: .\lua\inventory\storage.lua:557
 msgid "WARNING:"
 msgstr "ATTENTION :"
 
-#: .\lua\inventory\storage.lua:560
+#: .\lua\inventory\storage.lua:558
 msgid "this item is purely nostalgic (from the good old times when this unit needed it).\n"
 msgstr "cet objet est purement nostalgique (du bon vieux temps où cette unité en avait besoin).\n"
 
-#: .\lua\inventory\storage.lua:561
+#: .\lua\inventory\storage.lua:559
 msgid ""
 "If you unequip it, this unit won't be able to equip it again.\n"
 "\n"
@@ -1830,7 +1857,7 @@ msgstr ""
 "Si vous le déséquipez, cette unité ne pourra pas le rééquiper.\n"
 "\n"
 
-#: .\lua\inventory\storage.lua:562
+#: .\lua\inventory\storage.lua:560
 msgid "Do you still want to unequip it?"
 msgstr "Voulez-vous toujours le déséquiper ?"
 
@@ -2079,9 +2106,9 @@ msgstr "Messagère Céleste"
 #: .\units\mainline\Wose_Shaman.cfg:97
 #: .\units\mainline\Wose_Shaman.cfg:119
 #: .\units\mainline\Wose_Shaman.cfg:141
-#: .\utils\amla.cfg:6374
-#: .\utils\amla.cfg:6396
-#: .\utils\amla.cfg:6418
+#: .\utils\amla.cfg:6373
+#: .\utils\amla.cfg:6395
+#: .\utils\amla.cfg:6417
 msgid "able to heal allies better"
 msgstr "capable de mieux soigner les alliés"
 
@@ -2361,7 +2388,7 @@ msgstr "capable d'attaquer d'une façon terrible qui diminue la résistance enne
 #: .\units\mainline\Myrmidon.cfg:42
 #: .\units\mainline\Paragon.cfg:50
 #: .\units\mainline\Wayfarer.cfg:26
-#: .\utils\abilities.cfg:1654
+#: .\utils\abilities.cfg:1665
 msgid "doom"
 msgstr "catastrophe"
 
@@ -2429,12 +2456,14 @@ msgstr ""
 #. [advancement], id=berserk
 #: .\units\Destroyer.cfg:150
 #: .\units\mainline\Alchemist.cfg:19
+#: .\units\mainline\Brawler.cfg:32
 msgid "able to enter a battle frenzy like dwarves, but only when attacking (new attack)"
 msgstr "capable d'entrer en frénésie de bataille comme les nains, mais seulement en attaque (nouvelle attaque)"
 
 #. [effect], apply_to=new_attack, type=impact, range=melee
 #: .\units\Destroyer.cfg:157
 #: .\units\mainline\Alchemist.cfg:26
+#: .\units\mainline\Brawler.cfg:39
 msgid "frenzy"
 msgstr "frénésie"
 
@@ -2544,8 +2573,8 @@ msgstr "Magicienne Duelliste"
 
 #. [advancement], id=retribution
 #: .\units\Duelist_Wizard.cfg:455
-msgid "able to return 2 pierce damage to every attacker"
-msgstr "capable de retourner 2 dégâts perforants à chaque attaquant"
+msgid "able to return 4 pierce damage to every attacker"
+msgstr "capable de retourner 4 dégâts perforants à chaque attaquant"
 
 #. [advancement], id=retribution2
 #: .\units\Duelist_Wizard.cfg:470
@@ -2554,7 +2583,7 @@ msgstr "capable de retourner une partie des dégâts à l'attaquant"
 
 #. [advancement], id=absorb1
 #: .\units\Duelist_Wizard.cfg:486
-#: .\utils\amla.cfg:6320
+#: .\utils\amla.cfg:6319
 msgid "able to heal from enemies' attacks"
 msgstr "capable de se soigner des attaques ennemies"
 
@@ -2562,7 +2591,7 @@ msgstr "capable de se soigner des attaques ennemies"
 #. [advancement], id=absorb3
 #: .\units\Duelist_Wizard.cfg:502
 #: .\units\Duelist_Wizard.cfg:524
-#: .\utils\amla.cfg:6336
+#: .\utils\amla.cfg:6335
 msgid "able to heal from enemies' attacks better"
 msgstr "capable de mieux se soigner des attaques ennemies"
 
@@ -2607,7 +2636,7 @@ msgstr "capable de faire gagner 1 point de mouvement aux unités alliées adjace
 #: .\units\mainline\Flameheart.cfg:84
 #: .\units\mainline\Warmaster.cfg:130
 #: .\units\mainline\Wose_Shaman.cfg:15
-#: .\utils\amla.cfg:6358
+#: .\utils\amla.cfg:6357
 msgid "able to heal allies"
 msgstr "capable de soigner les alliés"
 
@@ -2806,7 +2835,7 @@ msgstr "capable de lancer une rafale de feu (nouvelle attaque)"
 #. [attack], type=fire, range=ranged
 #: .\units\Elder_Mage.cfg:765
 #: .\units\enemies\Phoenix.cfg:44
-#: .\utils\amla.cfg:4842
+#: .\utils\amla.cfg:4841
 msgid "fire blast"
 msgstr "rafale de feu"
 
@@ -2928,6 +2957,7 @@ msgstr "plus précis avec l'arc"
 #: .\units\Elvish_Warlord.cfg:265
 #: .\units\Siege_Troll.cfg:97
 #: .\units\mainline\Blademaster.cfg:15
+#: .\units\mainline\Brawler.cfg:56
 #: .\units\mainline\Enforcer.cfg:15
 #: .\units\mainline\Flameheart.cfg:122
 #: .\units\mainline\Sicarius.cfg:33
@@ -2941,6 +2971,7 @@ msgstr "capable d'attaquer de manière effrayante (nouvelle attaque)"
 #: .\units\Elvish_Warlord.cfg:272
 #: .\units\Siege_Troll.cfg:104
 #: .\units\mainline\Blademaster.cfg:22
+#: .\units\mainline\Brawler.cfg:63
 #: .\units\mainline\Enforcer.cfg:22
 #: .\units\mainline\Flameheart.cfg:129
 #: .\units\mainline\Sicarius.cfg:40
@@ -2959,7 +2990,7 @@ msgstr "capable de mutiler les ennemis, diminuant temporairement leurs dégâts 
 #: .\units\Elvish_Juggernaut.cfg:240
 #: .\units\mainline\Sicarius.cfg:62
 #: .\units\mainline\Zephyr.cfg:62
-#: .\utils\abilities.cfg:1640
+#: .\utils\abilities.cfg:1651
 msgid "mayhem"
 msgstr "pagaille"
 
@@ -3198,7 +3229,7 @@ msgstr "capable de parer les coups ennemis (nouvelle attaque)"
 #: .\units\Shadowalker.cfg:685
 #: .\units\Swordmaster.cfg:163
 #: .\units\mainline\Paragon.cfg:26
-#: .\utils\abilities.cfg:1611
+#: .\utils\abilities.cfg:1622
 msgid "parry"
 msgstr "parade"
 
@@ -3303,7 +3334,7 @@ msgstr "capable de pousser les ennemis vers l'arrière (nouvelle attaque)"
 #. [damage], id=knockback_loti
 #: .\units\Grim_Knight.cfg:207
 #: .\units\mainline\Wayfarer.cfg:50
-#: .\utils\abilities.cfg:1464
+#: .\utils\abilities.cfg:1467
 msgid "knockback"
 msgstr "poussée"
 
@@ -3731,7 +3762,7 @@ msgstr "capable d'attaquer d'une manière rusée qui diminue la défense ennemie
 #: .\units\mainline\Saurian_Javelineer.cfg:41
 #: .\units\mainline\Spearmaster.cfg:26
 #: .\units\mainline\Warden.cfg:22
-#: .\utils\abilities.cfg:1647
+#: .\utils\abilities.cfg:1658
 msgid "trickery"
 msgstr "ruse"
 
@@ -4017,7 +4048,7 @@ msgstr "dévastation"
 #: .\units\mainline\Troll_Shaman.cfg:120
 #: .\units\mainline\Wose_Ancient.cfg:14
 #: .\units\mainline\Wose_Shaman.cfg:196
-#: .\utils\amla.cfg:6193
+#: .\utils\amla.cfg:6192
 msgid "regenerating 4 additional hitpoints per turn"
 msgstr "régénérer 4 points de vie additionnels par tour"
 
@@ -4033,8 +4064,8 @@ msgstr "régénérer 4 points de vie additionnels par tour"
 #: .\units\mainline\Wose_Ancient.cfg:56
 #: .\units\mainline\Wose_Shaman.cfg:217
 #: .\units\mainline\Wose_Shaman.cfg:238
-#: .\utils\amla.cfg:6214
-#: .\utils\amla.cfg:6235
+#: .\utils\amla.cfg:6213
+#: .\utils\amla.cfg:6234
 msgid "regenerating 3 additional hitpoints per turn"
 msgstr "régénérer 3 points de vie additionnels par tour"
 
@@ -4056,9 +4087,9 @@ msgstr "régénérer 3 points de vie additionnels par tour"
 #: .\units\mainline\Wose_Shaman.cfg:259
 #: .\units\mainline\Wose_Shaman.cfg:280
 #: .\units\mainline\Wose_Shaman.cfg:301
-#: .\utils\amla.cfg:6256
-#: .\utils\amla.cfg:6277
-#: .\utils\amla.cfg:6298
+#: .\utils\amla.cfg:6255
+#: .\utils\amla.cfg:6276
+#: .\utils\amla.cfg:6297
 msgid "regenerating 2 additional hitpoints per turn"
 msgstr "régénérer 2 points de vie additionnels par tour"
 
@@ -4170,7 +4201,7 @@ msgstr "capable d'invoquer un blizzard (nouvelle attaque)"
 
 #. [effect], apply_to=new_attack, type=cold, range=ranged
 #: .\units\Snow_Hunter.cfg:474
-#: .\utils\amla.cfg:5371
+#: .\utils\amla.cfg:5370
 msgid "blizzard"
 msgstr "blizzard"
 
@@ -4248,7 +4279,7 @@ msgstr "Certaines elfes qui décident de suivre le chemin de la féérie décide
 #. [unit_type], id=Swordmaster LotI, race=human
 #: .\units\Swordmaster.cfg:4
 msgid "Swordmaster"
-msgstr "Maître de l'Épée"
+msgstr "Maître Epéiste"
 
 #. [unit_type], id=Swordmaster LotI, race=human
 #: .\units\Swordmaster.cfg:18
@@ -4256,7 +4287,7 @@ msgid ""
 "Some royal guards show a great expertise with swords, not only good defensive abilities, so they act as the main offensive force of defensive forces. Shattering the lines of enemy defence in times of war and protecting castles in times of peace, swordmasters are the greatest elite of human soldiers.\n"
 "\n"
 "Note: The ability upgrades may require some books to learn them from."
-msgstr "Certains gardes royaux montrent une grande expertise à l'épée, et pas uniquement de bonnes capacités défensives ; ils agissent donc comme la force d'attaque principale des forces de défense. Brisant la ligne de défense ennemie en temps de guerre et protégeant les châteaux en temps de paix, les Maîtres de l'Epée sont la plus haute élite des soldats humains."
+msgstr "Certains gardes royaux montrent une grande expertise à l'épée, et pas uniquement de bonnes capacités défensives ; ils agissent donc comme la force d'attaque principale des forces de défense. Brisant la ligne de défense ennemie en temps de guerre et protégeant les châteaux en temps de paix, les Maîtres Epéistes sont la plus haute élite des soldats humains."
 
 #. [attack], type=blade, range=melee
 #: .\units\Swordmaster.cfg:43
@@ -4543,7 +4574,7 @@ msgstr "appendice griffu"
 #. [attack], type=lightning, range=ranged
 #. [dummy], id=retribution_loti
 #: .\units\enemies\Amplificator.cfg:80
-#: .\utils\abilities.cfg:2051
+#: .\utils\abilities.cfg:2062
 msgid "retribution"
 msgstr "rétribution"
 
@@ -5281,7 +5312,7 @@ msgstr "résistant aux dégâts magiques"
 #. [dummy], id=regrowing_loti
 #: .\units\enemies\demons_race.cfg:347
 #: .\units\enemies\demons_race.cfg:948
-#: .\utils\abilities.cfg:1782
+#: .\utils\abilities.cfg:1793
 msgid "regrowing"
 msgstr "repoussant"
 
@@ -5460,7 +5491,7 @@ msgstr "se régénère douloureusement et se soigne avant d'attaquer ou d'être 
 #. [trait], id=unforgiving
 #. [dummy], id=unforgiving_loti
 #: .\units\enemies\demons_race.cfg:513
-#: .\utils\abilities.cfg:1511
+#: .\utils\abilities.cfg:1514
 msgid "unforgiving"
 msgstr "impitoyable"
 
@@ -5510,14 +5541,14 @@ msgstr "nouvelle attaque fulgurante 120-1, magique"
 
 #. [effect], apply_to=new_attack, type=fire, range=ranged
 #: .\units\enemies\demons_race.cfg:544
-#: .\utils\amla.cfg:5028
+#: .\utils\amla.cfg:5027
 msgid "firestorm"
 msgstr "tempête de feu"
 
 #. [dummy], id=storm_demon
 #. [dummy], id=storm_loti
 #: .\units\enemies\demons_race.cfg:550
-#: .\utils\abilities.cfg:1442
+#: .\utils\abilities.cfg:1445
 msgid "storm"
 msgstr "tempête"
 
@@ -6748,6 +6779,11 @@ msgstr "sarbacane berserk"
 #: .\units\mainline\Bat_Dread.cfg:28
 msgid "tougher (2% better resistances; +3% resist impact)"
 msgstr "plus résistant (2% de résistance supplémentaire; +3% de résistance au contondant)"
+
+#. [advancement], id=slow
+#: .\units\mainline\Brawler.cfg:14
+msgid "stunning enemies better"
+msgstr "mieux étourdir les ennemis"
 
 #. [advancement], id=armour
 #: .\units\mainline\Cataphract.cfg:156
@@ -8083,1286 +8119,1297 @@ msgid "Adjacent enemies have 1 less attack"
 msgstr "Les ennemis adjacents ont 1 attaque en moins."
 
 #. [attacks]
-#: .\utils\abilities.cfg:1410
-#: .\utils\abilities.cfg:1411
+#: .\utils\abilities.cfg:1413
+#: .\utils\abilities.cfg:1414
 msgid "quickstrike"
 msgstr "frappe rapide"
 
 #. [attacks]
-#: .\utils\abilities.cfg:1412
+#: .\utils\abilities.cfg:1415
 msgid "When this attack is used, the attacker loses no movement. However, this does not give back the movement lost due to entering a unit's ZoC."
 msgstr "Lorsque cette attaque est utilisée, l'attaquant ne perd aucun mouvement. En revanche, il ne récupère pas le mouvement perdu pour être entré dans la ZdC d'une unité."
 
 #. [dummy], id=dazzle_loti
-#: .\utils\abilities.cfg:1421
+#: .\utils\abilities.cfg:1424
 msgid "dazzle"
 msgstr "ébloui"
 
 #. [dummy], id=dazzle_loti
-#: .\utils\abilities.cfg:1422
+#: .\utils\abilities.cfg:1425
 msgid "This weapon special reduces the target's chance to hit by 3% with every hit. The reduction halves at every turn."
 msgstr "Cette spécificité d'attaque réduit les chances de toucher de la cible de 3% à chaque coup. La réduction est divisée par deux à chaque tour. "
 
 #. [dummy], id=raging resolve loti
-#: .\utils\abilities.cfg:1428
+#: .\utils\abilities.cfg:1431
 msgid "raging resolve"
 msgstr "résolution furieuse"
 
 #. [dummy], id=raging resolve loti
-#: .\utils\abilities.cfg:1429
+#: .\utils\abilities.cfg:1432
 msgid "Hitting enemies with this special will increase resistances by 1%. This increase halves every turn."
 msgstr "Toucher des ennemis avec cette attaque augmente les résistances de 1%. Cette augmentation est divisée par deux à chaque tour."
 
 #. [dummy], id=mind_raid_loti
-#: .\utils\abilities.cfg:1435
+#: .\utils\abilities.cfg:1438
 msgid "mind raid"
 msgstr "raid mental"
 
 #. [dummy], id=mind_raid_loti
-#: .\utils\abilities.cfg:1436
+#: .\utils\abilities.cfg:1439
 msgid "This weapon special steals 2 experience from the opponent, increasing the user's experience. It does not work if the target does not have enough experience."
 msgstr "Cette arme spéciale vole 2 points d'expérience à l'adversaire, ce qui augmente l'expérience de l'utilisateur. Elle ne fonctionne pas si la cible n'a pas assez d'expérience."
 
 #. [dummy], id=storm_loti
-#: .\utils\abilities.cfg:1443
+#: .\utils\abilities.cfg:1446
 msgid "The damage of this attack will affect also a lot of other enemy units around the caster, and will also deal some impact damage. It is so tiring that the unit's damage decreases by 12 after the attack, the damage penalty will half each turn."
 msgstr "Les dégâts de cette attaque affecteront également beaucoup d'autres unités ennemies autour du lanceur de sorts, et infligeront également des dégâts contondants. C'est si fatigant que les dégâts de l'unité diminuent de 12 après l'attaque, la pénalité de dégâts diminuant de moitié à chaque tour."
 
 #. [poison], id=infect_loti
-#: .\utils\abilities.cfg:1450
+#: .\utils\abilities.cfg:1453
 msgid "infect"
 msgstr "infection"
 
 #. [poison], id=infect_loti
-#: .\utils\abilities.cfg:1451
+#: .\utils\abilities.cfg:1454
 msgid "The target of this weapon specials becomes poisoned in a special way: if it dies from this toxin or is killed while affected by it, it becomes a Walking Corpse."
 msgstr "La cible de cette spécialité d'attaque est empoisonnée d'une manière particulière : si elle meurt de cette toxine ou si elle est tuée alors qu'elle est affectée par cette toxine, elle devient un Cadavre Ambulant."
 
 #. [poison], id=greater infect loti
-#: .\utils\abilities.cfg:1457
+#: .\utils\abilities.cfg:1460
 msgid "greater infect"
 msgstr "infection majeure"
 
 #. [poison], id=greater infect loti
-#: .\utils\abilities.cfg:1458
+#: .\utils\abilities.cfg:1461
 msgid "The target of this weapon specials becomes poisoned in a special way: if it dies from this toxin or is killed while affected by it, it becomes a Soulless."
 msgstr "La cible de cette spécialité d'attaque est empoisonnée d'une manière particulière : si elle meurt de cette toxine ou si elle est tuée alors qu'elle est affectée par cette toxine, elle devient un sans-âme."
 
 #. [damage], id=knockback_loti
-#: .\utils\abilities.cfg:1465
+#: .\utils\abilities.cfg:1468
 msgid "When this attack is used offensively, at the end of the fight the enemy will be knocked back."
 msgstr "Lorsque cette attaque est utilisée de manière offensive, à la fin du combat l'ennemi est repoussé."
 
 #. [damage], id=supreme knockback loti
-#: .\utils\abilities.cfg:1472
+#: .\utils\abilities.cfg:1475
 msgid "supreme knockback"
 msgstr "poussée suprème"
 
 #. [damage], id=supreme knockback loti
-#: .\utils\abilities.cfg:1473
+#: .\utils\abilities.cfg:1476
 msgid "When this attack is used offensively, every hit will push the target 5 hexes away from the attacker or to the nearest unreachable terrain."
 msgstr "Quand cette attaque est utilisée en attaque, chaque coup repousse la cible de 5 cases ou jusqu'au plus proche terrain infranchissable."
 
 #. [dummy], id=necromancy_loti
-#: .\utils\abilities.cfg:1480
+#: .\utils\abilities.cfg:1483
 msgid "necromancy"
 msgstr "nécromancie"
 
 #. [dummy], id=necromancy_loti
-#: .\utils\abilities.cfg:1481
+#: .\utils\abilities.cfg:1484
 msgid "female^necromancy"
 msgstr "nécromancie"
 
 #. [dummy], id=necromancy_loti
-#: .\utils\abilities.cfg:1482
+#: .\utils\abilities.cfg:1485
 msgid "If this unit dies, it becomes a lich."
 msgstr "Si cette unité meurt, elle devient une liche."
 
 #. [dummy], id=cowardice_loti
-#: .\utils\abilities.cfg:1488
+#: .\utils\abilities.cfg:1491
 msgid "cowardice"
 msgstr "couardise"
 
 #. [dummy], id=cowardice_loti
-#: .\utils\abilities.cfg:1489
+#: .\utils\abilities.cfg:1492
 msgid "female^cowardice"
 msgstr "couardise"
 
 #. [dummy], id=cowardice_loti
-#: .\utils\abilities.cfg:1490
+#: .\utils\abilities.cfg:1493
 msgid "If this unit runs out of moves with no adjacent units, it loses its attack that turn but gains its moves back."
 msgstr "Si cette unité se retrouve à court de mouvements sans unité adjacente, elle perd son attaque pour ce tour mais récupère ses mouvements."
 
 #. [dummy], id=triggerable_loti
-#: .\utils\abilities.cfg:1496
+#: .\utils\abilities.cfg:1499
 msgid "triggerable"
 msgstr "déclenchable"
 
 #. [dummy], id=triggerable_loti
-#: .\utils\abilities.cfg:1497
+#: .\utils\abilities.cfg:1500
 msgid "This unit's attack damage increases by 1 when hit. Does not work when hit by a retaliating unit. The added damage bonus halves each turn (rounded down)."
 msgstr "Les dégâts d'attaque de cette unité augmentent de 1 lorsqu'elle est touchée. Ne fonctionne pas si elle est touchée par une unité qui riposte. Le bonus de dégâts supplémentaires est divisé par deux à chaque tour (arrondi à l'inférieur)."
 
 #. [dummy], id=vindictive_loti
-#: .\utils\abilities.cfg:1503
+#: .\utils\abilities.cfg:1506
 msgid "vindictive"
 msgstr "vindincatif"
 
 #. [dummy], id=vindictive_loti
-#: .\utils\abilities.cfg:1504
+#: .\utils\abilities.cfg:1507
 msgid "female^vindictive"
 msgstr "vindicative"
 
 #. [dummy], id=vindictive_loti
-#: .\utils\abilities.cfg:1505
+#: .\utils\abilities.cfg:1508
 msgid "This unit's attack damage increases by 1 when an adjacent ally is hit. Does not work when hit by a retaliating unit. The added damage bonus halves each turn (rounded down)."
 msgstr "Les dégâts d'attaque de cette unité augmentent de 1 lorsqu'un allié adjacent est touché. Ne fonctionne pas lorsqu'elle est touchée par une unité qui riposte. Le bonus de dégâts supplémentaires est divisé par deux à chaque tour (arrondi à l'inférieur)."
 
 #. [dummy], id=unforgiving_loti
-#: .\utils\abilities.cfg:1512
+#: .\utils\abilities.cfg:1515
 msgid "This unit's attack deals 50% additional fire damage when directly hitting a unit type that hit it in the last 5 turns. Does not work when hit by a retaliating unit."
 msgstr "L'attaque de cette unité inflige 50 % de dégâts de feu supplémentaires lorsqu'elle touche directement un type d'unité qui l'a touchée au cours des 5 derniers tours. Ne fonctionne pas lorsqu'elle est touchée par une unité qui riposte."
 
 #. [dummy], id=wrath_loti
-#: .\utils\abilities.cfg:1518
+#: .\utils\abilities.cfg:1521
 msgid "wrath"
 msgstr "courroux"
 
 #. [dummy], id=wrath_loti
-#: .\utils\abilities.cfg:1519
+#: .\utils\abilities.cfg:1522
 msgid "female^wrath"
 msgstr "courroux"
 
 #. [dummy], id=wrath_loti
-#: .\utils\abilities.cfg:1520
+#: .\utils\abilities.cfg:1523
 msgid "When offensively hitting an enemy, this unit's attack damage increases by 1. The added damage bonus halves each turn (rounded down)."
 msgstr "Lorsque cette unité frappe un ennemi de manière offensive, ses dégâts d'attaque augmentent de 1. Le bonus de dégâts supplémentaires est divisé par deux à chaque tour (arrondi à l'inférieur)."
 
 #. [dummy], id=killjoy_loti
-#: .\utils\abilities.cfg:1526
+#: .\utils\abilities.cfg:1529
 msgid "killjoy"
 msgstr "rabat-joie"
 
 #. [dummy], id=killjoy_loti
-#: .\utils\abilities.cfg:1527
+#: .\utils\abilities.cfg:1530
 msgid "female^killjoy"
 msgstr "rabat-joie"
 
 #. [dummy], id=killjoy_loti
-#: .\utils\abilities.cfg:1528
+#: .\utils\abilities.cfg:1531
 msgid "Killing an enemy with this attack will increase the attacker's attack count on all attacks by 1. The bonus halves each turn (rounded down)."
 msgstr "Tuer un ennemi avec cette attaque augmente le nombre d'attaque de toutes les attaques de l'attaquant de 1. Le bonus est divisé par deux à chaque tour (arrondi à l'inférieur)"
 
 #. [dummy], id=sense of purpose loti
-#: .\utils\abilities.cfg:1534
+#: .\utils\abilities.cfg:1537
 msgid "sense of purpose"
 msgstr "sens du devoir"
 
 #. [dummy], id=sense of purpose loti
-#: .\utils\abilities.cfg:1535
+#: .\utils\abilities.cfg:1538
 msgid "female^sense of purpose"
 msgstr "sens du devoir"
 
 #. [dummy], id=sense of purpose loti
-#: .\utils\abilities.cfg:1536
+#: .\utils\abilities.cfg:1539
 msgid "Hitting anything with this weapon increases the chance to hit by 1%. The bonus halves each turn (rounded down)."
 msgstr "Toucher quelque chose avec cette arme augmente les chances de toucher de 1%. Le bonus est divisé par deux à chaque tour (arrondi à l'inférieur)"
 
 #. [dummy], id=lethargy_loti
-#: .\utils\abilities.cfg:1542
+#: .\utils\abilities.cfg:1545
 msgid "lethargy"
 msgstr "léthargie"
 
 #. [dummy], id=lethargy_loti
-#: .\utils\abilities.cfg:1543
+#: .\utils\abilities.cfg:1546
 msgid "female^lethargy"
 msgstr "léthargie"
 
 #. [dummy], id=lethargy_loti
-#: .\utils\abilities.cfg:1544
+#: .\utils\abilities.cfg:1547
 msgid "When hitting an enemy, the opponent's attack damage decreases by 2. The reduction of damage bonus halves each turn (rounded down)."
 msgstr "Lorsque vous touchez un ennemi, les dégâts de son attaque sont réduits de 2. Le bonus de réduction des dégâts est divisé par deux à chaque tour (arrondi à l'inférieur)."
 
 #. [dummy], id=lesser lethargy loti
-#: .\utils\abilities.cfg:1550
+#: .\utils\abilities.cfg:1553
 msgid "lesser lethargy"
 msgstr "léthargie mineure"
 
 #. [dummy], id=lesser lethargy loti
-#: .\utils\abilities.cfg:1551
+#: .\utils\abilities.cfg:1554
 msgid "female^lesser lethargy"
 msgstr "léthargie mineure"
 
 #. [dummy], id=lesser lethargy loti
-#: .\utils\abilities.cfg:1552
+#: .\utils\abilities.cfg:1555
 msgid "When hitting an enemy, the opponent's attack damage decreases by 1. The reduction of damage bonus halves each turn (rounded down)."
 msgstr "Lorsque vous touchez un ennemi, les dégâts de son attaque sont réduits de 1. Le bonus de réduction des dégâts est divisé par deux à chaque tour (arrondi à l'inférieur)."
 
 #. [dummy], id=hate speech loti
-#: .\utils\abilities.cfg:1558
+#: .\utils\abilities.cfg:1561
 msgid "hate speech"
 msgstr "discours haineux"
 
 #. [dummy], id=hate speech loti
-#: .\utils\abilities.cfg:1559
+#: .\utils\abilities.cfg:1562
 msgid "female^hate speech"
 msgstr "discours haineux"
 
 #. [dummy], id=hate speech loti
-#: .\utils\abilities.cfg:1560
+#: .\utils\abilities.cfg:1563
 msgid "When an adjacent unit offensively hits an enemy, its attack damage increases by 1. The added damage bonus halves each turn (rounded down)."
 msgstr "Lorsqu'une unité adjacente frappe offensivement un ennemi, ses dégâts d'attaque augmentent de 1. Le bonus de dégâts supplémentaires est divisé par deux à chaque tour (arrondi à l'inférieur)."
 
 #. [dummy], id=martyrdom_loti
-#: .\utils\abilities.cfg:1566
+#: .\utils\abilities.cfg:1569
 msgid "martyrdom"
 msgstr "martyr"
 
 #. [dummy], id=martyrdom_loti
-#: .\utils\abilities.cfg:1567
+#: .\utils\abilities.cfg:1570
 msgid "female^martyrdom"
 msgstr "martyre"
 
 #. [dummy], id=martyrdom_loti
-#: .\utils\abilities.cfg:1568
+#: .\utils\abilities.cfg:1571
 msgid "Hatred arouses among its comrades when this unit gets hurt. For every hit this unit takes, the damage of all adjacent allies increases by 1. The damage increased this way halves each turn (rounded down)."
 msgstr "La haine s'installe parmi ses camarades lorsque cette unité est blessée. Pour chaque coup reçu par cette unité, les dégâts de tous les alliés adjacents augmentent de 1. Les dégâts ainsi augmentés sont divisés par deux à chaque tour (arrondi à l'inférieur)."
 
 #. [dummy], id=innocence_loti
-#: .\utils\abilities.cfg:1574
+#: .\utils\abilities.cfg:1577
 msgid "innocence"
 msgstr "innocence"
 
 #. [dummy], id=innocence_loti
-#: .\utils\abilities.cfg:1575
+#: .\utils\abilities.cfg:1578
 msgid "female^innocence"
 msgstr "innocence"
 
 #. [dummy], id=innocence_loti
-#: .\utils\abilities.cfg:1576
+#: .\utils\abilities.cfg:1579
 msgid "Through magical means, this unit looks so innocent that attacking it causes the attacker to suffer emotional trauma that makes it deal 1 less damage for each hit. The damage decreased this way halves each turn."
 msgstr "Par des moyens magiques, cette unité semble si innocente qu'en l'attaquant, l'attaquant subit un traumatisme émotionnel qui lui fait infliger 1 point de dégâts en moins à chaque coup. Les dégâts ainsi réduits sont divisés par deux à chaque tour."
 
 #. [dummy], id=blood drinking loti
-#: .\utils\abilities.cfg:1582
+#: .\utils\abilities.cfg:1585
 msgid "blood drinking"
 msgstr "buveur de sang"
 
 #. [dummy], id=blood drinking loti
-#: .\utils\abilities.cfg:1583
+#: .\utils\abilities.cfg:1586
 msgid "female^blood drinking"
 msgstr "buveuse de sang"
 
 #. [dummy], id=blood drinking loti
-#: .\utils\abilities.cfg:1584
+#: .\utils\abilities.cfg:1587
 msgid "When a unit adjacent to this unit takes damage, this unit heals 5% of the damage."
 msgstr "Lorsqu'une unité adjacente à cette unité subit des dégâts, cette unité se soigne de 5 % des dégâts."
 
 #. [dummy], id=unholy hunger loti
-#: .\utils\abilities.cfg:1590
+#: .\utils\abilities.cfg:1593
 msgid "unholy hunger"
 msgstr "faim impie"
 
 #. [dummy], id=unholy hunger loti
-#: .\utils\abilities.cfg:1591
+#: .\utils\abilities.cfg:1594
 msgid "This unit craves for the souls of living beings. When it kills a living unit, it will heal 10 HP and its maximum HP will increase by 3. When it is not fed continually, it starts to starve, and loses 1 maximum HP more for each turn it did not kill something at the beginning of each turn. The hunger has no effect if the unit is cared by a healer or standing in a village."
 msgstr "Cette unité a faim des âmes des êtres vivants. Lorsqu'elle tue une unité vivante, elle se soigne de 10 PV et son maximum de PV est augmenté de 3. Si elle n'est pas nourrie continuellement, elle commence à être affamée et perd 1 PV max pour chaque tour où elle n'a pas tué quelque chose, au début de chaque tour. Cette faim n'a pas d'effet si un soigneur s'est occupé d'elle ou si elle se trouve dans un village. "
 
 #. [dummy], id=incinerate_loti
-#: .\utils\abilities.cfg:1597
+#: .\utils\abilities.cfg:1600
 msgid "incinerate"
 msgstr "incinère"
 
 #. [dummy], id=incinerate_loti
-#: .\utils\abilities.cfg:1598
+#: .\utils\abilities.cfg:1601
 msgid "This attack incinerates its targets. Burning units lose 16 HP every turn until they are cured. Flames can kill a unit, the attacker that incinerated the unit gets the experience."
 msgstr "Cette attaque incinère les cibles. Les unités en feu perdent 16 PV à chaque tour jusqu'à ce qu'elles soient soignées. Les flammes peuvent tuer une unité, l'attaquant qui a incinéré l'unité reçoit l'expérience."
 
 #. [dummy], id=hit and run loti
-#: .\utils\abilities.cfg:1604
+#: .\utils\abilities.cfg:1607
+#: .\utils\abilities.cfg:1614
 msgid "hit and run"
 msgstr "attaque éclair"
 
 #. [dummy], id=hit and run loti
-#: .\utils\abilities.cfg:1605
+#: .\utils\abilities.cfg:1608
 msgid "When this attack is used, the unit regains half of its max MP."
 msgstr "Lorsque cette attaque est utilisée, l'unité récupère la moitié de ses PM max."
 
+#. [dummy], id=hit and run loti
+#: .\utils\abilities.cfg:1615
+msgid "female^hit and run"
+msgstr "attaque éclair"
+
+#. [dummy], id=hit and run loti
+#: .\utils\abilities.cfg:1616
+msgid "When this unit attacks, it regains half of its max MP."
+msgstr "Lorsque cette attaque est utilisée, l'unité récupère la moitié de ses Mov. max."
+
 #. [dummy], id=parry_loti
-#: .\utils\abilities.cfg:1612
-msgid "When a defender target misses, the attacker will hit him without any checks."
+#: .\utils\abilities.cfg:1623
+msgid "When a defender target misses, the attacker will hit him for half of the damage without any checks."
 msgstr "Lorsqu'un défenseur rate son attaque, l'attaquant le frappera sans échec possible. "
 
 #. [dummy], id=reflects_loti
-#: .\utils\abilities.cfg:1618
+#: .\utils\abilities.cfg:1629
 msgid "reflects"
 msgstr "reflète"
 
 #. [dummy], id=reflects_loti
-#: .\utils\abilities.cfg:1619
+#: .\utils\abilities.cfg:1630
 msgid "Causes opponents's attacks to hit the opponent when the opponent misses."
 msgstr "L'attaque de l'opposant le touchera s'il rate son attaque."
 
 #. [dummy], id=pierce_loti
-#: .\utils\abilities.cfg:1625
+#: .\utils\abilities.cfg:1636
 msgid "pierce"
 msgstr "perforant"
 
 #. [dummy], id=pierce_loti
-#: .\utils\abilities.cfg:1626
+#: .\utils\abilities.cfg:1637
 msgid "If this attack is used offensively, the enemy behind the target is hurt as well, for 1/2 of the damage. The user loses 2 damage points after the attack, the damage penalty will half each turn."
 msgstr "Si cette attaque est utilisée en attaque, l'ennemi derrière la cible est blessé également, de la moitié des dégâts. L'utilisateur perd 2 points de dégâts après l'attaque, la pénalité aux dégâts étant réduite de moitié à chaque tour. "
 
 #. [dummy], id=massive missile loti
-#: .\utils\abilities.cfg:1632
+#: .\utils\abilities.cfg:1643
 msgid "massive missile"
 msgstr "missile massif"
 
 #. [dummy], id=massive missile loti
-#: .\utils\abilities.cfg:1634
+#: .\utils\abilities.cfg:1645
 msgid "If this attack is used offensively, multiple enemies behind the target are hurt as well, dealing "
 msgstr "Si cette attaque est utilisée en attaque, de multiples ennemis derrière la cible sont blessés également, infligeant "
 
 #. [dummy], id=mayhem_loti
-#: .\utils\abilities.cfg:1641
+#: .\utils\abilities.cfg:1652
 msgid "If this attack hits offensively, opponent's attack count is lowered by 1. This decrease halves every turn."
 msgstr "Si cette attaque est utilisée en attaque, le nombre d'attaques de l'adversaire est diminué de 1. Cette diminution est divisée par deux à chaque tour. "
 
 #. [dummy], id=trickery_loti
-#: .\utils\abilities.cfg:1648
+#: .\utils\abilities.cfg:1659
 msgid "If this attack hits offensively, opponent's defence on all terrains is lowered by 5%. This decrease halves every turn."
 msgstr "Si cette attaque est utilisée en attaque, la défense de l'opposant est réduite de 5% sur tous les terrains. Cette réduction est divisée par deux à chaque tour. "
 
 #. [dummy], id=doom_loti
-#: .\utils\abilities.cfg:1655
+#: .\utils\abilities.cfg:1666
 msgid "If this attack hits offensively, opponent's resistances will drop by 5%. This decrease halves every turn."
 msgstr "Si cette attaque touche en attaque, les résistances de l'opposant diminuent de 5%. Cette diminution est divisée par deux à chaque tour."
 
 #. [dummy], id=cone_loti
-#: .\utils\abilities.cfg:1661
+#: .\utils\abilities.cfg:1672
 msgid "cone"
 msgstr "cône"
 
 #. [dummy], id=cone_loti
-#: .\utils\abilities.cfg:1662
+#: .\utils\abilities.cfg:1673
 msgid "With this attack enemies next to attacker and target suffer 1/2 the damage. The foe behind the defender takes 1/2 of the damage too, while their adjacent comrades take 1/4 of it. It is so tiring that the unit's damage decreases by 6 after the attack, the damage penalty will half each turn. Works only offensively."
 msgstr "Avec cette attaque, les ennemies se trouvant à côté de l'attaquant et de la cible subissent la moitié des dégâts. L'adversaire se trouvant derrière le défenseur subit également la moitié des dégâts, tandis que leurs camarades adjacents subissent un quart de ceux-ci. Cela est tellement fatiguant que les dégâts de l'unité sont réduits de 6 après l'attaque, la pénalité de dégâts étant divisée par deux à chaque tour. Utilisable uniquement en attaque. "
 
 #. [dummy], id=hose_loti
-#: .\utils\abilities.cfg:1668
+#: .\utils\abilities.cfg:1679
 msgid "hose"
 msgstr "tuyau"
 
 #. [dummy], id=hose_loti
-#: .\utils\abilities.cfg:1669
+#: .\utils\abilities.cfg:1680
 msgid "If this attack us used offensively, many enemies behind and around the original target are hit. It is so tiring that the unit's damage decreases by 12 after the attack, the damage penalty will half each turn."
 msgstr "Si cette attaque est utilisée en attaque, plusieurs ennemis derrière et autour de la cible initiale sont touchés. Cela est tellement fatiguant que les dégâts de l'unité sont réduits de 12 après l'attaque, la pénalité aux dégâts étant divisée par deux à chaque tour. "
 
 #. [dummy], id=extra damage 5 impact loti
-#: .\utils\abilities.cfg:1675
+#: .\utils\abilities.cfg:1686
 msgid "extra damage (+5; impact)"
 msgstr "dégâts supplémentaires (+5 ; contondant)"
 
 #. [dummy], id=extra damage 5 impact loti
-#: .\utils\abilities.cfg:1676
+#: .\utils\abilities.cfg:1687
 msgid "After the damage with this weapon is dealt, the target takes 5 points of impact damage, that is unaffected by charge or slow."
 msgstr "Après avoir subi les dégâts de cette arme, la cible subit 5 points de dégâts contondants, qui ne sont pas affectés par la charge ou le ralentissement."
 
 #. [dummy], id=revulsion_loti
-#: .\utils\abilities.cfg:1682
+#: .\utils\abilities.cfg:1693
 msgid "revulsion"
 msgstr "dégoût"
 
 #. [dummy], id=revulsion_loti
-#: .\utils\abilities.cfg:1683
+#: .\utils\abilities.cfg:1694
 msgid "Any enemies hitting this unit will lose 5% resistances. This weakness halves every turn."
 msgstr "Tout ennemi attaquant cette unité perdra 5% de résistances. Cette faiblesse est divisée par deux à chaque tour. "
 
 #. [dummy], id=wardrums_loti
-#: .\utils\abilities.cfg:1689
+#: .\utils\abilities.cfg:1700
 msgid "wardrums"
 msgstr "tambours de guerre"
 
 #. [dummy], id=wardrums_loti
-#: .\utils\abilities.cfg:1690
+#: .\utils\abilities.cfg:1701
 msgid "All adjacent members of the same side get +2 to movement at the start of their turn."
 msgstr "Tous les membres adjacents d'un même camp bénéficient d'un +2 au mouvement au début de leur tour."
 
 #. [dummy], id=relentless tide loti
-#: .\utils\abilities.cfg:1696
+#: .\utils\abilities.cfg:1707
 msgid "relentless tide"
 msgstr "marée implacable"
 
 #. [dummy], id=relentless tide loti
-#: .\utils\abilities.cfg:1697
+#: .\utils\abilities.cfg:1708
 msgid "All adjacent members of the same side get 10% to all resistances at the start of their turn. This bonus is stackable, but halves every turn."
 msgstr "Tous les membres adjacents d'un même camp gagnent 10% à toutes leurs résistances au début de leut tour. Ce bonus est cumulable mais est divisé par deux à chaque tour."
 
 #. [dummy], id=push_loti
-#: .\utils\abilities.cfg:1703
+#: .\utils\abilities.cfg:1714
 msgid "push"
 msgstr "poussée"
 
 #. [dummy], id=push_loti
-#: .\utils\abilities.cfg:1704
+#: .\utils\abilities.cfg:1715
 msgid "When an ally standing next to this unit finishes attacking, it gains one movement point."
 msgstr "Lorsqu'un allié se trouvant à côté de cette unité finit d'attaquer, elle gagne un point de mouvement."
 
 #. [dummy], id=thorns_loti
-#: .\utils\abilities.cfg:1710
+#: .\utils\abilities.cfg:1721
 msgid "thorns"
 msgstr "épines"
 
 #. [dummy], id=thorns_loti
-#: .\utils\abilities.cfg:1711
+#: .\utils\abilities.cfg:1722
 msgid "Any unit that attacks this unit suffers 4 points of piercing damage. Unlike reflect, it can kill."
 msgstr "Toute unité qui attaque cette unité subit 4 points de dégâts perforants. Contrairement au reflet, cela peut tuer."
 
 #. [dummy], id=thorns aura loti
-#: .\utils\abilities.cfg:1718
+#: .\utils\abilities.cfg:1729
 msgid "thorns aura"
 msgstr "aura d'épines"
 
 #. [dummy], id=thorns aura loti
-#: .\utils\abilities.cfg:1719
+#: .\utils\abilities.cfg:1730
 msgid "Any unit that attacks an adjacent ally of this unit suffers 4 points of piercing damage. Unlike reflect, it can kill."
 msgstr "Toute unité qui attaque un allié adjacent à cette unité subit 4 points de dégâts perforants. Contrairement au reflet, cela peut tuer."
 
 #. [dummy], id=lesser redeem loti
-#: .\utils\abilities.cfg:1726
+#: .\utils\abilities.cfg:1737
 msgid "lesser redeem"
 msgstr "rédemption mineure"
 
 #. [dummy], id=lesser redeem loti
-#: .\utils\abilities.cfg:1727
+#: .\utils\abilities.cfg:1738
 msgid "When this unit attacks another unit, there is a chance that the target will be absorbed, inversely proportional to enemy level. When the redeem count reaches a certain level, the unit's properties will improve."
 msgstr "Lorsque cette unité attaque une autre unité, il y a une chance que la cible soit absorbée, inversement proportionnelle au niveau de l'ennemi. Lorsque le nombre de rédemptions atteint un certain niveau, les propriétés de l'unité s'améliorent."
 
 #. [dummy], id=mockery_loti
-#: .\utils\abilities.cfg:1733
+#: .\utils\abilities.cfg:1744
 msgid "mockery"
 msgstr "moquerie"
 
 #. [dummy], id=mockery_loti
-#: .\utils\abilities.cfg:1734
+#: .\utils\abilities.cfg:1745
 msgid "When an attack against this unit misses, he/she heals 2 HP."
 msgstr "Lorsqu'une attaque contre cette unité rate, elle récupère 2 PV."
 
 #. [dummy], id=supreme murderlust loti
-#: .\utils\abilities.cfg:1740
+#: .\utils\abilities.cfg:1751
 msgid "supreme murderlust"
 msgstr "soif de meurtre suprème"
 
 #. [dummy], id=supreme murderlust loti
-#: .\utils\abilities.cfg:1741
+#: .\utils\abilities.cfg:1752
 msgid "When this unit kills another unit, he/she heals 8 HP and is ridden of poison and slow."
 msgstr "Lorsque cette unité tue une autre unité, elle récupère 8 PV et est débarrassée du poison et du ralentissement."
 
 #. [dummy], id=murderlust_loti
-#: .\utils\abilities.cfg:1747
+#: .\utils\abilities.cfg:1758
 msgid "murderlust"
 msgstr "soif de meurtre"
 
 #. [dummy], id=murderlust_loti
-#: .\utils\abilities.cfg:1748
+#: .\utils\abilities.cfg:1759
 msgid "When this unit kills another unit during his/her turn, he/she heals 8 HP."
 msgstr "Lorsque cette unité tue une autre unité pendant son tour, elle récupère 8 PV."
 
 #. [dummy], id=killhunger_loti
-#: .\utils\abilities.cfg:1754
+#: .\utils\abilities.cfg:1765
 msgid "killhunger"
 msgstr "faim meurtrière"
 
 #. [dummy], id=killhunger_loti
-#: .\utils\abilities.cfg:1755
+#: .\utils\abilities.cfg:1766
 msgid "When this unit kills another unit, it heals 4 HP."
 msgstr "Lorsque cette unité tue une autre unité, elle récupère 4 PV."
 
 #. [dummy], id=lesser evisceration loti
-#: .\utils\abilities.cfg:1761
+#: .\utils\abilities.cfg:1772
 msgid "lesser evisceration"
 msgstr "éviscération mineure"
 
 #. [dummy], id=lesser evisceration loti
-#: .\utils\abilities.cfg:1762
+#: .\utils\abilities.cfg:1773
 msgid "When this unit kills another unit, nearby allies heal 4 HP."
 msgstr "Lorsque cette unité tue une autre unité, les alliés proches récupèrent 4 PV."
 
 #. [dummy], id=evisceration_loti
-#: .\utils\abilities.cfg:1768
+#: .\utils\abilities.cfg:1779
 msgid "evisceration"
 msgstr "éviscération"
 
 #. [dummy], id=evisceration_loti
-#: .\utils\abilities.cfg:1769
+#: .\utils\abilities.cfg:1780
 msgid "When this unit kills another unit, nearby allies heal 10 HP."
 msgstr "Lorsque cette unité tue une autre unité, les alliés proches récupèrent 10 PV."
 
 #. [dummy], id=greater evisceration loti
-#: .\utils\abilities.cfg:1775
+#: .\utils\abilities.cfg:1786
 msgid "greater evisceration"
 msgstr "éviscération majeure"
 
 #. [dummy], id=greater evisceration loti
-#: .\utils\abilities.cfg:1776
+#: .\utils\abilities.cfg:1787
 msgid "When this unit kills another unit, nearby allies heal 16 HP."
 msgstr "Lorsque cette unité tue une autre unité, les alliés proches récupèrent 16 PV."
 
 #. [dummy], id=regrowing_loti
-#: .\utils\abilities.cfg:1783
+#: .\utils\abilities.cfg:1794
 msgid "When this unit begins combat, offensively or defensively, it heals an amount of hitpoints equal to two times their level."
 msgstr "Lorsque cette unité engage un combat, offensif ou défensif, elle se soigne d'un nombre de points de vie égal à deux fois son niveau."
 
 #. [dummy], id=flaming radiance loti
-#: .\utils\abilities.cfg:1789
+#: .\utils\abilities.cfg:1800
 msgid "flaming radiance"
 msgstr "éclat flamboyant"
 
 #. [dummy], id=flaming radiance loti
-#: .\utils\abilities.cfg:1790
+#: .\utils\abilities.cfg:1801
 msgid "All adjacent foes to this unit take fire damage every turn. At first turn, they take 8 damage and this number increases by 8 every turn they stand in the range of this ability. This ability cannot kill."
 msgstr "Tous les ennemis adjacents à cette unité subissent des dégâts de feu à chaque tour. Au premier tour, ils subissent 8 points de dégâts et ce nombre augmente de 8 à chaque tour où ils se trouvent à portée de cette capacité. Cette capacité ne peut pas tuer."
 
 #. [dummy], id=from the ashes loti
-#: .\utils\abilities.cfg:1796
+#: .\utils\abilities.cfg:1807
 msgid "from the ashes"
 msgstr "depuis les cendres"
 
 #. [dummy], id=from the ashes loti
-#: .\utils\abilities.cfg:1797
+#: .\utils\abilities.cfg:1808
 msgid "If this unit is attacked and its hitpoints drop below 20, it heals 40 hitpoints and deals 40 fire damage to all nearby foes. This ability can be used only once per 10 turns."
 msgstr "Si cette unité est attaquée et que ses points de vie tombent en dessous de 20, elle se soigne de 40 points de vie et inflige 40 dégâts de feu à tous les ennemis proches. Cette capacité ne peut être utilisée qu'une fois tous les 10 tours."
 
 #. [dummy], id=cancer_loti
-#: .\utils\abilities.cfg:1803
+#: .\utils\abilities.cfg:1814
 msgid "cancer"
 msgstr "cancer"
 
 #. [dummy], id=cancer_loti
-#: .\utils\abilities.cfg:1804
+#: .\utils\abilities.cfg:1815
 msgid "This unit is poisoned at the beginning of its turn."
 msgstr "Cette unité est empoisonnée au début de son tour."
 
 #. [dummy], id=frostbite_loti
-#: .\utils\abilities.cfg:1810
+#: .\utils\abilities.cfg:1821
 msgid "frostbite"
 msgstr "engelure"
 
 #. [dummy], id=frostbite_loti
-#: .\utils\abilities.cfg:1811
+#: .\utils\abilities.cfg:1822
 msgid "This unit takes 24 cold damage at the beginning of its turn."
 msgstr "Cette unité subit 24 dégâts de froid au début de son tour."
 
 #. [dummy], id=steals_loti
-#: .\utils\abilities.cfg:1817
+#: .\utils\abilities.cfg:1828
 msgid "steals"
 msgstr "vole"
 
 #. [dummy], id=steals_loti
-#: .\utils\abilities.cfg:1818
+#: .\utils\abilities.cfg:1829
 msgid "When this unit hits an enemy with a melee attack, it has a chance to earn some gold."
 msgstr "Lorsque cette unité touche un ennemi avec une attaque de mêlée, elle a une chance de gagner de l'or."
 
 #. [dummy], id=tax collector loti
-#: .\utils\abilities.cfg:1824
+#: .\utils\abilities.cfg:1835
 msgid "tax collector"
 msgstr "collecteur d'impôts"
 
 #. [dummy], id=tax collector loti
-#: .\utils\abilities.cfg:1825
+#: .\utils\abilities.cfg:1836
 msgid "When this unit hits an enemy, it has a chance to tax its own side and part it from some gold."
 msgstr "Lorsque cette unité frappe un ennemi, elle a une chance de taxer son propre camp et de le priver d'un peu d'or."
 
 #. [dummy], id=producer_loti
-#: .\utils\abilities.cfg:1831
+#: .\utils\abilities.cfg:1842
 msgid "producer"
 msgstr "producteur"
 
 #. [dummy], id=producer_loti
-#: .\utils\abilities.cfg:1832
+#: .\utils\abilities.cfg:1843
 msgid "This unit occasionally earns some gold for his side."
 msgstr "Cette unité gagne parfois un peu d'or pour son camp."
 
 #. [dummy], id=autocast_loti
-#: .\utils\abilities.cfg:1838
+#: .\utils\abilities.cfg:1849
 msgid "firecast"
 msgstr "jet de feu"
 
 #. [dummy], id=autocast_loti
-#: .\utils\abilities.cfg:1839
+#: .\utils\abilities.cfg:1850
 msgid "When this unit hits with a melee attack in offence, a randomly chosen fire spell is cast at the target."
 msgstr "Lorsque cette unité touche avec une attaque de mêlée en attaque, un sort de feu choisi au hasard est lancé sur la cible."
 
 #. [slow], id=shockwave_loti
-#: .\utils\abilities.cfg:1846
+#: .\utils\abilities.cfg:1857
 msgid "shockwave"
 msgstr "onde de choc"
 
 #. [slow], id=shockwave_loti
-#: .\utils\abilities.cfg:1847
+#: .\utils\abilities.cfg:1858
 msgid "This attack is so strong that it slows the target, and creates a shock wave that knocks all enemies adjacent to the target 1 hex away from it, and causes them to take 8 impact damage. When used defensively, it only slows the attacker."
 msgstr "Cette attaque est si puissante qu'elle ralentit la cible et crée une onde de choc qui éloigne tous les ennemis adjacents à la cible d'une case et leur inflige 8 points de dégâts contondants. Lorsqu'elle est utilisée de manière défensive, elle ne fait que ralentir l'attaquant."
 
 #. [damage], id=cleave_loti
-#: .\utils\abilities.cfg:1853
+#: .\utils\abilities.cfg:1864
 msgid "cleave"
 msgstr "fendre"
 
 #. [damage], id=cleave_loti
-#: .\utils\abilities.cfg:1854
+#: .\utils\abilities.cfg:1865
 msgid "This attack will hit additional enemies in the two hexes that are adjacent to both the attacker and defender, in a crescent moon shape, for 50% of the original damage. It is so tiring that the unit's damage decreases by 2 after the attack, the damage penalty will half each turn."
 msgstr "Cette attaque touche les ennemis supplémentaires dans les deux hexagones adjacents à l'attaquant et au défenseur, en forme de croissant de lune, pour 50 % des dégâts initiaux. C'est si fatigant que les dégâts de l'unité diminuent de 2 après l'attaque, la pénalité de dégâts diminuant de moitié à chaque tour."
 
 #. [damage], id=kamikaze sprint loti
-#: .\utils\abilities.cfg:1860
+#: .\utils\abilities.cfg:1871
 msgid "kamikaze sprint"
 msgstr "sprint kamikaze"
 
 #. [damage], id=kamikaze sprint loti
-#: .\utils\abilities.cfg:1861
+#: .\utils\abilities.cfg:1872
 msgid "If this attack hits offensively, the attacker first takes the damage of all the opponent's attacks. Then, the enemy behind the target takes a half of this attack's damage, the enemy behind him takes a quarter of the initial damage etc, until there are no more enemies in the row, and the attacker will appear there. If the opponent's damage would kill, the weapon special does not work."
 msgstr "Si cette attaque touche offensivement, l'attaquant subit d'abord les dégâts de toutes les attaques de l'adversaire. Ensuite, l'ennemi derrière la cible subit la moitié des dégâts de cette attaque, l'ennemi derrière lui subit un quart des dégâts initiaux, etc., jusqu'à ce qu'il n'y ait plus d'ennemis dans la rangée, et l'attaquant y apparaîtra. Si les dégâts de l'adversaire tuent, la spécialité d'attaque ne fonctionne pas."
 
 #. [damage], id=disintegrate_loti
-#: .\utils\abilities.cfg:1867
+#: .\utils\abilities.cfg:1878
 msgid "disintegrate"
 msgstr "désintègre"
 
 #. [damage], id=disintegrate_loti
-#: .\utils\abilities.cfg:1868
+#: .\utils\abilities.cfg:1879
 msgid "Every blow with this weapon has a 2% chance to kill an enemy without any checks."
 msgstr "Chaque coup porté avec cette arme a 2 % de chances de tuer un ennemi sans aucune condition."
 
 #. [damage], id=soul annihilation loti
-#: .\utils\abilities.cfg:1874
+#: .\utils\abilities.cfg:1885
 msgid "soul annihilation"
 msgstr "annihilation d'âme"
 
 #. [damage], id=soul annihilation loti
-#: .\utils\abilities.cfg:1875
+#: .\utils\abilities.cfg:1886
 msgid "Every blow with this attack has a 1% chance to kill an enemy, dealing arcane damage to nearby enemies, the damage is the amount of the victim's remaining health divided by the number of nearby enemies with arcane damage."
 msgstr "Chaque coup avec cette attaque a 1% de chance de tuer l'ennemi, infligeant des dégâts d'arcane aux ennemis proches, les dégâts étant la santé restante à la victime divisée par le nombre d'ennemis proche."
 
 #. [damage], id=nosferatu gorge loti
-#: .\utils\abilities.cfg:1881
+#: .\utils\abilities.cfg:1892
 msgid "nosferatu's gorge"
 msgstr "ravin de nosferatu"
 
 #. [damage], id=nosferatu gorge loti
-#: .\utils\abilities.cfg:1882
+#: .\utils\abilities.cfg:1893
 msgid "Every blow with this attack has a chance to add all the victims' remaining hitpoints to the attacker's hitpoints, killing the victim. The chance depends on victim's level. Works only in offence."
 msgstr "Chaque coup porté avec cette attaque a une chance d'ajouter tous les points de vie restants de la victime aux points de vie de l'attaquant, tuant ainsi la victime. Les chances dépendent du niveau de la victime. Ne fonctionne qu'en cas d'attaque."
 
 #. [damage], id=raijers saloon loti
-#: .\utils\abilities.cfg:1888
+#: .\utils\abilities.cfg:1899
 msgid "Raijer's saloon"
 msgstr "Saloon de Raijer"
 
 #. [damage], id=raijers saloon loti
-#: .\utils\abilities.cfg:1889
+#: .\utils\abilities.cfg:1900
 msgid "Every blow with this attack has a chance to add all the victims' hitpoints to the hitpoints of attacker and attacker's nearby allies (divided by the number of healed units), killing the victim. The chance depends on victim's level. Works only in offence."
 msgstr "Chaque coup porté avec cette attaque a une chance d'ajouter tous les points de vie de la victime aux points de vie de l'attaquant et des alliés proches de l'attaquant (divisés par le nombre d'unités soignées), tuant la victime. Les chances dépendent du niveau de la victime. Ne fonctionne qu'en cas d'attaque."
 
 #. [damage], id=soul thrash loti
-#: .\utils\abilities.cfg:1895
+#: .\utils\abilities.cfg:1906
 msgid "soul thrash"
 msgstr "raclée d'âme"
 
 #. [damage], id=soul thrash loti
-#: .\utils\abilities.cfg:1896
+#: .\utils\abilities.cfg:1907
 msgid "Every blow with this attack has a 1% chance to kill an enemy, adding the victims' level to the attacker's wrath (increasing the damage temporarily, the increase is halved every turn). Works only offensively."
 msgstr "Chaque coup porté avec cette attaque a 1 % de chances de tuer un ennemi, en ajoutant le niveau de la victime au courroux de l'attaquant (ce qui augmente temporairement les dégâts, l'augmentation étant divisée par deux à chaque tour). Ne fonctionne qu'en attaque."
 
 #. [damage], id=soul extraction loti
-#: .\utils\abilities.cfg:1902
+#: .\utils\abilities.cfg:1913
 msgid "soul extraction"
 msgstr "extraction d'âme"
 
 #. [damage], id=soul extraction loti
-#: .\utils\abilities.cfg:1903
+#: .\utils\abilities.cfg:1914
 msgid "Every blow with this attack has a 1% chance to kill an enemy, summoning a Ghost in the process."
 msgstr "Chaque coup porté avec cette attaque a 1 % de chances de tuer un ennemi et d'invoquer un fantôme."
 
 #. [dummy], id=absorb_loti
-#: .\utils\abilities.cfg:1909
+#: .\utils\abilities.cfg:1920
 msgid "absorbs (1)"
 msgstr "absorbe (1)"
 
 #. [dummy], id=absorb_loti
-#: .\utils\abilities.cfg:1911
+#: .\utils\abilities.cfg:1922
 msgid "When this unit is hit, it takes its regular damage, but heals 1 HP after it."
 msgstr "Lorsque cette unité est touchée, elle subit les dégâts habituels, mais récupère ensuite 1 PV."
 
 #. [dummy], id=absorb_loti
-#: .\utils\abilities.cfg:1917
+#: .\utils\abilities.cfg:1928
 msgid "absorbs (2)"
 msgstr "absorbe (2)"
 
 #. [dummy], id=absorb_loti
-#: .\utils\abilities.cfg:1919
+#: .\utils\abilities.cfg:1930
 msgid "When this unit is hit, it takes its regular damage, but heals 2 HP after it."
 msgstr "Lorsque cette unité est touchée, elle subit les dégâts habituels, mais récupère ensuite 2 PV."
 
 #. [dummy], id=absorb_loti
-#: .\utils\abilities.cfg:1925
+#: .\utils\abilities.cfg:1936
 msgid "absorbs (3)"
 msgstr "absorbe (3)"
 
 #. [dummy], id=absorb_loti
-#: .\utils\abilities.cfg:1927
+#: .\utils\abilities.cfg:1938
 msgid "When this unit is hit, it takes its regular damage, but heals 3 HP after it."
 msgstr "Lorsque cette unité est touchée, elle subit les dégâts habituels, mais récupère ensuite 3 PV."
 
 #. [dummy], id=absorb_loti
-#: .\utils\abilities.cfg:1933
+#: .\utils\abilities.cfg:1944
 msgid "absorbs (4)"
 msgstr "absorbe (4)"
 
 #. [dummy], id=absorb_loti
-#: .\utils\abilities.cfg:1935
+#: .\utils\abilities.cfg:1946
 msgid "When this unit is hit, it takes its regular damage, but heals 4 HP after it."
 msgstr "Lorsque cette unité est touchée, elle subit les dégâts habituels, mais récupère ensuite 4 PV."
 
 #. [dummy], id=leech_loti
 #. [damage], id=leeches_loti
-#: .\utils\abilities.cfg:1941
-#: .\utils\abilities.cfg:1963
+#: .\utils\abilities.cfg:1952
+#: .\utils\abilities.cfg:1974
 msgid "leeches"
 msgstr "sangsue"
 
 #. [dummy], id=leech_loti
-#: .\utils\abilities.cfg:1942
+#: .\utils\abilities.cfg:1953
 msgid "All adjacent enemy units to a unit with this ability lose 2 hitpoints at the beginning of this unit's turn. The damage dealt heals the unit. It cannot kill."
 msgstr "Toutes les unités ennemies adjacentes à une unité dotée de cette capacité perdent 2 points de vie au début du tour de cette unité. Les dégâts infligés soignent l'unité. Cela ne peut pas tuer."
 
 #. [dummy], id=fueled by death loti
-#: .\utils\abilities.cfg:1948
+#: .\utils\abilities.cfg:1959
 msgid "fueled by death"
 msgstr "alimenté par la mort"
 
 #. [dummy], id=fueled by death loti
-#: .\utils\abilities.cfg:1949
+#: .\utils\abilities.cfg:1960
 msgid "female^fueled by death"
 msgstr "alimentée par la mort"
 
 #. [dummy], id=fueled by death loti
-#: .\utils\abilities.cfg:1950
+#: .\utils\abilities.cfg:1961
 msgid "All adjacent units to a unit with this ability lose 4 hitpoints at the beginning of this unit's turn. Half of the damage dealt increases this unit's damage in a way that decays to half every turn. Undrainable units are not hurt but contribute to the damage bonus notheless. It cannot kill."
 msgstr "Toutes les unités adjacentes à une unité avec cette capacité perdent 4 points de vie au début du tour de cette unité. La moitié des dégâts infligés augmentent les dégâts de cette unité d'une manière qui est réduite de moitié à chaque tour. Les unités indrainables ne sont pas blessées mais contribuent tout de même au bonus de dégâts. Cela ne peut pas tuer."
 
 #. [dummy], id=parasite_loti
-#: .\utils\abilities.cfg:1956
+#: .\utils\abilities.cfg:1967
 msgid "parasite"
 msgstr "parasite"
 
 #. [dummy], id=parasite_loti
-#: .\utils\abilities.cfg:1957
+#: .\utils\abilities.cfg:1968
 msgid "All adjacent allies to a unit with this ability lose 4 hitpoints at the beginning of this unit's turn. The damage dealt heals the unit. It cannot kill."
 msgstr "Tous les alliés adjacents à une unité dotée de cette capacité perdent 4 points de vie au début du tour de cette unité. Les dégâts infligés soignent l'unité. Cela ne peut pas tuer."
 
 #. [damage], id=leeches_loti
-#: .\utils\abilities.cfg:1964
+#: .\utils\abilities.cfg:1975
 msgid "This is similar to the drains ability, but it drains only 1/10 of the damage inflicted but it can leech also the magic bound in the undeath of non-living foes."
 msgstr "C'est similaire à la capacité de drain, mais elle ne draine que 1/10 des dégâts infligés, alors qu'elle peut également sangsue la magie liée à la non-mort des ennemis non-vivants."
 
 #. [damage], id=explosive leech loti
-#: .\utils\abilities.cfg:1970
+#: .\utils\abilities.cfg:1981
 msgid "explosive leech"
 msgstr "sangsue explosif"
 
 #. [damage], id=explosive leech loti
-#: .\utils\abilities.cfg:1971
+#: .\utils\abilities.cfg:1982
 msgid "When this attack is used, all enemies next to the target take 1/4 of the damage the target was dealt and the life is added to the caster's health. It is so tiring that the unit's damage decreases by 6 after the attack, the damage penalty will half each turn."
 msgstr "Lorsque cette attaque est utilisée, tous les ennemis à côté de la cible subissent 1/4 des dégâts infligés à la cible et la vie est ajoutée aux points de vie du lanceur de sorts. C'est si fatigant que les dégâts de l'unité diminuent de 6 après l'attaque, la pénalité de dégâts diminuant de moitié à chaque tour."
 
 #. [damage], id=explosive slow loti
-#: .\utils\abilities.cfg:1977
+#: .\utils\abilities.cfg:1988
 msgid "explosive slow"
 msgstr "ralentissement explosif"
 
 #. [damage], id=explosive slow loti
-#: .\utils\abilities.cfg:1978
+#: .\utils\abilities.cfg:1989
 msgid "When this attack is used offensively, all enemies adjacent to a target are slowed."
 msgstr "Lorsque cette attaque est utilisée en attaque, tous les ennemis adjacents à la cible sont ralentis."
 
 #. [damage], id=explosive_loti
-#: .\utils\abilities.cfg:1985
+#: .\utils\abilities.cfg:1996
 msgid "explosive"
 msgstr "explosif"
 
 #. [damage], id=explosive_loti
-#: .\utils\abilities.cfg:1986
+#: .\utils\abilities.cfg:1997
 msgid "When this attack is used, all enemies adjacent to the target take 75% of the damage, and even those behind them will take a few if the damage is sufficiently high. It is so tiring that the unit's damage decreases by 10 after the attack, the damage penalty will half each turn."
 msgstr "Lorsque cette attaque est utilisée, tous les ennemis adjacents à la cible subissent 75 % des dégâts, et même ceux qui se trouvent derrière eux en subissent quelques-uns si les dégâts sont suffisamment élevés. C'est si fatigant que les dégâts de l'unité diminuent de 10 après l'attaque, la pénalité de dégâts diminuant de moitié à chaque tour."
 
 #. [damage], id=explosive unprotected loti
-#: .\utils\abilities.cfg:1992
+#: .\utils\abilities.cfg:2003
 msgid "explosive unprotected"
 msgstr "explosif non protégé"
 
 #. [damage], id=explosive unprotected loti
-#: .\utils\abilities.cfg:1993
+#: .\utils\abilities.cfg:2004
 msgid "When this attack is used, all units adjacent to the target take 75% of the damage, including allies. It is so tiring that the unit's damage decreases by 8 after the attack, the damage penalty will half each turn."
 msgstr "Lorsque cette attaque est utilisée, toutes les unités adjacentes à la cible subissent 75 % des dégâts, y compris les alliés. C'est si fatigant que les dégâts de l'unité diminuent de 8 après l'attaque, la pénalité de dégâts diminuant de moitié à chaque tour."
 
 #. [damage], id=explosive damage enemy loti
-#: .\utils\abilities.cfg:1999
+#: .\utils\abilities.cfg:2010
 msgid "explosive damage"
 msgstr "dégât explosif"
 
 #. [damage], id=explosive damage enemy loti
-#: .\utils\abilities.cfg:2000
+#: .\utils\abilities.cfg:2011
 msgid "When this attack is used offensively, all units adjacent to the target take 10 damage."
 msgstr "Lorsque cette attaque est utilisée de manière offensive, toutes les unités adjacentes à la cible subissent 10 points de dégâts."
 
 #. [attacks]
-#: .\utils\abilities.cfg:2010
+#: .\utils\abilities.cfg:2021
 msgid "When this attack is used, all enemies adjacent to the attacker take the damage and the enemy cannot retaliate. It is so tiring that the unit's damage decreases by 10 after the attack, the damage penalty will half each turn."
 msgstr "Quand cette attaque est utilisée, tous les ennemis adjacents à l'attaquant prennent les dégâts et l'ennemi ne peut pas riposter. Cela est tellement fatiguant que les dégâts de l'unité sont réduits de 10 après l'attaque, la pénalité de dégâts étant divisée par deux à chaque tour. "
 
 #. [attacks]
-#: .\utils\abilities.cfg:2011
+#: .\utils\abilities.cfg:2022
 msgid "When this attack is used, all enemies adjacent the attacker take the damage and the enemy cannot retaliate. It is so tiring that the unit's damage decreases by 10 after the attack, the damage penalty will half each turn."
 msgstr "Lorsque cette attaque est utilisée, tous les ennemis adjacents à l'attaquant subissent les dégâts et l'ennemi ne peut pas riposter. C'est si fatigant que les dégâts de l'unité diminuent de 10 après l'attaque, la pénalité de dégâts diminuant de moitié à chaque tour."
 
 #. [chance_to_hit], id=chaos_loti
-#: .\utils\abilities.cfg:2024
+#: .\utils\abilities.cfg:2035
 msgid "chaos"
 msgstr "chaos"
 
 #. [chance_to_hit], id=chaos_loti
-#: .\utils\abilities.cfg:2025
-#: .\utils\abilities.cfg:2026
+#: .\utils\abilities.cfg:2036
+#: .\utils\abilities.cfg:2037
 msgid "When used defensively, this attacks damages all surrounding foes for a half of the damage, and it always has a 70% chance to hit regardless of the defensive ability of the attacking unit. Whether in defence or on attack, it is so tiring that the unit's damage decreases by 2 afterwards and then halves with each turn."
 msgstr "Lorsque utilisée de manière défensive, cette attaque inflige à tous les ennemis environnants la moitié des dégâts, et elle a toujours 70 % de chances de toucher, quelle que soit la capacité défensive de l'unité attaquante. Que ce soit en défense ou en attaque, elle est si fatigante que les dégâts de l'unité diminuent de 2 par la suite et se réduisent de moitié à chaque tour."
 
 #. [dummy], id=purify_loti
-#: .\utils\abilities.cfg:2036
+#: .\utils\abilities.cfg:2047
 msgid "purify"
 msgstr "purifie"
 
 #. [dummy], id=purify_loti
-#: .\utils\abilities.cfg:2037
+#: .\utils\abilities.cfg:2048
 msgid "When an undead unit is killed by this attack, it becomes living again. Does not work on undead demons, black souls or other otherworldly undead-like abominations."
 msgstr "Quand un mort-vivant est tué par cette attaque, il redevient vivant. Ne fonctionne pas sur les démons morts-vivants, âmes noires et autres abominations mortes-vivantes d'outre-monde."
 
 #. [dummy], id=penetrate_loti
-#: .\utils\abilities.cfg:2043
+#: .\utils\abilities.cfg:2054
 msgid "penetrates"
 msgstr "pénètre"
 
 #. [dummy], id=penetrate_loti
-#: .\utils\abilities.cfg:2044
+#: .\utils\abilities.cfg:2055
 msgid "female^penetrates"
 msgstr "pénètre"
 
 #. [dummy], id=penetrate_loti
-#: .\utils\abilities.cfg:2045
+#: .\utils\abilities.cfg:2056
 msgid "This unit gains 1 movement after attacking, allowing it to slowly progress through ranks of enemies if it can survive their attacks."
 msgstr "Cette unité gagne 1 mouvement après avoir attaqué, ce qui lui permet de progresser lentement à travers les rangs des ennemis si elle peut survivre à leurs attaques."
 
 #. [dummy], id=retribution_loti
-#: .\utils\abilities.cfg:2052
+#: .\utils\abilities.cfg:2063
 msgid "female^retribution"
 msgstr "rétribution"
 
 #. [dummy], id=retribution_loti
-#: .\utils\abilities.cfg:2053
+#: .\utils\abilities.cfg:2064
 msgid "When this unit is hit, an amount of fire damage equal to a quarter of the damage dealt hurts the attacker."
 msgstr "Lorsque cette unité est touchée, un montant de dégâts de feu égal à un quart des dégâts infligés blesse l'attaquant."
 
 #. [dummy], id=weak reflect loti
-#: .\utils\abilities.cfg:2059
+#: .\utils\abilities.cfg:2070
 msgid "weak reflect"
 msgstr "faible reflet"
 
 #. [dummy], id=weak reflect loti
-#: .\utils\abilities.cfg:2060
+#: .\utils\abilities.cfg:2071
 msgid "female^weak reflect"
 msgstr "faible reflet"
 
 #. [dummy], id=weak reflect loti
-#: .\utils\abilities.cfg:2061
+#: .\utils\abilities.cfg:2072
 msgid "When this unit is hit, an quarter of the damage it took is dealt also to the attacker. It cannot kill, unlike thorns."
 msgstr "Lorsque cette unité est touchée, un quart des dégâts qu'elle a subis est également infligé à l'attaquant. Cela ne peut pas tuer, contrairement aux épines."
 
 #. [dummy], id=weak reflect aura loti
-#: .\utils\abilities.cfg:2068
+#: .\utils\abilities.cfg:2079
 msgid "weak reflect aura"
 msgstr "aura de faible reflet"
 
 #. [dummy], id=weak reflect aura loti
-#: .\utils\abilities.cfg:2069
+#: .\utils\abilities.cfg:2080
 msgid "female^weak reflect aura"
 msgstr "aura de faible reflet"
 
 #. [dummy], id=weak reflect aura loti
-#: .\utils\abilities.cfg:2070
+#: .\utils\abilities.cfg:2081
 msgid "When an adjacent ally of unit is hit, an quarter of the damage it took is dealt also to the attacker. It cannot kill, unlike thorns."
 msgstr "Lorsqu'un allié adjacent de cette unité est touché, un quart des dégâts qu'il a subis est également infligé à l'attaquant. Cela ne peut pas tuer, contrairement aux épines."
 
 #. [dummy], id=reflect_loti
-#: .\utils\abilities.cfg:2077
+#: .\utils\abilities.cfg:2088
 msgid "reflect"
 msgstr "reflet"
 
 #. [dummy], id=reflect_loti
-#: .\utils\abilities.cfg:2078
+#: .\utils\abilities.cfg:2089
 msgid "female^reflect"
 msgstr "reflet"
 
 #. [dummy], id=reflect_loti
-#: .\utils\abilities.cfg:2079
+#: .\utils\abilities.cfg:2090
 msgid "When this unit is hit, a half of the damage it took is dealt also to the attacker. It cannot kill, unlike thorns."
 msgstr "Quand cette unité est touchée, la moitié des dégâts qui lui sont infligés sont également infligés à l'attaquant. Cela ne peut pas tuer, contrairement aux épines."
 
 #. [dummy], id=reflect aura loti
-#: .\utils\abilities.cfg:2086
+#: .\utils\abilities.cfg:2097
 msgid "reflect aura"
 msgstr "aura de reflet"
 
 #. [dummy], id=reflect aura loti
-#: .\utils\abilities.cfg:2087
+#: .\utils\abilities.cfg:2098
 msgid "female^reflect aura"
 msgstr "aura de reflet"
 
 #. [dummy], id=reflect aura loti
-#: .\utils\abilities.cfg:2088
+#: .\utils\abilities.cfg:2099
 msgid "When an adjacent ally of unit is hit, an half of the damage it took is dealt also to the attacker. It cannot kill, unlike thorns."
 msgstr "Lorsqu'un allié adjacent de cette unité est touché, une moitié des dégâts qu'il a subis est également infligé à l'attaquant. Cela ne peut pas tuer, contrairement aux épines."
 
 #. [dummy], id=electrical_discharge_loti
-#: .\utils\abilities.cfg:2095
+#: .\utils\abilities.cfg:2106
 msgid "electrical discharge"
 msgstr "décharge électrique"
 
 #. [dummy], id=electrical_discharge_loti
-#: .\utils\abilities.cfg:2096
+#: .\utils\abilities.cfg:2107
 msgid "female^electrical discharge"
 msgstr "décharge électrique"
 
 #. [dummy], id=electrical_discharge_loti
-#: .\utils\abilities.cfg:2097
+#: .\utils\abilities.cfg:2108
 msgid "When this unit is hit with a melee attack, the resulting discharge of electricity causes an equal amount of lightning damage to be taken by the attacker. It can kill."
 msgstr "Quand cette unité est touchée au corps-à-corps, la décharge électrique résultante cause une quantité égale de dégâts électriques à l'attaquant. Cela peut tuer."
 
 #. [dummy], id=freezing_loti
-#: .\utils\abilities.cfg:2104
+#: .\utils\abilities.cfg:2115
 msgid "freezing aura"
 msgstr "aura glacée"
 
 #. [dummy], id=freezing_loti
-#: .\utils\abilities.cfg:2105
+#: .\utils\abilities.cfg:2116
 msgid "female^freezing aura"
 msgstr "aura glacée"
 
 #. [dummy], id=freezing_loti
-#: .\utils\abilities.cfg:2106
+#: .\utils\abilities.cfg:2117
 msgid "All adjacent enemies will be slowed at the beginning of their turn."
 msgstr "Tous les ennemis adjacents sont ralentis au début de leur tour."
 
 #. [dummy], id=dark aura loti
-#: .\utils\abilities.cfg:2112
+#: .\utils\abilities.cfg:2123
 msgid "dark aura"
 msgstr "aura sombre"
 
 #. [dummy], id=dark aura loti
-#: .\utils\abilities.cfg:2113
+#: .\utils\abilities.cfg:2124
 msgid "female^dark aura"
 msgstr "aura sombre"
 
 #. [dummy], id=dark aura loti
-#: .\utils\abilities.cfg:2114
+#: .\utils\abilities.cfg:2125
 msgid "All adjacent enemies will be poisoned at the beginning of their turn."
 msgstr "Tous les ennemis adjacents sont empoisonnés au début de leur tour."
 
 #. [dummy], id=feeding_easy_loti
-#: .\utils\abilities.cfg:2122
+#: .\utils\abilities.cfg:2133
 msgid "This unit gains 1 hitpoint added to its maximum whenever it kills a living unit."
 msgstr "Cette unité gagne 1 point de vie ajouté à son maximum chaque fois qu'elle tue une unité vivante."
 
 #. [dummy], id=temptation_loti
-#: .\utils\abilities.cfg:2128
+#: .\utils\abilities.cfg:2139
 msgid "temptation"
 msgstr "temptation"
 
 #. [dummy], id=temptation_loti
-#: .\utils\abilities.cfg:2129
+#: .\utils\abilities.cfg:2140
 msgid "female^temptation"
 msgstr "temptation"
 
 #. [dummy], id=temptation_loti
-#: .\utils\abilities.cfg:2130
+#: .\utils\abilities.cfg:2141
 msgid "This unit makes its enemies of opposite gender infatuated at the beginning of their turn, making them unable to attack, but able to break this charm by fleeing."
 msgstr "Cette unité rend ses ennemis de sexe opposé entichés au début de leur tour, ce qui les rend incapables d'attaquer, mais ils peuvent rompre ce charme en s'enfuyant."
 
 #. [dummy], id=temptation_loti
-#: .\utils\abilities.cfg:2131
+#: .\utils\abilities.cfg:2142
 msgid "If a unit of the opposite gender stands next to this unit at the beginning of its turn, it loses its will to attack that turn, and can only resist the temptation to run away."
 msgstr "Si une unité du sexe opposé se trouve à côté de cette unité au début de son tour, elle perd sa volonté d'attaquer pendant ce tour et ne peut que résister à la tentation pour s'enfuir."
 
 #. [dummy], id=northfrost aura loti
-#: .\utils\abilities.cfg:2137
+#: .\utils\abilities.cfg:2148
 msgid "northfrost aura"
 msgstr "aura de givre nordique"
 
 #. [dummy], id=northfrost aura loti
-#: .\utils\abilities.cfg:2138
+#: .\utils\abilities.cfg:2149
 msgid "female^northfrost aura"
 msgstr "aura de givre nordique"
 
 #. [dummy], id=northfrost aura loti
-#: .\utils\abilities.cfg:2139
+#: .\utils\abilities.cfg:2150
 msgid "All enemies in the range of two hexes from this unit will be slowed at the beginning of their turn."
 msgstr "Tous les ennemis situés à une distance de deux hexagones de cette unité sont ralentis au début de leur tour."
 
 #. [resistance], id=spell eater loti
-#: .\utils\abilities.cfg:2149
+#: .\utils\abilities.cfg:2160
 msgid "spell eater"
 msgstr "mangeur de sorts"
 
 #. [resistance], id=spell eater loti
-#: .\utils\abilities.cfg:2150
+#: .\utils\abilities.cfg:2161
 msgid "female^spell eater"
 msgstr "mangeuse de sorts"
 
 #. [resistance], id=spell eater loti
-#: .\utils\abilities.cfg:2151
+#: .\utils\abilities.cfg:2162
 msgid "This unit feeds on nearby magical energies, increasing nearby allied units' arcane resistance by 100% and grows stronger when a nearby allied unit is hit with arcane, fire or cold damage."
 msgstr "Cette unité se nourrit des énergies magiques à proximité, augmentant de 100 % la résistance à l'arcane des unités alliées proches et devient plus forte lorsqu'une unité alliée proche est touchée par des dégâts d'arcane, de feu ou de froid."
 
 #. [teleport], id=shadowalk_loti
-#: .\utils\abilities.cfg:2164
+#: .\utils\abilities.cfg:2175
 msgid "shadowalk"
 msgstr "marche de l'ombre"
 
 #. [teleport], id=shadowalk_loti
-#: .\utils\abilities.cfg:2165
+#: .\utils\abilities.cfg:2176
 msgid "female^shadowalk"
 msgstr "marche de l'ombre"
 
 #. [teleport], id=shadowalk_loti
-#: .\utils\abilities.cfg:2166
+#: .\utils\abilities.cfg:2177
 msgid "While in darkness, this unit can teleport to any hex adjacent to an adjacent enemy."
 msgstr "Dans les ténèbres, cette unité peut se téléporter vers n'importe quelle case adjacente à un ennemi adjacent. "
 
 #. [teleport], id=blackwatch_loti
-#: .\utils\abilities.cfg:2195
+#: .\utils\abilities.cfg:2201
 msgid "blackwatch"
 msgstr "garde noire"
 
 #. [teleport], id=blackwatch_loti
-#: .\utils\abilities.cfg:2196
+#: .\utils\abilities.cfg:2202
 msgid "female^blackwatch"
 msgstr "garde noire"
 
 #. [teleport], id=blackwatch_loti
-#: .\utils\abilities.cfg:2197
-msgid "While in darkness, this unit can teleport to any hex adjacent to a unit of the same side that is adjacent to an enemy, up to 3 hexes from its last location."
+#: .\utils\abilities.cfg:2203
+msgid "While in darkness, this unit can teleport to any hex adjacent to an allied unit that is adjacent to an enemy, up to 3 hexes from its last location."
 msgstr "Dans les ténèbres, cette unité peut se téléporter vers n'importe quelle case adjacente à une unité du même camp adjacente à un ennemi, jusqu'à trois cases de sa précédente position. "
 
 #. [teleport], id=recall_loti
-#: .\utils\abilities.cfg:2230
+#: .\utils\abilities.cfg:2227
 msgid "recall"
 msgstr "rappel"
 
 #. [teleport], id=recall_loti
-#: .\utils\abilities.cfg:2231
+#: .\utils\abilities.cfg:2228
 msgid "female^recall"
 msgstr "rappel"
 
 #. [teleport], id=recall_loti
-#: .\utils\abilities.cfg:2232
+#: .\utils\abilities.cfg:2229
 msgid "This unit may teleport to a leader of its side."
 msgstr "Cette unité peut se téléporter vers un commandant de son camp."
 
 #. [teleport], id=combat recall loti
-#: .\utils\abilities.cfg:2253
+#: .\utils\abilities.cfg:2247
 msgid "combat recall"
 msgstr "rappel de combat"
 
 #. [teleport], id=combat recall loti
-#: .\utils\abilities.cfg:2254
+#: .\utils\abilities.cfg:2248
 msgid "female^combat recall"
 msgstr "rappel de combat"
 
 #. [teleport], id=combat recall loti
-#: .\utils\abilities.cfg:2255
+#: .\utils\abilities.cfg:2249
 msgid "This unit may teleport to any hex up to 3 hexes from a leader of its side."
 msgstr "Cette unité peut se téléporter vers n'importe quelle case située à moins de trois cases d'un commandant de son camp. "
 
 #. [teleport], id=homecoming_loti
-#: .\utils\abilities.cfg:2277
+#: .\utils\abilities.cfg:2268
 msgid "homecoming"
 msgstr "retour à la maison"
 
 #. [teleport], id=homecoming_loti
-#: .\utils\abilities.cfg:2278
+#: .\utils\abilities.cfg:2269
 msgid "female^homecoming"
 msgstr "retour à la maison"
 
 #. [teleport], id=homecoming_loti
-#: .\utils\abilities.cfg:2279
+#: .\utils\abilities.cfg:2270
 msgid "This unit may teleport to an Ancient Lich, Arch Necromancer, Demilich or Lich King."
 msgstr "Cette unité peut se téléporter vers une Ancienne Liche, un Archi-Nécromancien, une Demiliche ou un Roi Liche."
 
 #. [teleport], id=escape artist loti {DISTANCE}
-#: .\utils\abilities.cfg:2311
+#: .\utils\abilities.cfg:2300
 msgid "escape artist"
 msgstr "roi de l'évasion"
 
 #. [teleport], id=escape artist loti {DISTANCE}
-#: .\utils\abilities.cfg:2312
+#: .\utils\abilities.cfg:2301
 msgid "female^escape artist"
 msgstr "reine de l'évasion"
 
 #. [teleport], id=escape artist loti {DISTANCE}
-#: .\utils\abilities.cfg:2313
+#: .\utils\abilities.cfg:2302
 msgid "While adjacent to an enemy and at full moves, can teleport to a hex up to "
 msgstr "Lorsqu'adjacent à un ennemi et avec tout son mouvement, peut se téléporter vers une case jusqu'à "
 
 #. [teleport], id=escape artist loti {DISTANCE}
-#: .\utils\abilities.cfg:2313
+#: .\utils\abilities.cfg:2302
 msgid " hexes away."
 msgstr " cases de distance."
 
 #. [berserk], id=berserk_leadership_loti
-#: .\utils\abilities.cfg:2340
+#: .\utils\abilities.cfg:2329
 msgid "radiating insanity"
 msgstr "folie rayonnante"
 
 #. [berserk], id=berserk_leadership_loti
-#: .\utils\abilities.cfg:2341
+#: .\utils\abilities.cfg:2330
 msgid "female^radiating insanity"
 msgstr "folie rayonnante"
 
 #. [berserk], id=berserk_leadership_loti
-#: .\utils\abilities.cfg:2342
+#: .\utils\abilities.cfg:2331
 msgid "All nearby allies fight with a bloodlust equal to the dwarvish berserk on melee attacks."
 msgstr "Tous les alliés proches combattent au corps-à-corps avec une soif de sang égale à celle d'un berserk nain."
 
 #. [damage], id=charge_leadership_loti
-#: .\utils\abilities.cfg:2360
+#: .\utils\abilities.cfg:2349
 msgid "warlord's rule"
 msgstr "règne du seigneur de guerre"
 
 #. [damage], id=charge_leadership_loti
-#: .\utils\abilities.cfg:2361
+#: .\utils\abilities.cfg:2350
 msgid "female^warlord's rule"
 msgstr "règne du seigneur de guerre"
 
 #. [damage], id=charge_leadership_loti
-#: .\utils\abilities.cfg:2362
+#: .\utils\abilities.cfg:2351
 msgid "All nearby allies deal and take 50% more melee damage."
 msgstr "Touts les alliés proches infligent et subissent 50% de dégâts en plus au corps-à-corps."
 
 #. [damage], id=charge_leadership_loti
-#: .\utils\abilities.cfg:2363
+#: .\utils\abilities.cfg:2352
 msgid " This unit can fanaticise all units adjacent to him into a frenzy, making them deal and take double melee damage, but only offensively."
 msgstr "Cette unité peut fanatiser toutes les unités adjacentes en une frénésie, leur faisant infliger et subir le double de dégâts au corps-à-corps, mais uniquement en attaque."
 
 #. [poison], id=poison_leadership_loti
-#: .\utils\abilities.cfg:2383
+#: .\utils\abilities.cfg:2372
 msgid "radiation"
 msgstr "radiation"
 
 #. [poison], id=poison_leadership_loti
-#: .\utils\abilities.cfg:2384
+#: .\utils\abilities.cfg:2373
 msgid "female^radiation"
 msgstr "radiation"
 
 #. [poison], id=poison_leadership_loti
-#: .\utils\abilities.cfg:2385
+#: .\utils\abilities.cfg:2374
 msgid "All nearby allies get poisonous attacks."
 msgstr "Tous les alliés proches obtiennent des attaques empoisonnées."
 
 #. [firststrike], id=firststrike_leadership_loti
-#: .\utils\abilities.cfg:2396
+#: .\utils\abilities.cfg:2385
 msgid "zeal aura"
 msgstr "aura de zèle"
 
 #. [firststrike], id=firststrike_leadership_loti
-#: .\utils\abilities.cfg:2397
+#: .\utils\abilities.cfg:2386
 msgid "female^zeal aura"
 msgstr "aura de zèle"
 
 #. [firststrike], id=firststrike_leadership_loti
-#: .\utils\abilities.cfg:2398
+#: .\utils\abilities.cfg:2387
 msgid "All nearby allies get firststrike."
 msgstr "Tous les alliés proches obtiennent initiative."
 
 #. [damage], id=backstab_leadership_loti
-#: .\utils\abilities.cfg:2409
+#: .\utils\abilities.cfg:2398
 msgid "murderous presence"
 msgstr "présence meurtrière"
 
 #. [damage], id=backstab_leadership_loti
-#: .\utils\abilities.cfg:2410
+#: .\utils\abilities.cfg:2399
 msgid "female^murderous presence"
 msgstr "présence meurtrière"
 
 #. [damage], id=backstab_leadership_loti
-#: .\utils\abilities.cfg:2411
+#: .\utils\abilities.cfg:2400
 msgid "All nearby allies get melee backstab."
 msgstr "Tous les alliés proches obtiennent coup dans le dos en mêlée."
 
 #. [chance_to_hit], id=marksman_leadership_loti
-#: .\utils\abilities.cfg:2446
+#: .\utils\abilities.cfg:2435
 msgid "cantor"
 msgstr "cantor"
 
 #. [chance_to_hit], id=marksman_leadership_loti
-#: .\utils\abilities.cfg:2447
+#: .\utils\abilities.cfg:2436
 msgid "female^cantor"
 msgstr "cantor"
 
 #. [chance_to_hit], id=marksman_leadership_loti
-#: .\utils\abilities.cfg:2448
+#: .\utils\abilities.cfg:2437
 msgid "This unit grants marksman to all ranged attacks of all adjacent allies."
 msgstr "Cette unité accorde le statut de tireur d'élite à toutes les attaques à distance de tous les alliés adjacents."
 
 #. [drains]
-#: .\utils\abilities.cfg:2467
+#: .\utils\abilities.cfg:2456
 msgid "aura of hunger"
 msgstr "aura de faim"
 
 #. [drains]
-#: .\utils\abilities.cfg:2468
+#: .\utils\abilities.cfg:2457
 msgid "female^aura of hunger"
 msgstr "aura de faim"
 
 #. [drains]
-#: .\utils\abilities.cfg:2469
+#: .\utils\abilities.cfg:2458
 msgid "All adjacent allies gain melee drain that drains 25% of the damage dealt (instead of the usual 50%)."
 msgstr "Tous les alliés adjacents gagnent un drain de mêlée qui draine 25 % des dégâts infligés (au lieu des 50 % habituels)."
 
 #. [slow], id=slow leadership loti
-#: .\utils\abilities.cfg:2487
+#: .\utils\abilities.cfg:2476
 msgid "gossamer dispenser"
 msgstr "distributeur de filandre"
 
 #. [slow], id=slow leadership loti
-#: .\utils\abilities.cfg:2488
+#: .\utils\abilities.cfg:2477
 msgid "female^gossamer dispenser"
 msgstr "distributrice de filandre"
 
 #. [slow], id=slow leadership loti
-#: .\utils\abilities.cfg:2489
+#: .\utils\abilities.cfg:2478
 msgid "All adjacent allies will slow targets with melee attacks."
 msgstr "Tous les alliés adjacents ralentiront leur cible au corps-à-corps."
 
 #. SPECIAL_NOTES_ICE_DRAGON_BREATH
-#: .\utils\abilities.cfg:2503
+#: .\utils\abilities.cfg:2492
 msgid " This unit accumulates liquid helium in its inside, and when he unleashes it, it turns everything in its presence into solid ice in order to evaporate. Clothes of units protect them from being frozen completely, but it still halves their movement and damage."
 msgstr " Cette unité accumule de l'hélium liquide à l'intérieur, et lorsqu'elle le libère, elle transforme tout ce qui se trouve en sa présence en glace solide afin de s'évaporer. Les vêtements des unités les protègent de la congélation totale, mais celle-ci réduit tout de même de moitié leurs mouvements et leurs dégâts."
 
 #. SPECIAL_NOTES_DARK_DRAGON_BREATH
-#: .\utils\abilities.cfg:2506
+#: .\utils\abilities.cfg:2495
 msgid " This unit absorbs the vital energy of its victims when its foul breath touches them, healing a half of the damage inflicted and makes them fall in lethargy, halving their damage and doubling their movement costs."
 msgstr " Cette unité absorbe l'énergie vitale de ses victimes lorsque son haleine fétide les touche, se soignant de la moitié des dégâts infligés et les faisant tomber en léthargie, divisant par deux leurs dégâts et doublant leur coût de déplacement."
 
 #. SPECIAL_NOTES_DEMIGOD
-#: .\utils\abilities.cfg:2509
+#: .\utils\abilities.cfg:2498
 msgid ""
 " Telling everything a half-god can do would be too lengthy. But a matter to consider is that they have developed compassion out of a desire to save their wretched enemies from sins, pain, suffering and misery, they are able to redeem tormented souls. Even if this 'redeem attack' can be used only once every three turns.\n"
 "\n"
@@ -9377,22 +9424,22 @@ msgstr ""
 "Sans ces avancées, l'unité ne deviendra jamais particulièrement forte, et les ennemis de bas niveau risquent de devenir rares à trouver."
 
 #. SPECIAL_NOTES_TENTACLES
-#: .\utils\abilities.cfg:2516
+#: .\utils\abilities.cfg:2505
 msgid " When this unit is attacked in melee range, the attacker takes 10 points of impact damage from his tentacles, because he strayed too close."
 msgstr " Lorsque cette unité est attaquée à portée de mêlée, l'attaquant subit 10 points de dégâts contondants de ses tentacules, parce qu'il s'est approché trop près."
 
 #. SPECIAL_NOTES_TENTACLES_AKULA
-#: .\utils\abilities.cfg:2519
+#: .\utils\abilities.cfg:2508
 msgid " When this unit is attacked in melee range, the attacker takes 15 impact damage from her tentacles, because he strayed too close."
 msgstr " Lorsque cette unité est attaquée à portée de mêlée, l'attaquant subit 15 dégâts contondants de ses tentacules, parce qu'il s'est approché trop près."
 
 #. SPECIAL_NOTES_TENTACLES_AKULA_BOSS
-#: .\utils\abilities.cfg:2522
+#: .\utils\abilities.cfg:2511
 msgid " When this unit is attacked in melee range, the attacker takes a huge amount of impact damage from her tentacles, because he strayed too close."
 msgstr " Lorsque cette unité est attaquée à portée de mêlée, l'attaquant subit d'énormes dégâts contondants de la part de ses tentacules, parce qu'il s'est approché trop près."
 
 #. SPECIAL_NOTES_DEMON_ARCANE
-#: .\utils\abilities.cfg:2525
+#: .\utils\abilities.cfg:2514
 msgid " Demons are creatures of magic, and arcane attacks have only a little effect on them."
 msgstr " Les démons sont des créatures magiques, et les attaques d'arcane n'ont que peu d'effet sur eux."
 
@@ -9457,67 +9504,67 @@ msgid "I have put an end to your unlife."
 msgstr "J'ai mis un terme à ta non-vie."
 
 #. [floating_text]
-#: .\utils\abilities_events.cfg:5439
+#: .\utils\abilities_events.cfg:5452
 msgid "+2 resist / +8 HP / +4 MAX_HP / +1 damage"
 msgstr "+2 résistance / +8 PV / +4 PV_MAX / +1 dégat"
 
 #. [value]
-#: .\utils\abilities_events.cfg:6736
+#: .\utils\abilities_events.cfg:6749
 msgid "LesserRedeem: 5 hps and +1 all damage"
 msgstr "RédemptionMineure : 5 pvs et +1 à tous les dégâts"
 
 #. [floating_text]
-#: .\utils\abilities_events.cfg:6751
+#: .\utils\abilities_events.cfg:6764
 msgid "LesserRedeem Level Up 1"
 msgstr "RédemptionMineure Niveau Supérieur 1"
 
 #. [value]
-#: .\utils\abilities_events.cfg:6765
+#: .\utils\abilities_events.cfg:6778
 msgid "LesserRedeem: 3 hps and +3 resist all"
 msgstr "RédemptionMineure : 3 pvs et +3 résistance à tout"
 
 #. [floating_text]
-#: .\utils\abilities_events.cfg:6788
+#: .\utils\abilities_events.cfg:6801
 msgid "LesserRedeem Level Up 2"
 msgstr "RédemptionMineure Niveau Supérieur 2"
 
 #. [value]
-#: .\utils\abilities_events.cfg:6802
+#: .\utils\abilities_events.cfg:6815
 msgid "LesserRedeem: 2 hps, +2 resist all, +1 move"
 msgstr "RédemptionMineure : 2 pvs, +2 résistance à tout, +1 mouvement"
 
 #. [floating_text]
-#: .\utils\abilities_events.cfg:6829
+#: .\utils\abilities_events.cfg:6842
 msgid "LesserRedeem Level Up 3"
 msgstr "RédemptionMineure Niveau Supérieur 3"
 
 #. [value]
-#: .\utils\abilities_events.cfg:6843
+#: .\utils\abilities_events.cfg:6856
 msgid "LesserRedeem: +1 dmg, +2 resist all, penetrate blade, arcane and pierce"
 msgstr "RédemptionMineure : +1 dégât, +2 résistance à tout, pénètre le tranchant, l'arcane, et le perforant"
 
 #. [floating_text]
-#: .\utils\abilities_events.cfg:6868
+#: .\utils\abilities_events.cfg:6881
 msgid "LesserRedeem Level Up 4"
 msgstr "RédemptionMineure Niveau Supérieur 4"
 
 #. [value]
-#: .\utils\abilities_events.cfg:6882
+#: .\utils\abilities_events.cfg:6895
 msgid "LesserRedeem: 3 hps, penetrate fire, impact and cold"
 msgstr "RédemptionMineure : 3 pvs, pénètre le feu, le contondant, et le froid"
 
 #. [floating_text]
-#: .\utils\abilities_events.cfg:6896
+#: .\utils\abilities_events.cfg:6909
 msgid "LesserRedeem Level Up 5"
 msgstr "RédemptionMineure Niveau Supérieur 5"
 
 #. [value]
-#: .\utils\abilities_events.cfg:6910
+#: .\utils\abilities_events.cfg:6923
 msgid "LesserRedeem: 2 hps, +1 resist all, +2 penetrate all"
 msgstr "RédemptionMineure : 2 pvs, +1 résistance à tout, +2 pénétration de tout"
 
 #. [floating_text]
-#: .\utils\abilities_events.cfg:6939
+#: .\utils\abilities_events.cfg:6952
 msgid "LesserRedeem Level Up 6"
 msgstr "RédemptionMineure Niveau Supérieur 6"
 
@@ -9528,8 +9575,8 @@ msgstr "conscient de l'héritage possédé"
 
 #. [advancement], id=backup_amla
 #: .\utils\amla.cfg:65
-#: .\utils\amla.cfg:3890
-#: .\utils\amla.cfg:4629
+#: .\utils\amla.cfg:3889
+#: .\utils\amla.cfg:4628
 msgid "The unit will be able to pick one of powerful upgrades"
 msgstr "L'unité pourra choisir l'une des puissantes améliorations suivantes"
 
@@ -10225,8 +10272,8 @@ msgid "regaining half of the max MP after attacking (Legacy of the Free)"
 msgstr "regagner la moitié des PM max après avoir attaqué (Héritage de la Liberté)"
 
 #. [advancement], id=lightning1
-#: .\utils\amla.cfg:3913
-#: .\utils\amla.cfg:4653
+#: .\utils\amla.cfg:3912
+#: .\utils\amla.cfg:4652
 msgid "capable to use lightning (huge damage, few attacks)"
 msgstr "capable d'utiliser les éclairs (dégâts importants, peu d'attaques)"
 
@@ -10236,48 +10283,48 @@ msgstr "capable d'utiliser les éclairs (dégâts importants, peu d'attaques)"
 #. [advancement], id=lightning5
 #. [advancement], id=lightning6
 #. [advancement], id=lightning7
-#: .\utils\amla.cfg:3936
-#: .\utils\amla.cfg:3956
-#: .\utils\amla.cfg:3971
-#: .\utils\amla.cfg:4005
-#: .\utils\amla.cfg:4036
-#: .\utils\amla.cfg:4067
-#: .\utils\amla.cfg:4677
-#: .\utils\amla.cfg:4693
-#: .\utils\amla.cfg:4708
-#: .\utils\amla.cfg:4742
-#: .\utils\amla.cfg:4773
-#: .\utils\amla.cfg:4804
+#: .\utils\amla.cfg:3935
+#: .\utils\amla.cfg:3955
+#: .\utils\amla.cfg:3970
+#: .\utils\amla.cfg:4004
+#: .\utils\amla.cfg:4035
+#: .\utils\amla.cfg:4066
+#: .\utils\amla.cfg:4676
+#: .\utils\amla.cfg:4692
+#: .\utils\amla.cfg:4707
+#: .\utils\amla.cfg:4741
+#: .\utils\amla.cfg:4772
+#: .\utils\amla.cfg:4803
 msgid "more proficient with lightnings"
 msgstr "plus compétent avec la foudre"
 
 #. [advancement], id=lightning4_firststrike
-#: .\utils\amla.cfg:3986
+#: .\utils\amla.cfg:3985
 msgid "using lightnings very very very fast"
 msgstr "utiliser des éclairs très très très rapidement"
 
 #. [advancement], id=lightning5_noswarm
-#: .\utils\amla.cfg:4020
-#: .\utils\amla.cfg:4757
+#: .\utils\amla.cfg:4019
+#: .\utils\amla.cfg:4756
 msgid "using lightnings without need to be at good health"
 msgstr "utiliser des éclairs sans avoir besoin d'être en bonne santé"
 
 #. [advancement], id=lightning6_speed
 #. [advancement], id=lightning7_speed
-#: .\utils\amla.cfg:4051
-#: .\utils\amla.cfg:4082
-#: .\utils\amla.cfg:4788
-#: .\utils\amla.cfg:4819
+#: .\utils\amla.cfg:4050
+#: .\utils\amla.cfg:4081
+#: .\utils\amla.cfg:4787
+#: .\utils\amla.cfg:4818
 msgid "shooting lightnings faster"
 msgstr "tirer des éclairs plus rapidement"
 
 #. [advancement], id=thunder1
-#: .\utils\amla.cfg:4098
+#: .\utils\amla.cfg:4097
 msgid "capable to use thunder (huge damage, huge radius)"
 msgstr "capable d'utiliser tonnerre (dégâts considérables, rayon considérable)"
 
 #. [effect], apply_to=new_attack, type=lightning, range=ranged
-#: .\utils\amla.cfg:4105
+#: .\utils\amla.cfg:4104
 msgid "thunder"
 msgstr "tonnerre"
 
@@ -10285,20 +10332,20 @@ msgstr "tonnerre"
 #. [advancement], id=thunder3
 #. [advancement], id=thunder5
 #. [advancement], id=thunder6
-#: .\utils\amla.cfg:4122
-#: .\utils\amla.cfg:4137
-#: .\utils\amla.cfg:4168
-#: .\utils\amla.cfg:4183
+#: .\utils\amla.cfg:4121
+#: .\utils\amla.cfg:4136
+#: .\utils\amla.cfg:4167
+#: .\utils\amla.cfg:4182
 msgid "casting stronger thunder"
 msgstr "lancer des tonnerres plus puissants"
 
 #. [advancement], id=thunder4
-#: .\utils\amla.cfg:4152
+#: .\utils\amla.cfg:4151
 msgid "casting thunders faster"
 msgstr "lancer des tonnerres plus rapidement"
 
 #. [advancement], id=fireball1
-#: .\utils\amla.cfg:4198
+#: .\utils\amla.cfg:4197
 msgid "capable to use fireball"
 msgstr "capable d'utiliser des boules de feu"
 
@@ -10306,69 +10353,69 @@ msgstr "capable d'utiliser des boules de feu"
 #. [advancement], id=fireball3
 #. [advancement], id=fireball4
 #. [advancement], id=fireball5
-#: .\utils\amla.cfg:4221
-#: .\utils\amla.cfg:4236
-#: .\utils\amla.cfg:4269
-#: .\utils\amla.cfg:4303
+#: .\utils\amla.cfg:4220
+#: .\utils\amla.cfg:4235
+#: .\utils\amla.cfg:4268
+#: .\utils\amla.cfg:4302
 msgid "more proficient with fireballs"
 msgstr "plus compétent avec les boules de feu"
 
 #. [advancement], id=fireball3_range
-#: .\utils\amla.cfg:4251
+#: .\utils\amla.cfg:4250
 msgid "using fireballs with explosive range"
 msgstr "utiliser des boules de feu à portée explosive"
 
 #. [advancement], id=fireball4_precision
 #. [advancement], id=fireball5_precision
-#: .\utils\amla.cfg:4284
-#: .\utils\amla.cfg:4318
+#: .\utils\amla.cfg:4283
+#: .\utils\amla.cfg:4317
 msgid "shooting fireballs with better precision"
 msgstr "lancer des boules de feu avec plus de précision"
 
 #. [advancement], id=meteor1
-#: .\utils\amla.cfg:4337
+#: .\utils\amla.cfg:4336
 msgid "capable to cast a burning meteor from the skies"
 msgstr "capable de faire tomber du ciel un météore enflammé"
 
 #. [effect], apply_to=new_attack, type=fire, range=ranged
-#: .\utils\amla.cfg:4347
+#: .\utils\amla.cfg:4346
 msgid "meteor"
 msgstr "météore"
 
 #. [advancement], id=meteor2
-#: .\utils\amla.cfg:4363
+#: .\utils\amla.cfg:4362
 msgid "attracting meteoroids with higher concentrations of heavy metals"
 msgstr "attirer des météoroïdes présentant des concentrations plus élevées de métaux lourds"
 
 #. [advancement], id=chill1
-#: .\utils\amla.cfg:4378
+#: .\utils\amla.cfg:4377
 msgid "able to cast chill tempest"
 msgstr "capable de lancer une tempête de givre"
 
 #. [advancement], id=chill2
-#: .\utils\amla.cfg:4401
+#: .\utils\amla.cfg:4400
 msgid "slowing enemies with chill tempest"
 msgstr "ralentir les ennemis avec les tempêtes de givre"
 
 #. [advancement], id=chill3
 #. [advancement], id=chill4
-#: .\utils\amla.cfg:4420
-#: .\utils\amla.cfg:4455
+#: .\utils\amla.cfg:4419
+#: .\utils\amla.cfg:4454
 msgid "more proficient with chill tempest"
 msgstr "plus compétent avec la tempête de givre"
 
 #. [advancement], id=chill_slow_extra
-#: .\utils\amla.cfg:4436
+#: .\utils\amla.cfg:4435
 msgid "slowing groups of enemies with chill tempest"
 msgstr "ralentir des groupes d'ennemis avec les tempêtes de givre"
 
 #. [advancement], id=chill5_attacks
-#: .\utils\amla.cfg:4471
+#: .\utils\amla.cfg:4470
 msgid "casting chill tempest faster"
 msgstr "lancer des tempêtes de givre plus rapidement"
 
 #. [advancement], id=shadowwave1
-#: .\utils\amla.cfg:4486
+#: .\utils\amla.cfg:4485
 msgid "able to cast a draining shadow wave"
 msgstr "capable de lancer une vague d'ombre drainante"
 
@@ -10376,35 +10423,35 @@ msgstr "capable de lancer une vague d'ombre drainante"
 #. [advancement], id=shadowwave3
 #. [advancement], id=shadowwave4
 #. [advancement], id=shadowwave5
-#: .\utils\amla.cfg:4510
-#: .\utils\amla.cfg:4544
-#: .\utils\amla.cfg:4578
-#: .\utils\amla.cfg:4593
+#: .\utils\amla.cfg:4509
+#: .\utils\amla.cfg:4543
+#: .\utils\amla.cfg:4577
+#: .\utils\amla.cfg:4592
 msgid "more proficient with shadow wave"
 msgstr "plus compétent avec la vague d'ombre"
 
 #. [advancement], id=shadowwave2_leech
-#: .\utils\amla.cfg:4525
+#: .\utils\amla.cfg:4524
 msgid "leeching more life with shadow wave"
 msgstr "sangsue plus de vie avec les vague d'ombre"
 
 #. [advancement], id=shadowwave3_leech
-#: .\utils\amla.cfg:4559
+#: .\utils\amla.cfg:4558
 msgid "leeching life with shadow wave from multiple enemies"
 msgstr "sangsue la vie de multiples ennemis avec les vagues d'ombre"
 
 #. [advancement], id=shadowwave5_speed
-#: .\utils\amla.cfg:4608
+#: .\utils\amla.cfg:4607
 msgid "casting shadow wave faster"
 msgstr "lancer des vagues d'ombre plus rapidement"
 
 #. [advancement], id=lightning4_firststrike
-#: .\utils\amla.cfg:4723
+#: .\utils\amla.cfg:4722
 msgid "using lightnings very very very fast (firststrike)"
 msgstr "utiliser les éclairs très très très vite (initiative)"
 
 #. [advancement], id=fireblast1
-#: .\utils\amla.cfg:4835
+#: .\utils\amla.cfg:4834
 msgid "capable to cast fire blast"
 msgstr "capable de lancer un souffle de feu"
 
@@ -10413,35 +10460,35 @@ msgstr "capable de lancer un souffle de feu"
 #. [advancement], id=fireblast4
 #. [advancement], id=fireblast5
 #. [advancement], id=fireblast6
-#: .\utils\amla.cfg:4860
-#: .\utils\amla.cfg:4890
-#: .\utils\amla.cfg:4924
-#: .\utils\amla.cfg:4957
-#: .\utils\amla.cfg:4991
+#: .\utils\amla.cfg:4859
+#: .\utils\amla.cfg:4889
+#: .\utils\amla.cfg:4923
+#: .\utils\amla.cfg:4956
+#: .\utils\amla.cfg:4990
 msgid "more proficient with fire blasts"
 msgstr "plus compétent avec les rafales de feu."
 
 #. [advancement], id=fireblast2_speed
 #. [advancement], id=fireblast6_speed
-#: .\utils\amla.cfg:4875
-#: .\utils\amla.cfg:5006
+#: .\utils\amla.cfg:4874
+#: .\utils\amla.cfg:5005
 msgid "casting fire blasts faster"
 msgstr "meiux lancer les rafales de feu"
 
 #. [advancement], id=fireblast3_precision
 #. [advancement], id=fireblast5_precision
-#: .\utils\amla.cfg:4905
-#: .\utils\amla.cfg:4972
+#: .\utils\amla.cfg:4904
+#: .\utils\amla.cfg:4971
 msgid "failing to hit enemies with fire blasts less frequently"
 msgstr "rater moins fréquemment de toucher les ennemis avec les souffles de feu"
 
 #. [advancement], id=fireblast4_burn
-#: .\utils\amla.cfg:4939
+#: .\utils\amla.cfg:4938
 msgid "incinerating the primary target of fire blasts"
 msgstr "incinérer la cible principale des souffles de feu"
 
 #. [advancement], id=firestorm1
-#: .\utils\amla.cfg:5021
+#: .\utils\amla.cfg:5020
 msgid "capable to summon a meteoric firestorm"
 msgstr "capable d'invoquer une tempête de feu météorique"
 
@@ -10449,37 +10496,37 @@ msgstr "capable d'invoquer une tempête de feu météorique"
 #. [advancement], id=firestorm3
 #. [advancement], id=firestorm4
 #. [advancement], id=firestorm5
-#: .\utils\amla.cfg:5046
-#: .\utils\amla.cfg:5077
-#: .\utils\amla.cfg:5111
-#: .\utils\amla.cfg:5142
+#: .\utils\amla.cfg:5045
+#: .\utils\amla.cfg:5076
+#: .\utils\amla.cfg:5110
+#: .\utils\amla.cfg:5141
 msgid "more proficient with firestorms"
 msgstr "plus compétent avec les tempêtes de feu"
 
 #. [advancement], id=firestorm2_speed
 #. [advancement], id=firestorm4_speed
-#: .\utils\amla.cfg:5061
-#: .\utils\amla.cfg:5126
+#: .\utils\amla.cfg:5060
+#: .\utils\amla.cfg:5125
 msgid "summoning firestorms faster"
 msgstr "invoquer des tempêtes de feu plus rapidement"
 
 #. [advancement], id=firestorm3_precision
-#: .\utils\amla.cfg:5092
+#: .\utils\amla.cfg:5091
 msgid "failing to summon firestorms less frequently"
 msgstr "rater moins fréquemment l'invocation de tempêtes de feu"
 
 #. [advancement], id=firestorm5_burns
-#: .\utils\amla.cfg:5157
+#: .\utils\amla.cfg:5156
 msgid "summoning firestorms that cause inflammatory burns"
 msgstr "invoquer des tempêtes de feu qui provoquent des brûlures inflammatoires"
 
 #. [advancement], id=arcticblast1
-#: .\utils\amla.cfg:5175
+#: .\utils\amla.cfg:5174
 msgid "able to summon an arctic blast"
 msgstr "capable d'invoquer un soufflé arctique"
 
 #. [effect], apply_to=new_attack, type=cold, range=ranged
-#: .\utils\amla.cfg:5182
+#: .\utils\amla.cfg:5181
 msgid "arctic blast"
 msgstr "souffle arctique"
 
@@ -10488,35 +10535,35 @@ msgstr "souffle arctique"
 #. [advancement], id=arcticblast4
 #. [advancement], id=arcticblast5
 #. [advancement], id=arcticblast6
-#: .\utils\amla.cfg:5201
-#: .\utils\amla.cfg:5232
-#: .\utils\amla.cfg:5266
-#: .\utils\amla.cfg:5299
-#: .\utils\amla.cfg:5333
+#: .\utils\amla.cfg:5200
+#: .\utils\amla.cfg:5231
+#: .\utils\amla.cfg:5265
+#: .\utils\amla.cfg:5298
+#: .\utils\amla.cfg:5332
 msgid "more proficient with arctic blasts"
 msgstr "plus compétents avec les rafales arctiques"
 
 #. [advancement], id=arcticblast2_speed
 #. [advancement], id=arcticblast6_speed
-#: .\utils\amla.cfg:5216
-#: .\utils\amla.cfg:5348
+#: .\utils\amla.cfg:5215
+#: .\utils\amla.cfg:5347
 msgid "casting arctic blasts faster"
 msgstr "lancer plus rapidement des souffles arctiques"
 
 #. [advancement], id=arcticblast3_precision
 #. [advancement], id=arcticblast5_precision
-#: .\utils\amla.cfg:5247
-#: .\utils\amla.cfg:5314
+#: .\utils\amla.cfg:5246
+#: .\utils\amla.cfg:5313
 msgid "failing to hit enemies with arctic blasts less frequently"
 msgstr "rater moins fréquemment de toucher les ennemis avec les souffles arctiques"
 
 #. [advancement], id=arcticblast4_burn
-#: .\utils\amla.cfg:5281
+#: .\utils\amla.cfg:5280
 msgid "inflicting cold burns with arctic blast"
 msgstr "infliger des brûlures par le froid avec le souffle arctique"
 
 #. [advancement], id=blizzard1
-#: .\utils\amla.cfg:5364
+#: .\utils\amla.cfg:5363
 msgid "capable to summon a blizzard"
 msgstr "capable d'invoquer un blizzard"
 
@@ -10524,42 +10571,42 @@ msgstr "capable d'invoquer un blizzard"
 #. [advancement], id=blizzard3
 #. [advancement], id=blizzard4
 #. [advancement], id=blizzard5
-#: .\utils\amla.cfg:5390
-#: .\utils\amla.cfg:5421
-#: .\utils\amla.cfg:5455
-#: .\utils\amla.cfg:5486
+#: .\utils\amla.cfg:5389
+#: .\utils\amla.cfg:5420
+#: .\utils\amla.cfg:5454
+#: .\utils\amla.cfg:5485
 msgid "more proficient with blizzards"
 msgstr "plus compétent avec les blizzards"
 
 #. [advancement], id=blizzard2_speed
 #. [advancement], id=blizzard4_speed
-#: .\utils\amla.cfg:5405
-#: .\utils\amla.cfg:5470
+#: .\utils\amla.cfg:5404
+#: .\utils\amla.cfg:5469
 msgid "summoning blizzards faster"
 msgstr "invoquer des blizzards plus rapidement"
 
 #. [advancement], id=blizzard3_precision
-#: .\utils\amla.cfg:5436
+#: .\utils\amla.cfg:5435
 msgid "failing to summon blizzards less frequently"
 msgstr "rater moins fréquemment l'invocation de blizzards"
 
 #. [advancement], id=blizzard5_burns
-#: .\utils\amla.cfg:5501
+#: .\utils\amla.cfg:5500
 msgid "summoning blizzards that cause cold burns"
 msgstr "invoquer des blizzards qui provoquent des brûlures par le froid"
 
 #. [advancement], id=entropy1
-#: .\utils\amla.cfg:5519
+#: .\utils\amla.cfg:5518
 msgid "able to blast enemies with entropic chaos"
 msgstr "capable de déflagrer les ennemis avec l'entropie chaotique"
 
 #. [effect], apply_to=new_attack, type=arcane, range=ranged
-#: .\utils\amla.cfg:5526
+#: .\utils\amla.cfg:5525
 msgid "entropy"
 msgstr "entropie"
 
 #. [advancement], id=entropy1_slow
-#: .\utils\amla.cfg:5543
+#: .\utils\amla.cfg:5542
 msgid "slowing enemies with entropical blasts"
 msgstr "ralentir les ennemis avec les déflagrations entropiques"
 
@@ -10568,51 +10615,51 @@ msgstr "ralentir les ennemis avec les déflagrations entropiques"
 #. [advancement], id=entropy4
 #. [advancement], id=entropy5
 #. [advancement], id=entropy6
-#: .\utils\amla.cfg:5561
-#: .\utils\amla.cfg:5595
-#: .\utils\amla.cfg:5628
-#: .\utils\amla.cfg:5661
-#: .\utils\amla.cfg:5695
+#: .\utils\amla.cfg:5560
+#: .\utils\amla.cfg:5594
+#: .\utils\amla.cfg:5627
+#: .\utils\amla.cfg:5660
+#: .\utils\amla.cfg:5694
 msgid "more proficient with entropy"
 msgstr "plus compétent avec l'entropie"
 
 #. [advancement], id=entropy2_poison
-#: .\utils\amla.cfg:5577
+#: .\utils\amla.cfg:5576
 msgid "poisoning enemies with entropical blasts"
 msgstr "empoisonner les ennemis avec les déflagrations entropiques"
 
 #. [advancement], id=entropy3_dazzle
-#: .\utils\amla.cfg:5610
+#: .\utils\amla.cfg:5609
 msgid "dazzling enemies with entropical blasts"
 msgstr "éblouir les ennemis avec les déflagrations entropiques"
 
 #. [advancement], id=entropy4_mayhem
-#: .\utils\amla.cfg:5643
+#: .\utils\amla.cfg:5642
 msgid "maiming enemies with entropical blasts"
 msgstr "mutiler les ennemis avec les déflagrations entropiques"
 
 #. [advancement], id=entropy5_burn
-#: .\utils\amla.cfg:5677
+#: .\utils\amla.cfg:5676
 msgid "incinerating enemies with entropical blasts"
 msgstr "incinérer les ennemis avec les déflagrations entropiques"
 
 #. [advancement], id=entropy6_zombification
-#: .\utils\amla.cfg:5710
+#: .\utils\amla.cfg:5709
 msgid "turning enemies into zombies with entropical blasts"
 msgstr "transformer les ennemis en zombies avec les déflagrations entropiques"
 
 #. [advancement], id=entropy7
-#: .\utils\amla.cfg:5729
+#: .\utils\amla.cfg:5728
 msgid "blasting enemies with entropy faster"
 msgstr "déflagrer plus rapidement les ennemis avec l'entropie"
 
 #. [advancement], id=particlestorm1
-#: .\utils\amla.cfg:5744
+#: .\utils\amla.cfg:5743
 msgid "capable to summon a devastating particle storm"
 msgstr "capable d'invoquer une tempête de particules dévastatrice"
 
 #. [effect], apply_to=new_attack, type=lightning, range=ranged
-#: .\utils\amla.cfg:5751
+#: .\utils\amla.cfg:5750
 msgid "particle storm"
 msgstr "tempête de particules"
 
@@ -10620,187 +10667,187 @@ msgstr "tempête de particules"
 #. [advancement], id=particlestorm3
 #. [advancement], id=particlestorm4
 #. [advancement], id=particlestorm5
-#: .\utils\amla.cfg:5770
-#: .\utils\amla.cfg:5801
-#: .\utils\amla.cfg:5835
-#: .\utils\amla.cfg:5866
+#: .\utils\amla.cfg:5769
+#: .\utils\amla.cfg:5800
+#: .\utils\amla.cfg:5834
+#: .\utils\amla.cfg:5865
 msgid "more proficient with particle storms"
 msgstr "plus compétent avec les tempêtes de particules"
 
 #. [advancement], id=particlestorm2_speed
 #. [advancement], id=particlestorm4_speed
-#: .\utils\amla.cfg:5785
-#: .\utils\amla.cfg:5850
+#: .\utils\amla.cfg:5784
+#: .\utils\amla.cfg:5849
 msgid "summoning particle storms faster"
 msgstr "invoquer des tempêtes de particules plus rapidement"
 
 #. [advancement], id=particlestorm3_precision
 #. [advancement], id=particlestorm5_guided
-#: .\utils\amla.cfg:5816
-#: .\utils\amla.cfg:5881
+#: .\utils\amla.cfg:5815
+#: .\utils\amla.cfg:5880
 msgid "failing to summon particle storms less frequently"
 msgstr "rater moins fréquemment l'invocation de tempêtes de particules"
 
 #. [advancement], id=weapons1
-#: .\utils\amla.cfg:5901
+#: .\utils\amla.cfg:5900
 msgid "better at fighting with weapons"
 msgstr "meilleur au combat avec les armes"
 
 #. [advancement], id=weapons2
-#: .\utils\amla.cfg:5926
+#: .\utils\amla.cfg:5925
 msgid "cleaving in melee combat"
 msgstr "fendre en combat de mêlée"
 
 #. [advancement], id=weapons3
-#: .\utils\amla.cfg:5950
+#: .\utils\amla.cfg:5949
 msgid "better at armed combat"
 msgstr "meilleur au combat armé"
 
 #. [advancement], id=weapons4
-#: .\utils\amla.cfg:5975
+#: .\utils\amla.cfg:5974
 msgid "faster in armed combat"
 msgstr "plus rapide dans les combats armés"
 
 #. [advancement], id=weapons5
-#: .\utils\amla.cfg:5997
+#: .\utils\amla.cfg:5996
 msgid "dealing cold damage with weapons"
 msgstr "infliger des dégâts de froid avec les armes"
 
 #. [advancement], id=magic1
-#: .\utils\amla.cfg:6017
+#: .\utils\amla.cfg:6016
 msgid "better with basic spells"
 msgstr "meilleur avec les sorts de base"
 
 #. [advancement], id=magic2
-#: .\utils\amla.cfg:6047
+#: .\utils\amla.cfg:6046
 msgid "faster with basic spells"
 msgstr "plus rapide avec les sorts de base"
 
 #. [advancement], id=resist_cold1
-#: .\utils\amla.cfg:6084
+#: .\utils\amla.cfg:6083
 msgid "better protected from cold (5% better resistances)"
 msgstr "mieux protégé contre le froid (5 % de résistance supplémentaire)"
 
 #. [advancement], id=resist_fire1
-#: .\utils\amla.cfg:6100
+#: .\utils\amla.cfg:6099
 msgid "better protected from fire (5% better resistances)"
 msgstr "mieux protégé contre le feu (5 % de résistance supplémentaire)"
 
 #. [advancement], id=resist_arcane1
-#: .\utils\amla.cfg:6116
+#: .\utils\amla.cfg:6115
 msgid "better protected from arcane damage (5% better resistances)"
 msgstr "mieux protégé contre les dégâts arcaniques (5 % de résistance supplémentaire)"
 
 #. [advancement], id=resist_blade1
-#: .\utils\amla.cfg:6132
+#: .\utils\amla.cfg:6131
 msgid "better protected from blade (5% better resistances)"
 msgstr "mieux protégé contre les lames (5 % de résistance supplémentaire)"
 
 #. [advancement], id=resist_pierce1
-#: .\utils\amla.cfg:6148
+#: .\utils\amla.cfg:6147
 msgid "better protected from piercing attacks (5% better resistances)"
 msgstr "mieux protégé contre les attaques perforantes (5 % de résistance supplémentaire)"
 
 #. [advancement], id=resist_impact1
-#: .\utils\amla.cfg:6164
+#: .\utils\amla.cfg:6163
 msgid "better protected from impacts (5% better resistances)"
 msgstr "mieux protégé contre les impacts (5 % de résistance supplémentaire)"
 
 #. [advancement], id=health1
-#: .\utils\amla.cfg:6180
+#: .\utils\amla.cfg:6179
 msgid "having more hitpoints"
 msgstr "avoir plus de points de vie"
 
 #. [advancement], id=leadership1
-#: .\utils\amla.cfg:6440
+#: .\utils\amla.cfg:6439
 msgid "able to lead allies into battle (leadership of a level 4 unit)"
 msgstr "capable de commander à des alliés au combat (commandement d'une unité de niveau 4)"
 
 #. [advancement], id=leadership2
-#: .\utils\amla.cfg:6456
+#: .\utils\amla.cfg:6455
 msgid "able to lead allies into battle (leadership of a level 5 unit)"
 msgstr "capable de commander à des alliés au combat (commandement d'une unité de niveau 5)"
 
 #. [advancement], id=leadership3
-#: .\utils\amla.cfg:6478
+#: .\utils\amla.cfg:6477
 msgid "able to lead allies into battle to fight like furious savages"
 msgstr "capable de commander à ses alliés à la bataille pour qu'ils se battent comme des sauvages enragés"
 
 #. [advancement], id=spirit1
-#: .\utils\amla.cfg:6494
+#: .\utils\amla.cfg:6493
 msgid "able to leave the mortal shell to attack almost immune to physical damage"
 msgstr "capable de quitter l'enveloppe mortelle pour attaquer, presque immunisé contre les dommages physiques"
 
 #. [effect], apply_to=bonus_attack, type=arcane, range=melee
-#: .\utils\amla.cfg:6502
+#: .\utils\amla.cfg:6501
 msgid "spiritual transformation"
 msgstr "transformation spirituelle"
 
 #. [advancement], id=fire_penetrate1
-#: .\utils\amla.cfg:6517
+#: .\utils\amla.cfg:6516
 msgid "decreasing fire resistance of all adjacent enemies by 5% more"
 msgstr "diminue la résistance au feu de tous les ennemis adjacents de 5 % supplémentaires"
 
 #. [advancement], id=cold_penetrate1
-#: .\utils\amla.cfg:6528
+#: .\utils\amla.cfg:6527
 msgid "decreasing cold resistance of all adjacent enemies by 5% more"
 msgstr "diminue la résistance au froid de tous les ennemis adjacents de 5 % supplémentaires"
 
 #. [advancement], id=arcane_penetrate1
-#: .\utils\amla.cfg:6539
+#: .\utils\amla.cfg:6538
 msgid "decreasing arcane resistance of all adjacent enemies by 5% more"
 msgstr "diminue la résistance à l'arcane de tous les ennemis adjacents de 5 % supplémentaires"
 
 #. [advancement], id=blade_penetrate1
-#: .\utils\amla.cfg:6550
+#: .\utils\amla.cfg:6549
 msgid "decreasing blade resistance of all adjacent enemies by 5% more"
 msgstr "diminue la résistance au tranchant de tous les ennemis adjacents de 5 % supplémentaires"
 
 #. [advancement], id=impact_penetrate1
-#: .\utils\amla.cfg:6561
+#: .\utils\amla.cfg:6560
 msgid "decreasing impact resistance of all adjacent enemies by 5% more"
 msgstr "diminue la résistance au contondant de tous les ennemis adjacents de 5 % supplémentaires"
 
 #. [advancement], id=pierce_penetrate1
-#: .\utils\amla.cfg:6572
+#: .\utils\amla.cfg:6571
 msgid "decreasing pierce resistance of all adjacent enemies by 5% more"
 msgstr "diminue la résistance au perforant de tous les ennemis adjacents de 5 % supplémentaires"
 
 #. [message], speaker=narrator
-#: .\utils\global_events.cfg:650
+#: .\utils\global_events.cfg:646
 msgid "Automatically picked $item_info.name you could not pick before the end of the scenario."
 msgstr "$item_info.name, que vous n'aviez pas pu ramasser avant la fin du scénario, ramassé automatiquement."
 
 #. [set_menu_item], id=8respec
-#: .\utils\global_events.cfg:693
+#: .\utils\global_events.cfg:689
 msgid "Alter advancement"
 msgstr "Changer d'avancement"
 
 #. [value]
-#: .\utils\global_events.cfg:742
-#: .\utils\global_events.cfg:942
+#: .\utils\global_events.cfg:738
+#: .\utils\global_events.cfg:938
 msgid "better with "
 msgstr "meilleur avec "
 
 #. [value]
-#: .\utils\global_events.cfg:758
-#: .\utils\global_events.cfg:958
+#: .\utils\global_events.cfg:754
+#: .\utils\global_events.cfg:954
 msgid "faster with "
 msgstr "plus rapide avec "
 
 #. [value]
-#: .\utils\global_events.cfg:778
-#: .\utils\global_events.cfg:978
+#: .\utils\global_events.cfg:774
+#: .\utils\global_events.cfg:974
 msgid "more brutish with "
 msgstr "plus brutal avec "
 
 #. [then]
-#: .\utils\global_events.cfg:834
+#: .\utils\global_events.cfg:830
 msgid "Last advancement not found."
 msgstr "Dernier avancement non trouvé"
 
 #. [message], speaker=narrator
-#: .\utils\global_events.cfg:839
+#: .\utils\global_events.cfg:835
 msgid ""
 "The last advancement this unit has taken is described as:\n"
 "<b>$worked_on.modifications.advancement[$last_advancement_index].description </b>\n"
@@ -10811,34 +10858,34 @@ msgstr ""
 "Voulez-vous en changer pour autre chose ?"
 
 #. [set_menu_item], id=9help
-#: .\utils\global_events.cfg:1057
+#: .\utils\global_events.cfg:1053
 msgid "Mod help"
 msgstr "Aide du Mode"
 
 #. [message], speaker=narrator
-#: .\utils\global_events.cfg:1061
+#: .\utils\global_events.cfg:1057
 #: .\utils\help\interface.cfg:7
 msgid "What do you need help with?"
 msgstr "Sur quoi avez-vous besoin d'aide ?"
 
 #. [option]
-#: .\utils\global_events.cfg:1065
+#: .\utils\global_events.cfg:1061
 msgid "Interface"
 msgstr "Interface"
 
 #. [option]
-#: .\utils\global_events.cfg:1078
+#: .\utils\global_events.cfg:1074
 msgid "Frequently Asked Questions"
 msgstr "Questions Fréquemment Posées"
 
 #. [then]
-#: .\utils\global_events.cfg:1187
-#: .\utils\global_events.cfg:1206
+#: .\utils\global_events.cfg:1183
+#: .\utils\global_events.cfg:1202
 msgid "none"
 msgstr "aucun"
 
 #. [message], speaker=narrator
-#: .\utils\global_events.cfg:1219
+#: .\utils\global_events.cfg:1215
 msgid ""
 "\n"
 "<span size='xx-large' weight='bold' underline='single'>$unit.name</span><span color='#88FCA0' size='x-large'> ($unit.language_name)</span>\n"
@@ -10889,22 +10936,22 @@ msgstr ""
 "$advancements_taken"
 
 #. [value]
-#. [trait], id=healthy
-#: .\utils\global_events.cfg:1308
+#. [trait], id=highlander
+#: .\utils\global_events.cfg:1304
 #: .\utils\utils.cfg:263
 msgid "highlander"
 msgstr "highlander"
 
 #. [value]
-#. [trait], id=healthy
-#: .\utils\global_events.cfg:1309
+#. [trait], id=highlander
+#: .\utils\global_events.cfg:1305
 #: .\utils\utils.cfg:264
 msgid "female^highlander"
 msgstr "highlander"
 
 #. [value]
-#. [trait], id=healthy
-#: .\utils\global_events.cfg:1311
+#. [trait], id=highlander
+#: .\utils\global_events.cfg:1307
 #: .\utils\utils.cfg:266
 msgid "Born better than others, 5 more hitpoints + 3 more per level, 1 more damage per level, heals 2 HP every turn"
 msgstr "Mieux né que les autres, 5 points de vie supplémentaires + 3 par niveau, 1 dégat de plus par niveau, guérit de 2 PV à chaque tour"
@@ -18356,203 +18403,203 @@ msgid "You do not have enough gold. Listen, if I sold it to you for less gold, I
 msgstr "Vous n'avez pas assez d'or. Écoutez, si je vous le vendais pour moins d'or, je n'en aurais pas assez pour soudoyer les ennemis afin qu'ils me laissent tranquille."
 
 #. [trait], id=unstable
-#: .\utils\utils.cfg:288
+#: .\utils\utils.cfg:291
 msgid "unstable"
 msgstr "instable"
 
 #. [trait], id=unstable
-#: .\utils\utils.cfg:289
+#: .\utils\utils.cfg:292
 msgid "female^unstable"
 msgstr "instable"
 
 #. [trait], id=unstable
-#: .\utils\utils.cfg:291
+#: .\utils\utils.cfg:294
 msgid "This unit is highly unstable.  If you have to hit it, be careful what you use."
 msgstr "Cette unité est hautement instable. Si vous devez la frapper, faites attention à ce que vous utilisez. "
 
 #. [trait], id=perfectionist
-#: .\utils\utils.cfg:298
+#: .\utils\utils.cfg:301
 msgid "perfectionist"
 msgstr "perfectionniste"
 
 #. [trait], id=perfectionist
-#: .\utils\utils.cfg:299
+#: .\utils\utils.cfg:302
 msgid "female^perfectionist"
 msgstr "perfectionniste"
 
 #. [trait], id=perfectionist
-#: .\utils\utils.cfg:301
+#: .\utils\utils.cfg:304
 msgid "An obsessive attention to detail allows this unit to inflict 50% more damage, while requiring much more XP to advance"
 msgstr "Une attention obsessive aux détails permet à cette unité d'infligé 50% de dégâts supplémentaires tout en demandant beaucoup plus d'XP pour avancer."
 
 #. [trait], id=unstoppable
-#: .\utils\utils.cfg:324
+#: .\utils\utils.cfg:327
 msgid "unstoppable"
 msgstr "innarrêtable"
 
 #. [trait], id=unstoppable
-#: .\utils\utils.cfg:325
+#: .\utils\utils.cfg:328
 msgid "female^unstoppable"
 msgstr "innarrêtable"
 
 #. [trait], id=unstoppable
-#: .\utils\utils.cfg:327
+#: .\utils\utils.cfg:330
 msgid "This unit is very unwilling to die when trying to help their friends"
 msgstr "Cette unité est très peu disposée à mourir lorsqu'elle essaye d'aider ses amis. "
 
 #. [trait], id=thanatologist
-#: .\utils\utils.cfg:343
+#: .\utils\utils.cfg:346
 msgid "thanatologist"
 msgstr "thanatologue"
 
 #. [trait], id=thanatologist
-#: .\utils\utils.cfg:344
+#: .\utils\utils.cfg:347
 msgid "female^thanatologist"
 msgstr "thanatologue"
 
 #. [trait], id=thanatologist
-#: .\utils\utils.cfg:346
+#: .\utils\utils.cfg:349
 msgid "This unit has good understanding of death, and has made experiments that improved own resistances of pierce, blade and cold"
 msgstr "Cette unité a une bonne compréhension de la mort et a fait des expériences qui augmente ses résistances au perforant, au tranchant et au froid"
 
 #. [trait], id=impulsive
-#: .\utils\utils.cfg:362
+#: .\utils\utils.cfg:365
 msgid "impulsive"
 msgstr "impulsif"
 
 #. [trait], id=impulsive
-#: .\utils\utils.cfg:363
+#: .\utils\utils.cfg:366
 msgid "female^impulsive"
 msgstr "impulsive"
 
 #. [trait], id=impulsive
-#: .\utils\utils.cfg:365
+#: .\utils\utils.cfg:368
 msgid "This unit does not think before acting, and can attack first even when defending"
 msgstr "Cette unité ne réfléchit pas avant d'agir et attaque en premier même en défense"
 
 #. [trait], id=thermophile
-#: .\utils\utils.cfg:379
+#: .\utils\utils.cfg:382
 msgid "thermophile"
 msgstr "thermophile"
 
 #. [trait], id=thermophile
-#: .\utils\utils.cfg:380
+#: .\utils\utils.cfg:383
 msgid "female^thermophile"
 msgstr "thermophile"
 
 #. [trait], id=thermophile
-#: .\utils\utils.cfg:382
+#: .\utils\utils.cfg:385
 msgid "This unit liked sitting around lava pools to have developed a liking for hot temperatures"
 msgstr "Cette unité aimait tellement s'asseoir autour des lacs de lave qu'elle a développé un penchant pout les températures élevées"
 
 #. [trait], id=broken
-#: .\utils\utils.cfg:397
+#: .\utils\utils.cfg:400
 msgid "broken"
 msgstr "brisé"
 
 #. [trait], id=broken
-#: .\utils\utils.cfg:398
+#: .\utils\utils.cfg:401
 msgid "female^broken"
 msgstr "brisée"
 
 #. [trait], id=broken
-#: .\utils\utils.cfg:400
+#: .\utils\utils.cfg:403
 msgid "This unit has fought too many battles and has seen too many friends die, lacks the vigour of life but knows many tricks to avoid getting hit"
 msgstr "Cette unité a vécu trop de batailles et vu trop d'amis mourir, manque de vigueur à vivre mais connaît beaucoup de trucs pour éviter d'être touchée"
 
 #. [trait], id=cynic
-#: .\utils\utils.cfg:435
+#: .\utils\utils.cfg:438
 msgid "cynic"
 msgstr "cynique"
 
 #. [trait], id=cynic
-#: .\utils\utils.cfg:436
+#: .\utils\utils.cfg:439
 msgid "female^cynic"
 msgstr "cynique"
 
 #. [trait], id=cynic
-#: .\utils\utils.cfg:438
+#: .\utils\utils.cfg:441
 msgid "This unit has fought so many monsters that he subconsciously defies magic, becoming more resistant to arcane damage"
 msgstr "Cette unité a combattu tellement de monstres qu'elle se défie de façon subconsciente de la magie, devenant plus résistante aux dégats d'arcane"
 
 #. [time], id=fimbulwinter_dawn
-#: .\utils\utils.cfg:452
-#: .\utils\utils.cfg:506
+#: .\utils\utils.cfg:455
+#: .\utils\utils.cfg:509
 msgid "Fimbulwinter Dawn"
 msgstr "Aube de Fimbulvetr"
 
 #. [time], id=fimbulwinter_day
-#: .\utils\utils.cfg:461
-#: .\utils\utils.cfg:470
-#: .\utils\utils.cfg:479
-#: .\utils\utils.cfg:515
-#: .\utils\utils.cfg:524
-#: .\utils\utils.cfg:533
+#: .\utils\utils.cfg:464
+#: .\utils\utils.cfg:473
+#: .\utils\utils.cfg:482
+#: .\utils\utils.cfg:518
+#: .\utils\utils.cfg:527
+#: .\utils\utils.cfg:536
 msgid "Fimbulwinter Day"
 msgstr "Jour de Fimbulvetr"
 
 #. [time], id=fimbulwinter_dusk
-#: .\utils\utils.cfg:488
-#: .\utils\utils.cfg:542
+#: .\utils\utils.cfg:491
+#: .\utils\utils.cfg:545
 msgid "Fimbulwinter Dusk"
 msgstr "Crépuscule de Fimbulvetr"
 
 #. [time], id=fimbulwinter_night
-#: .\utils\utils.cfg:497
-#: .\utils\utils.cfg:551
-#: .\utils\utils.cfg:560
-#: .\utils\utils.cfg:569
-#: .\utils\utils.cfg:578
+#: .\utils\utils.cfg:500
+#: .\utils\utils.cfg:554
+#: .\utils\utils.cfg:563
+#: .\utils\utils.cfg:572
+#: .\utils\utils.cfg:581
 msgid "Fimbulwinter Night"
 msgstr "Nuit de Fimbulvetr"
 
 #. [message], speaker=narrator
-#: .\utils\utils.cfg:829
+#: .\utils\utils.cfg:832
 msgid "No units available."
 msgstr "Aucune unité disponible."
 
 #. [set_menu_item], id=teleport_to_{LEADER}
-#: .\utils\utils.cfg:911
+#: .\utils\utils.cfg:914
 msgid "Teleport units to "
 msgstr "Téléporter les unités vers "
 
 #. [set_menu_item], id=cannot_teleport_to_{LEADER}
-#: .\utils\utils.cfg:954
+#: .\utils\utils.cfg:957
 msgid "<span font-style='oblique'>Spell to teleport units to "
 msgstr "<span font-style='oblique'>Le sort pour téléporte les unités vers "
 
 #. [set_menu_item], id=cannot_teleport_to_{LEADER}
-#: .\utils\utils.cfg:954
+#: .\utils\utils.cfg:957
 msgid " is recharging</span>"
 msgstr " se recharge</span>"
 
 #. [value]
-#: .\utils\utils.cfg:1033
+#: .\utils\utils.cfg:1036
 msgid "Hahaha, you think you can match my dexterity, $unit.name|?"
 msgstr "Hahaha, tu penses que tu es à la hauteur de ma dextérité, $unit.name| ?"
 
 #. [value]
-#: .\utils\utils.cfg:1036
+#: .\utils\utils.cfg:1039
 msgid "Hahaha, nobody can match my dexterity!"
 msgstr "Hahaha, personne n'est à la hauteur de ma dextérité !"
 
 #. [value]
-#: .\utils\utils.cfg:1039
+#: .\utils\utils.cfg:1042
 msgid "Missed me by that <span font='oblique'>that</span> much"
 msgstr "Manqué de <span font='oblique'>ça</span>."
 
 #. [value]
-#: .\utils\utils.cfg:1042
+#: .\utils\utils.cfg:1045
 msgid "Hey man, nice shot!"
 msgstr "Hé mec, joli frappe !"
 
 #. [value]
-#: .\utils\utils.cfg:1045
+#: .\utils\utils.cfg:1048
 msgid "A swing and a miss!"
 msgstr "Une frappe et un raté !"
 
 #. [value]
-#: .\utils\utils.cfg:1048
+#: .\utils\utils.cfg:1051
 msgid "Just a <span font='oblique'>bit</span> outside!"
 msgstr "Juste un <span font='oblique'>peu</span> à côté !"
 
